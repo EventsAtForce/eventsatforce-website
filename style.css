@@ -8,7 +8,7 @@
     src: url(assets/fonts/HelveticaNeueLTPro-MdEx.otf);
 }
 
-/*COLORS*/
+/* COLORS */
 :root {
     --black-color: #000000;
     --white-color: #ffffff;
@@ -16,6 +16,8 @@
     --darkgrey-color: #afafaf;
 }
 
+
+/* SLIDER CAROUSEL */
 .slider-container {
     padding: 50px;
 }
@@ -44,6 +46,7 @@
     object-fit: cover;
 }
 
+/* SLIDER NAV DOTS */
 .slider-nav {
     display: flex;
     column-gap: 1rem;
@@ -64,5 +67,5 @@
 }
 
 .slider-nav a:hover {
-    opacity: 0.65;
+    opacity: 0.5;
 }
