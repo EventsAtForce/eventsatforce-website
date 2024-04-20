@@ -66,7 +66,3 @@
 .slider-nav a:hover {
     opacity: 0.75;
 }
-
-.slider-nav .single-dot a.active {
-    background-color: var(--black-color);
-}
