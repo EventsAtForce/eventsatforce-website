@@ -16,7 +16,7 @@
     --darkgrey-color: #afafaf;
 }
 
-.container {
+.slider-container {
     padding: 50px;
 }
 
@@ -64,5 +64,5 @@
 }
 
 .slider-nav a:hover {
-    opacity: 0.75;
+    opacity: 0.65;
 }
