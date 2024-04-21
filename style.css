@@ -23,6 +23,12 @@
     font-family: HelveticaNeueBD;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -79,5 +85,27 @@
 }
 
 .carousel {
-    
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+    width: 100%;
+    max-width: 1240px;
+    /* overflow: hidden; */
 }
+
+.carousel .slides {
+    display: flex;
+    white-space: nowrap;
+    transition: transform 0.5s ease;
+}   
+
+.slides img {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+    
