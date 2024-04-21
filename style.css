@@ -42,14 +42,14 @@ body {
     margin-bottom: 20px;
 }
 .arrow-left {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     cursor: pointer;
 }
 
 .arrow-right {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     cursor: pointer;
 }
 
@@ -57,7 +57,7 @@ body {
     width: 1240px;
     height: 696px;
     overflow: hidden;
-    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1.5rem 3rem -0.5rem hsla(0, 0%, 0%, 0.25);
     border-radius: 20px;
 }
 
@@ -76,13 +76,13 @@ body {
 .bottom {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 18px;
 }
 
 .dot {
-    width: 15px;
-    height: 15px;
-    border: 1px solid var(--black-color);
+    width: 18px;
+    height: 18px;
+    background-color: var(--darkgrey-color);
     border-radius: 50%;
     cursor: pointer; 
 }

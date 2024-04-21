@@ -25,7 +25,7 @@ dots[0] .style.backgroundColor = 'black';
 //Changing Slide on Dot Click
 const resetBg = () => {
     dots.forEach(dot => {
-        dot.style.backgroundColor = 'white';
+        dot.style.backgroundColor = '#afafaf';
     });
 };
 
