@@ -37,6 +37,7 @@ body {
     height: 100px;
     background-color: #ffffff;
     justify-content: space-between;
+    z-index: 1000;
 }
 
 .nav-logo a {
@@ -147,6 +148,7 @@ section {
     justify-content: center;
     margin-top: 22px;
     gap: 18px;
+    margin-bottom: 22px;
 }
 
 .nav-dots .dot {
