@@ -84,28 +84,27 @@ body {
     color: #000000
 }
 
-.carousel {
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    position: relative;
-    width: 100%;
-    max-width: 1240px;
-    /* overflow: hidden; */
-}
-
-.carousel .slides {
+main {
     display: flex;
-    white-space: nowrap;
-    transition: transform 0.5s ease;
-}   
-
-.slides img {
-    height: 100%;
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    cursor: pointer;
-    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-right: 100px;
 }
-    
+
+.carousel {
+
+}
+
+.frame {
+    display: flex;
+    aspect-ratio: 16/9;
+    width: 100%; /* Define a width */
+    height: 100%; /* Define a height */
+}
+
+.slides {
+    width: 100%; /* Make the child div fill the parent */
+    height: 100%; /* Make the child div fill the parent */
+}
