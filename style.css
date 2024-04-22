@@ -153,5 +153,6 @@ section {
     height: 18px;
     border-radius: 18px;
     background-color: var(--darkgrey-color);
+    cursor: pointer;
 }
 
