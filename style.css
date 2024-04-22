@@ -94,17 +94,41 @@ main {
 }
 
 .carousel {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .frame {
     display: flex;
     aspect-ratio: 16/9;
-    width: 100%; /* Define a width */
-    height: 100%; /* Define a height */
+    max-width: 1240px;
+    max-height: 696px;
+    cursor: pointer;
+    overflow: hidden;
+} 
+
+.slides-container {
+    display: flex;
+    width: 100%; 
+    height: 100%; 
 }
 
-.slides {
-    width: 100%; /* Make the child div fill the parent */
-    height: 100%; /* Make the child div fill the parent */
+.arrow-left {
+    position: absolute;
+    width: 70px;
+    height:70px;
+    cursor: pointer;
+    padding-right: 1240px;
 }
+
+.arrow-right {
+    position: absolute;
+    width: 70px;
+    height:70px;
+    cursor: pointer;
+    padding-left: 1240px;
+}
+
+

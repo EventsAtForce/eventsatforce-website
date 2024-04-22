@@ -2,7 +2,7 @@
 
 const left = document.querySelector('.arrow-left');
 const right = document.querySelector('.arrow-right');
-const slider = document.querySelector('.slider');
+const slider = document.querySelector('.slides-container');
 const images = document.querySelectorAll('.img');
 
 let slideNumber = 1;
