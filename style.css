@@ -86,8 +86,8 @@ body {
 }
 
 /* HERO SECTION */
-section {
-    display: flex;
+.carousel-section {
+    display: flex;  
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -157,5 +157,34 @@ section {
     border-radius: 18px;
     background-color: var(--darkgrey-color);
     cursor: pointer;
+}
+
+.about-section {
+    display: flex;  
+    flex-direction: column;
+    padding-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.about-text {
+    display: flex;  
+    flex-direction: column;
+}
+
+.about-text h1 {
+    width: 50%;
+    height: 40px;
+    padding-bottom: 28px;
+    text-align: center;
+    font-size: 48px;
+    text-shadow: 
+    /* Adds a grey shadow offset 1px in both directions */
+    3px 3px 0px rgba(175, 175, 175, 1); 
+}
+
+.about-text p {
+    text-align: justify;
+    font-size: 24px;
 }
 
