@@ -170,6 +170,8 @@ body {
     margin-left: 100px;
     margin-top: 30px;
     margin-right: 100px;
+    margin-bottom: 30px;
+    gap: 80px;
 }
 
 .about-text {
@@ -205,9 +207,24 @@ body {
     gap: 80px;
 }
 
-.about-image {
+.what-we-do-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.about-image .what-we-do-image { 
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
     object-fit: cover;
+}
+
+.what-we-do-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
