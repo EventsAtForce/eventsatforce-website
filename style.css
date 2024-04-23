@@ -202,15 +202,17 @@ body {
 
 .about-container, .what-we-do-container {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 80px;
 }
 
-.about-image, .what-we-do-image { 
+.about-image, .what-we-do-image {
+
+}
+.about-image img, .what-we-do-image img { 
     width: 100%;
+    min-width: 500px;
     height: auto;
-    aspect-ratio: 16/9;
     object-fit: cover;
 }
 
