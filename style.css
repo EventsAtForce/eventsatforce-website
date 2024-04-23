@@ -37,6 +37,7 @@ body {
     height: 100px;
     background-color: #ffffff;
     justify-content: space-between;
+    z-index: 1000;
 }
 
 .nav-logo a {
@@ -85,7 +86,7 @@ body {
 }
 
 /* HERO SECTION */
-section {
+.carousel-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,8 +106,7 @@ section {
 .frame {
     display: flex;
     aspect-ratio: 16/9;
-    max-width: 1240px;
-    max-height: 696px;
+    width: auto;
     cursor: pointer;
     overflow: hidden;
     border-radius: 20px ;
@@ -130,7 +130,8 @@ section {
     width: 70px;
     height:70px;
     cursor: pointer;
-    margin-right: 1240px;
+    left: 0;
+    margin-left: -35px;
 }
 
 .arrow-right {
@@ -138,7 +139,8 @@ section {
     width: 70px;
     height:70px;
     cursor: pointer;
-    margin-left: 1240px;
+    right: 0;
+    margin-right: -35px;
 }
 
 /* NAV DOTS */
@@ -147,6 +149,7 @@ section {
     justify-content: center;
     margin-top: 22px;
     gap: 18px;
+    margin-bottom: 22px;
 }
 
 .nav-dots .dot {
