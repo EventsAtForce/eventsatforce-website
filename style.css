@@ -186,7 +186,7 @@ body {
     padding-left: 1px; /* adjust as needed */
     font-family: HelveticaNeueBD;
     text-align: center;
-    font-size: 48px;
+    font-size: 3.333vw;
     color: #000000;
     text-shadow: 
     /* Adds a grey shadow offset 1px in both directions */
@@ -195,7 +195,7 @@ body {
 
 .about-text p, .what-we-do-text p {
     font-family: HelveticaNeueMD;
-    font-size: 24px;
+    font-size: 1.667vw;
     font-weight: 500;
     text-align: justify;
 }
