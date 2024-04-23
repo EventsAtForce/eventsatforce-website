@@ -8,11 +8,6 @@ const images = document.querySelectorAll('.image');
 let slideNumber = 1;
 const length = images.length;
 
-// Get the width of a slide
-function getSlideWidth() {
-    return document.querySelector('.frame').offsetWidth;
-  }  
-
 //Navigation Dots Section
 
 const navdots = document.querySelector('.nav-dots');
@@ -51,6 +46,12 @@ const changeColor = () => {
 }
 
 //Navigation Button Section-2
+
+// Get the width of a slide
+function getSlideWidth() {
+    return document.querySelector('.frame').offsetWidth;
+  }  
+
 
 //Next Slide function
 const nextSlide = () => {
