@@ -90,7 +90,7 @@ body {
 }
 
 /* HERO SECTION */
-section {
+.carousel-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,6 +238,7 @@ section {
     margin-top: 3.472vw;
     margin-left: 6.944vw;
     margin-right: 6.944vw;
+    margin-bottom: 5.556vw;
     gap: 4.514vw;
 }
 
@@ -379,4 +380,175 @@ section {
     right: 0;
     margin-right: -2.431vw;
 }
+
+/* TEAM SECTION */
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6.944vw;
+    margin-right: 6.944vw;
+    margin-bottom: 3.472vw;
+    gap: 5.556vw;
+
+}
+.leadership-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.472vw;
+}
+
+.leadership-header h1 {
+    font-family: HelveticaNeueMD;
+    font-size: 3.333vw;
+    color: #000000;
+    text-align: center;
+    font-weight: 500;
+    text-shadow:
+    /* Adds a grey shadow offset 1px in both directions */
+    0.139vw 0.139vw 0vw rgba(175, 175, 175, 1);
+}
+
+.member-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1.389vw;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    justify-content: center;
+    gap: 1.389vw;
+}
+
+.member img {
+    width: 20vw;
+    height: 25.139vw;
+}
+
+.member h1 {
+    font-family: HelveticaNeueMD;
+    font-size: 2.639vw;
+    color: #000000;
+    text-align: center;
+    font-weight: 200;
+    text-shadow:
+    /* Adds a grey shadow offset 1px in both directions */
+    0.138vw 0.138vw 0vw rgba(175, 175, 175, 1);
+}
+
+.member p {
+    font-family: HelveticaNeueMD;
+    font-size: 1.389vw;
+    color: #000000;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.472vw;
+
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6.944vw;
+    margin-right: 6.944vw;
+    gap: 1.736vw;
+}
+
+.border {
+    width: 100vw;
+    height: 0.139vw;
+    background-color: var(--darkgrey-color);
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.389vw;
+}
+.logos img:first-child {
+    width: 18.125vw;
+    height: auto;
+}
+
+.logos img:last-child {
+    width: 6.042vw;
+    height: auto;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.138vw;
+}
+
+.footer-text h1 {
+    font-family: HelveticaNeueMD;
+    font-size: 1.667vw;
+    color: #1b1b1b;
+    text-align: center;
+    font-weight: 500;
+}
+
+.footer-text a {
+    text-decoration: none;
+    font-family: HelveticaNeueMD;
+    font-size: 1.667vw;
+    color: #1b1b1b;
+    text-align: center;
+    font-weight: 500;
+}
+
+.socials-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.042vw;
+}
+
+.youtube, .linkedin, .instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11.458vw;
+    height: 3.472vw;
+    background-color: var(--lightgrey-color);
+    border-radius: 0.694vw;
+}
+
+.socials-container a {
+    text-decoration: none;
+    color: #484848;
+    font-family: HelveticaNeueMD;
+    font-size: 1.25vw;
+}
+
+footer h3 {
+    font-family: HelveticaNeueMD;
+    font-size: 1.111vw;
+    color: #1b1b1b;
+    text-align: center;
+    font-weight: 500;   
+    margin-bottom: 1.736vw;
+}
+
+
 
