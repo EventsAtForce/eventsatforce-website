@@ -382,14 +382,13 @@ body {
 }
 
 /* TEAM SECTION */
-.team {
+.team-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-left: 6.944vw;
     margin-right: 6.944vw;
-    margin-bottom: 3.472vw;
     gap: 5.556vw;
 
 }
