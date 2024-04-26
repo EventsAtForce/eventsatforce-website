@@ -238,7 +238,8 @@ section {
     margin-top: 3.472vw;
     margin-left: 6.944vw;
     margin-right: 6.944vw;
-    gap: 4.514vw;
+    margin-bottom: 3.472vw;
+    gap: 5.556vw;
 }
 
 .events-img-container img{
@@ -278,104 +279,4 @@ section {
     flex-shrink: 0;
     background-color: var(--darkgrey-color);
 }
-
-/* EVENTS REEL SUBSECTION */
-.reels-carousel-header h1 {
-    font-family: HelveticaNeueMD;
-    font-size: 3.333vw;
-    color: #000000;
-    text-align: center;
-    font-weight: 500;
-    text-shadow:
-    /* Adds a grey shadow offset 1px in both directions */
-    0.139vw 0.139vw 0vw rgba(175, 175, 175, 1);
-
-}
-.reels-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: auto;
-    height: auto;
-    /* margin-left: 100px;
-    margin-top: 50px;
-    margin-right: 100px; */
-}
-
-.reels-frame {
-    display: flex;
-    width: 86.111vw;
-    height: 42.639vw;
-    overflow: hidden;
-}
-
-.reels-container {
-    display: flex;
-    transition: all 800ms ease;
-    gap: 1.806vw;
-}
-.reel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 42.639vw;
-    width: 27.361vw;
-    border: var(--darkgrey-color) 0.069vw solid;
-    border-radius: 1.389vw;
-    background-color: var(--lightgrey-color);
-    gap: 0.903vw;
-    object-fit: contain;
-}
-
-.reel img {
-    height: 30.556vw;
-    width: 22.986vw;
-}
-
-.reel .watch-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    height: 4.167vw;
-    width: 25vw;
-    border: var(--darkgrey-color) 0.069vw solid;
-    border-radius: 1.389vw;
-    background-color: var(--lightgrey-color);
-}
-
-.reel h1 {
-    font-family: HelveticaNeueMD;
-    font-size: 1.667vw;
-    color: #000000;
-    text-align: center;
-    font-weight: 500;
-}
-.watch-button h2 {
-    font-family: HelveticaNeueMD;
-    font-size: 1.667vw;
-    color: #000000;
-    text-align: center;
-    font-weight: 500;
-}
-
-.arrow-left-2 {
-    position: absolute;
-    width: 4.861vw;
-    height:4.861vw;
-    cursor: pointer;
-    left: 0;
-    margin-left: -2.431vw;
-}
-
-.arrow-right-2 {
-    position: absolute;
-    width: 4.861vw;
-    height: 4.861vw;
-    cursor: pointer;
-    right: 0;
-    margin-right: -2.431vw;
-}
-
+>>>>>>>>> Temporary merge branch 2
