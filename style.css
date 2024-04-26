@@ -252,3 +252,18 @@ section {
     justify-content: center;
     gap: 20px;
 }
+
+.events-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.events-img-container img{  
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
