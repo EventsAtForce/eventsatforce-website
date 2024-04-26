@@ -129,7 +129,7 @@ section {
     object-fit: cover;
 }
 
-.arrow-left {
+.arrow-left-1 {
     position: absolute;
     width: 4.861vw;
     height:4.861vw;
@@ -138,7 +138,7 @@ section {
     margin-left: -2.431vw;
 }
 
-.arrow-right {
+.arrow-right-1 {
     position: absolute;
     width: 4.861vw;
     height: 4.861vw;
@@ -238,7 +238,7 @@ section {
     margin-top: 3.472vw;
     margin-left: 6.944vw;
     margin-right: 6.944vw;
-    gap: 5.556vw;
+    gap: 4.514vw;
 }
 
 .events-img-container img{
@@ -286,7 +286,6 @@ section {
     color: #000000;
     text-align: center;
     font-weight: 500;
-    padding-bottom: 0.972vw;
     text-shadow:
     /* Adds a grey shadow offset 1px in both directions */
     0.139vw 0.139vw 0vw rgba(175, 175, 175, 1);
@@ -308,7 +307,6 @@ section {
     display: flex;
     width: 86.111vw;
     height: 42.639vw;
-    cursor: pointer;
     overflow: hidden;
 }
 
@@ -340,6 +338,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     height: 4.167vw;
     width: 25vw;
     border: var(--darkgrey-color) 0.069vw solid;
@@ -360,5 +359,23 @@ section {
     color: #000000;
     text-align: center;
     font-weight: 500;
+}
+
+.arrow-left-2 {
+    position: absolute;
+    width: 4.861vw;
+    height:4.861vw;
+    cursor: pointer;
+    left: 0;
+    margin-left: -2.431vw;
+}
+
+.arrow-right-2 {
+    position: absolute;
+    width: 4.861vw;
+    height: 4.861vw;
+    cursor: pointer;
+    right: 0;
+    margin-right: -2.431vw;
 }
 
