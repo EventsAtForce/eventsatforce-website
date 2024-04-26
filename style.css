@@ -34,53 +34,53 @@ body {
     top: 0;
     width: 100%;
     display: flex;
-    height: 100px;
+    height: 6.944vw;
     background-color: #ffffff;
     justify-content: space-between;
     z-index: 1000;
 }
 
 .nav-logo a {
-    width: 301px;
-    height: 38px;
+    width: 20.903vw;
+    height: 2.639vw;
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding-left: 100px;
-    padding-top: 31px;
-    padding-bottom: 31px;
+    padding-left: 6.944vw;
+    padding-top: 2.153vw;
+    padding-bottom: 2.153vw;
 }
 
 .nav-logo img {
-    height: 38px;
-    width: 38px;
+    height: 2.639vw;
+    width: 2.639vw;
 }
 
 .nav-logo-text {
-    padding-left: 1px; /* adjust as needed */
+    padding-left: 0.069vw; /* adjust as needed */
     font-family: HelveticaNeueBD;
-    font-size: 24px;
+    font-size: 1.667vw;
     color: #000000;
     text-shadow: 
     /* Adds a grey shadow offset 1px in both directions */
-    1px 1px 0px rgba(175, 175, 175, 1);
+    0.069vw 0.069vw 0vw rgba(175, 175, 175, 1);
 }
 
 .nav-sections {
     display: flex;
     align-items: center;
-    padding-right: 100px;
-    padding-top: 39px;
-    padding-bottom: 39px;
+    padding-right: 6.944vw;
+    padding-top: 2.708vw;
+    padding-bottom: 2.708vw;
 }
 
 .nav-sections a {
-    width: 140px;
-    height: 20px;
+    width: 9.722vw;
+    height: 1.389vw;
     align-items: center;
     text-decoration: none;
     font-family: HelveticaNeueMD;
-    font-size: 22px;
+    font-size: 1.528vw;
     text-align: center;
     color: #000000
 }
@@ -91,9 +91,9 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 100px;
-    margin-top: 100px;
-    margin-right: 100px;
+    margin-left: 6.944vw;
+    margin-top: 6.944vw;
+    margin-right: 6.944vw;
 }
 
 .carousel {
@@ -109,7 +109,7 @@ section {
     width: auto;
     cursor: pointer;
     overflow: hidden;
-    border-radius: 20px ;
+    border-radius: 1.389vw ;
 } 
 
 .slides-container {
@@ -127,66 +127,37 @@ section {
 
 .arrow-left {
     position: absolute;
-    width: 70px;
-    height:70px;
+    width: 4.861vw;
+    height:4.861vw;
     cursor: pointer;
     left: 0;
-    margin-left: -35px;
+    margin-left: -2.431vw;
 }
 
 .arrow-right {
     position: absolute;
-    width: 70px;
-    height:70px;
+    width: 4.861vw;
+    height: 4.861vw;
     cursor: pointer;
     right: 0;
-    margin-right: -35px;
+    margin-right: -2.431vw;
 }
 
 /* NAV DOTS */
 .nav-dots {
     display: flex;
     justify-content: center;
-    margin-top: 22px;
-    gap: 18px;
-    margin-bottom: 22px;
+    margin-top: 1.528vw;
+    gap: 1.25vw;
+    margin-bottom: 1.528vw;
 }
 
 .nav-dots .dot {
-    width: 18px;
-    height: 18px;
-    border-radius: 18px;
+    width: 1.25vw;
+    height: 1.25vw;
+    border-radius: 1.25vw;
     background-color: var(--darkgrey-color);
     cursor: pointer;
-}
-
-.about-section {
-    display: flex;  
-    flex-direction: column;
-    padding-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.about-text {
-    display: flex;  
-    flex-direction: column;
-}
-
-.about-text h1 {
-    width: 50%;
-    height: 40px;
-    padding-bottom: 28px;
-    text-align: center;
-    font-size: 48px;
-    text-shadow: 
-    /* Adds a grey shadow offset 1px in both directions */
-    3px 3px 0px rgba(175, 175, 175, 1); 
-}
-
-.about-text p {
-    text-align: justify;
-    font-size: 24px;
 }
 
 /* ABOUT SECTION */
@@ -196,11 +167,11 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 100px;
-    margin-top: 30px;
-    margin-right: 100px;
-    margin-bottom: 30px;
-    gap: 80px;
+    margin-left: 6.944vw;
+    margin-top: 2.083vw;
+    margin-right: 6.944vw;
+    margin-bottom: 2.083vw;
+    gap: 5.556vw;
 }
 
 .about-text {
@@ -208,22 +179,25 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 1.389vw;
 }
 
 .about-text h1, .what-we-do-text h1{
-    padding-left: 1px; /* adjust as needed */
+    padding-left: 0vw; /* adjust as needed */
+    height: auto;
+    width: auto;
     font-family: HelveticaNeueBD;
     text-align: center;
     font-size: 3.333vw;
     color: #000000;
     text-shadow: 
     /* Adds a grey shadow offset 1px in both directions */
-    2px 2px 0px rgba(175, 175, 175, 1);
+    0.139vw 0.139vw 0vw rgba(175, 175, 175, 1);
 }
 
 .about-text p, .what-we-do-text p {
     font-family: HelveticaNeueMD;
+    height: auto;
     font-size: 1.667vw;
     font-weight: 500;
     text-align: justify;
@@ -232,16 +206,16 @@ section {
 .about-container, .what-we-do-container {
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 5.556vw;
 }
 
-.about-image, .what-we-do-image {
+/* .about-image, .what-we-do-image {
 
-}
+} */
 .about-image img, .what-we-do-image img { 
     width: 100%;
-    min-width: 500px;
-    height: auto;
+    /* min-width: 500px; */
+    width: 40.486vw;
     object-fit: cover;
 }
 
@@ -250,7 +224,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 1.389vw;
 }
 
 .events-section {
