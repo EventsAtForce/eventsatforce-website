@@ -312,7 +312,7 @@ section {
 
 .reels-container {
     display: flex;
-    transition: all 800ms ease;
+    transition: all 350ms ease;
     gap: 1.806vw;
 }
 .reel {
