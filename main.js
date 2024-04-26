@@ -34,7 +34,7 @@ dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
         resetBg();
         dot.style.backgroundColor = 'black';
-        slider.style.transform = `translateX(-${index*1240}px)`;
+        slider.style.transform = `translateX(-${getSlideWidth()*index}px)`;
         slideNumber = index+1;
     });
 });
@@ -47,15 +47,21 @@ const changeColor = () => {
 
 //Navigation Button Section-2
 
+// Get the width of a slide
+function getSlideWidth() {
+    return document.querySelector('.frame').offsetWidth;
+  }  
+
+
 //Next Slide function
 const nextSlide = () => {
-    slider.style.transform = `translateX(-${slideNumber*1240}px)`;
     slideNumber++;
+    slider.style.transform = `translateX(-${getSlideWidth()*(slideNumber-1)}px)`;
 };
 
 //Previous Slide function
 const prevSlide = () => {
-    slider.style.transform = `translateX(-${(slideNumber-2)*1240}px)`;
+    slider.style.transform = `translateX(-${getSlideWidth()*(slideNumber-2)}px)`;
     slideNumber--;
 };
 
@@ -67,7 +73,7 @@ const getFirstSlide = () => {
 
 //Get Last Slide function
 const getLastSlide = () => {
-    slider.style.transform = `translateX(-${(length-1)*1240}px)`;
+    slider.style.transform = `translateX(-${getSlideWidth()*(length-1)}px)`;
         slideNumber = length;;
 };
 

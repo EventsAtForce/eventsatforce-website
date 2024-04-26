@@ -86,8 +86,8 @@ body {
 }
 
 /* HERO SECTION */
-.carousel-section {
-    display: flex;  
+section {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -106,8 +106,7 @@ body {
 .frame {
     display: flex;
     aspect-ratio: 16/9;
-    max-width: 1240px;
-    max-height: 696px;
+    width: auto;
     cursor: pointer;
     overflow: hidden;
     border-radius: 20px ;
@@ -131,7 +130,8 @@ body {
     width: 70px;
     height:70px;
     cursor: pointer;
-    margin-right: 1240px;
+    left: 0;
+    margin-left: -35px;
 }
 
 .arrow-right {
@@ -139,7 +139,8 @@ body {
     width: 70px;
     height:70px;
     cursor: pointer;
-    margin-left: 1240px;
+    right: 0;
+    margin-right: -35px;
 }
 
 /* NAV DOTS */
@@ -188,3 +189,66 @@ body {
     font-size: 24px;
 }
 
+/* ABOUT SECTION */
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    gap: 80px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-text h1, .what-we-do-text h1{
+    padding-left: 1px; /* adjust as needed */
+    font-family: HelveticaNeueBD;
+    text-align: center;
+    font-size: 3.333vw;
+    color: #000000;
+    text-shadow: 
+    /* Adds a grey shadow offset 1px in both directions */
+    2px 2px 0px rgba(175, 175, 175, 1);
+}
+
+.about-text p, .what-we-do-text p {
+    font-family: HelveticaNeueMD;
+    font-size: 1.667vw;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.about-container, .what-we-do-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.about-image, .what-we-do-image {
+
+}
+.about-image img, .what-we-do-image img { 
+    width: 100%;
+    min-width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+
+.about-text, .what-we-do-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
