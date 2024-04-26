@@ -353,7 +353,8 @@ section {
     text-align: center;
     font-weight: 500;
 }
-.watch-button h2 {
+.watch-button a {
+    text-decoration: none;
     font-family: HelveticaNeueMD;
     font-size: 1.667vw;
     color: #000000;
