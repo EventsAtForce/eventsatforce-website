@@ -57,7 +57,7 @@ body {
 }
 
 .nav-logo-text {
-    padding-left: 0.069vw; /* adjust as needed */
+    padding-left: 0.139vw; /* adjust as needed */
     font-family: HelveticaNeueBD;
     font-size: 1.667vw;
     color: #000000;
@@ -230,14 +230,47 @@ section {
 .events-section {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 3.472vw;
+    margin-left: 6.944vw;
+    margin-right: 6.944vw;
+    margin-bottom: 3.472vw;
+    gap: 5.556vw;
 }
 
 .events-img-container img{  
-    width: 100%;
-    height: auto;
+    width: 86.111vw;
     object-fit: cover;
+}
 
+.events-stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5.764vw;
+}
+
+.events-stats-container h1 {
+    font-family: HelveticaNeueBD;
+    font-size: 3.333vw;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 0.972vw;
+    text-shadow: 
+    /* Adds a grey shadow offset 1px in both directions */
+    0.139vw 0.139vw 0vw rgba(175, 175, 175, 1);
+}
+
+.events-stats-container p {
+    font-family: HelveticaNeueMD;
+    font-size: 1.667vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+.divider {
+    width: 0.347vw;
+    height: 11.944vw;
+    border-radius: 0.5vw;
+    flex-shrink: 0;
+    background-color: var(--darkgrey-color);
 }
