@@ -133,7 +133,7 @@ const nextReel = () => {
 
 //Previous Reel function
 const prevReel = () => {
-    sliderReel.style.transform = `translateX(-${(getReelWidth()*(ReelNumber-2))+(getGap()*(ReelNumber-1))}px)`;
+    sliderReel.style.transform = `translateX(-${(getReelWidth()*(ReelNumber-2))+(getGap()*(ReelNumber-2))}px)`;
     ReelNumber--;
 };
 
