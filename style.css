@@ -76,11 +76,12 @@ body {
     padding-right: 6.944vw;
     padding-top: 2.708vw;
     padding-bottom: 2.708vw;
+    gap: 2.778vw;
 }
 
 .nav-sections a {
-    width: 9.722vw;
-    height: 1.389vw;
+    /* width: 9.722vw;
+    height: 1.389vw; */
     align-items: center;
     text-decoration: none;
     font-family: HelveticaNeueMD;
@@ -471,7 +472,7 @@ footer {
 }
 
 .border {
-    width: 99.999vw;
+    width: 99vw;
     height: 0.139vw;
     background-color: var(--darkgrey-color);
 }
