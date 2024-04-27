@@ -30,7 +30,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center ;
+    justify-content: center;
 }
 
 .navbar {
@@ -423,7 +423,7 @@ body {
     flex-direction: column;
     align-content: start;
     justify-content: center;
-    gap: 1.389vw;
+    gap: 1.042vw;
 }
 
 .member img {
@@ -433,18 +433,18 @@ body {
 
 .member h1 {
     font-family: HelveticaNeueMD;
-    font-size: 2.639vw;
+    font-size: 1.389vw;
     color: #000000;
     text-align: center;
     font-weight: 200;
     text-shadow:
     /* Adds a grey shadow offset 1px in both directions */
-    0.138vw 0.138vw 0vw rgba(175, 175, 175, 1);
+    0.069vw 0.069vw 0vw rgba(175, 175, 175, 1);
 }
 
 .member p {
     font-family: HelveticaNeueMD;
-    font-size: 1.389vw;
+    font-size: 0.972vw;
     color: #000000;
     text-align: center;
     font-weight: 500;
@@ -471,7 +471,7 @@ footer {
 }
 
 .border {
-    width: 100vw;
+    width: 99.999vw;
     height: 0.139vw;
     background-color: var(--darkgrey-color);
 }
