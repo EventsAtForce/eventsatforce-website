@@ -30,7 +30,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center ;
+    justify-content: center;    
 }
 
 .navbar {
@@ -76,11 +76,12 @@ body {
     padding-right: 6.944vw;
     padding-top: 2.708vw;
     padding-bottom: 2.708vw;
+    gap: 2.778vw;
 }
 
 .nav-sections a {
-    width: 9.722vw;
-    height: 1.389vw;
+    /* width: 9.722vw;
+    height: 1.389vw; */
     align-items: center;
     text-decoration: none;
     font-family: HelveticaNeueMD;
@@ -297,8 +298,6 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    width: auto;
-    height: auto;
     /* margin-left: 100px;
     margin-top: 50px;
     margin-right: 100px; */
@@ -306,15 +305,15 @@ body {
 
 .reels-frame {
     display: flex;
-    width: 86.111vw;
-    height: 42.639vw;
+    /* width: 86.111vw;
+    height: 42.639vw; */
     overflow: hidden;
 }
 
 .reels-container {
     display: flex;
     transition: all 350ms ease;
-    gap: 1.806vw;
+    gap: 1.736vw;
 }
 .reel {
     display: flex;
@@ -423,7 +422,7 @@ body {
     flex-direction: column;
     align-content: start;
     justify-content: center;
-    gap: 1.389vw;
+    gap: 1.042vw;
 }
 
 .member img {
@@ -433,18 +432,18 @@ body {
 
 .member h1 {
     font-family: HelveticaNeueMD;
-    font-size: 2.639vw;
+    font-size: 1.389vw;
     color: #000000;
     text-align: center;
     font-weight: 200;
     text-shadow:
     /* Adds a grey shadow offset 1px in both directions */
-    0.138vw 0.138vw 0vw rgba(175, 175, 175, 1);
+    0.069vw 0.069vw 0vw rgba(175, 175, 175, 1);
 }
 
 .member p {
     font-family: HelveticaNeueMD;
-    font-size: 1.389vw;
+    font-size: 0.972vw;
     color: #000000;
     text-align: center;
     font-weight: 500;
@@ -458,6 +457,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding-top: 3.472vw;
+    overflow: hidden;
 
 }
 .footer-container {
@@ -529,15 +529,22 @@ footer {
     justify-content: center;
     width: 11.458vw;
     height: 3.472vw;
+    cursor: pointer;
     background-color: var(--lightgrey-color);
     border-radius: 0.694vw;
 }
 
 .socials-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
+    width: 11.458vw;
+    height: 3.472vw;
     color: #484848;
     font-family: HelveticaNeueMD;
     font-size: 1.25vw;
+    
 }
 
 footer h3 {
