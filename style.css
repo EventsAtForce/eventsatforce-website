@@ -30,7 +30,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .navbar {
@@ -298,8 +298,6 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    width: auto;
-    height: auto;
     /* margin-left: 100px;
     margin-top: 50px;
     margin-right: 100px; */
@@ -307,15 +305,15 @@ body {
 
 .reels-frame {
     display: flex;
-    width: 86.111vw;
-    height: 42.639vw;
+    /* width: 86.111vw;
+    height: 42.639vw; */
     overflow: hidden;
 }
 
 .reels-container {
     display: flex;
     transition: all 350ms ease;
-    gap: 1.806vw;
+    gap: 1.736vw;
 }
 .reel {
     display: flex;
@@ -459,6 +457,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding-top: 3.472vw;
+    overflow: hidden;
 
 }
 .footer-container {
@@ -472,7 +471,7 @@ footer {
 }
 
 .border {
-    width: 99vw;
+    width: 100vw;
     height: 0.139vw;
     background-color: var(--darkgrey-color);
 }
@@ -530,15 +529,22 @@ footer {
     justify-content: center;
     width: 11.458vw;
     height: 3.472vw;
+    cursor: pointer;
     background-color: var(--lightgrey-color);
     border-radius: 0.694vw;
 }
 
 .socials-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
+    width: 11.458vw;
+    height: 3.472vw;
     color: #484848;
     font-family: HelveticaNeueMD;
     font-size: 1.25vw;
+    
 }
 
 footer h3 {
