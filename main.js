@@ -12,6 +12,7 @@ const length = images.length;
 
 const navdots = document.querySelector('.nav-dots');
 
+//Creating Dots
 for(let i = 0; i < length; i++){
     const div = document.createElement('div');
     div.className = 'dot';
