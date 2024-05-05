@@ -61,7 +61,7 @@ body {
 }
 
 .nav-logo-text {
-    padding-left: 0.139vw; /* adjust as needed */
+    padding-left: 0.139vw;
     font-family: HelveticaNeueBD;
     font-size: 1.667vw;
     color: #000000;
@@ -188,7 +188,7 @@ body {
 }
 
 .about-text h1, .what-we-do-text h1{
-    padding-left: 0vw; /* adjust as needed */
+    padding-left: 0vw; 
     height: auto;
     width: auto;
     font-family: HelveticaNeueMD;
@@ -214,9 +214,6 @@ body {
     gap: 5.556vw;
 }
 
-/* .about-image, .what-we-do-image {
-
-} */
 .about-image img, .what-we-do-image img {
     width: 100%;
     /* min-width: 500px; */
