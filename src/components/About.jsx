@@ -6,12 +6,12 @@ const classes = {
   AboutContainer: 'flex flex-col min-[900px]:flex-row items-start gap-[40px]',
   AboutText: 'flex flex-col items-center xl:gap-5 lg:gap-4 gap-3',
   AboutHeader: 'width-full font-HelveticaNeueBD xl:text-4xl xl:text-shadow-3 md:text-3xl text-2xl text-shadow-2',
-  AboutBody: 'width-full font-HelveticaNeue text-justify xl:text-2xl xl:leading-7 lg:text-xl lg:leading-6 md:text-lg md:leading-5',
+  AboutBody: 'width-full font-HelveticaNeue text-justify xl:text-2xl xl:leading-7 lg:text-xl lg:leading-6 md:text-lg md:leading-[24px] max-[430px]:leading-[1.25rem]',
   AboutImage: 'fit-cover hidden min-[900px]:block xl:w-[600px] min-[1120px]:w-[550px] lg:w-[450px] min-[900px]:w-[400px] xl:rounded-3xl lg:rounded-2xl md:rounded-xl',
   WhatWeDoContainer: 'flex flex-col min-[900px]:flex-row items-start gap-[40px]',
   WhatWeDoText: 'flex flex-col items-center justify-center xl:gap-5 lg:gap-4 gap-3',
   WhatWeDoHeader: 'width-full font-HelveticaNeueBD xl:text-4xl xl:text-shadow-3 md:text-3xl text-2xl text-shadow-2',
-  WhatWeDoBody: 'width-full font-HelveticaNeue text-justify xl:text-2xl xl:leading-7 lg:text-xl lg:leading-6 md:text-lg md:leading-5',
+  WhatWeDoBody: 'width-full font-HelveticaNeue text-justify xl:text-2xl xl:leading-7 lg:text-xl lg:leading-6 md:text-lg md:leading-[24px] max-[430px]:leading-[1.25rem]',
   WhatWeDoImage: 'fit-cover hidden min-[900px]:block xl:w-[600px] min-[1120px]:w-[550px] lg:w-[450px] min-[900px]:w-[400px] xl:rounded-3xl lg:rounded-2xl md:rounded-xl',
 }
 
