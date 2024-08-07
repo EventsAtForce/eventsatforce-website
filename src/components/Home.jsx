@@ -1,6 +1,5 @@
 import React from "react";
 import Carousel from "./Carousel";
-import Slide_1 from "../assets/images/Slide_1.png";
 
 const slides = [
   'src/assets/images/Slide_1.png',
