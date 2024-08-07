@@ -27,7 +27,7 @@ const About = () => {
       </div>
       <div className={classes.WhatWeDoContainer}>
         <img className={classes.WhatWeDoImage} src={IMG_2} alt="" />
-        <div class={classes.WhatWeDoText}>
+        <div className={classes.WhatWeDoText}>
           <h1 className={classes.WhatWeDoHeader}>WHAT WE DO</h1>
           <p className={classes.WhatWeDoBody}>FORCE is a platform for students to showcase their talents, skills, and creativity. We host events like Music Fests and Fresher's Day to celebrate student talents. We also organize technical events to enhance the skills of the students, fostering a dynamic community for students.</p>
         </div>
