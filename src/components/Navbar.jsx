@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/icons/LOGO.svg'
 
@@ -9,19 +9,19 @@ const navItems = [
   },
   {
     name: 'ABOUT',
-    link: '/'
+    link: '/About'
   },
   {
     name: 'EVENTS',
-    link: '/'
+    link: '/Events'
   },
   {
     name: 'SOCIETIES',
-    link: '/'
+    link: '/Soceities'
   },
   {
     name: 'TEAM',
-    link: '/'
+    link: '/Team'
   }
 ]
 
@@ -35,14 +35,29 @@ const classes = {
   HamMenu: 'md:hidden flex items-center justify-center',
   MenuIcon: "bg-black w-7 h-1 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out before:content-[''] before:absolute before:w-7 before:h-1 before:bg-black before:rounded-full before:-translate-y-1.5 before:transition-all before:duration-300 before:ease-in-out after:content-[''] after:absolute after:w-7 after:h-1 after:bg-black after:rounded-full after:translate-y-1.5 after:transition-all after:duration-300 after:ease-in-out",
   ActiveMenuIcon: "bg-transparent w-7 h-1 rounded-full flex items-center justify-center -translate-x-2 transition-all duration-300 ease-in-out before:content-[''] before:absolute before:w-7 before:h-1 before:bg-black before:rounded-full before:rotate-45 before:translate-x-2  before:transition-all before:duration-300 before:ease-in-out after:content-[''] after:absolute after:w-7 after:h-1 after:bg-black after:rounded-full after:-rotate-45 after:translate-x-2 after:transition-all after:duration-300 after:ease-in-out",
-  MenuContainer: 'fixed bg-white top-16 w-screen z-20 -translate-y-full transition-all duration-500 ease-in-out',
-  ActiveMenuContainer: 'fixed bg-white top-16 w-screen translate-y-0 transition-all duration-500 ease-in-out',
+  MenuContainer: 'fixed bg-white top-[-60px] w-screen z-20 -translate-y-full transition-all duration-500 ease-in-out',
+  ActiveMenuContainer: 'fixed bg-white top-[60px] w-screen translate-y-0 md:hidden transition-all duration-500 ease-in-out',
   MenuSections: 'flex flex-col items-center font-HelveticaNeueMD xl:gap-8 xl:text-xl lg:gap-7 lg:text-lg gap-6 text-md',
 }
 
 const Navbar = () => {
 
   const [openMenu, setOpenMenu] = useState(false)
+
+  //Reset openMenu state on window resize
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setOpenMenu(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <nav className={classes.NavContainer}>

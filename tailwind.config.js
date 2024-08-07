@@ -13,7 +13,7 @@ export default {
         HelveticaNeueBD: ['HelveticaNeueBD'],
         HelveticaNeueMD: ['HelveticaNeueMD'],
         HelveticaNeue: ['HelveticaNeue'],
-      } 
+      },
     },
   },
   plugins: [

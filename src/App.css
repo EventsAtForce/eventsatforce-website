@@ -21,6 +21,12 @@
     --darkgrey-color: #afafaf;
 }
 
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
     margin: 0;
     padding: 0;
