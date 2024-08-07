@@ -2,7 +2,7 @@
 
 # FORCE Website Project
 
-This repository contains the code for the FORUM's website. 
+This repository contains the source code for the FORUM's website. 
 
 ## React + Vite
 
@@ -11,7 +11,18 @@ This template provides a minimal setup to get React working in Vite with HMR and
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh 
+
+## Tech Stack (JAM)
+- **J - JavaScript**
+  - React.js
+- **A - APIs**
+  - Google APIs
+- **M - Markup**
+  - Next.js
+- **Tools and Libraries:**
+  - Figma - Design
+  - Git
 
 ## Installation
 
