@@ -37,7 +37,7 @@ const classes = {
   ActiveMenuIcon: "bg-transparent w-7 h-1 rounded-full flex items-center justify-center -translate-x-2 transition-all duration-300 ease-in-out before:content-[''] before:absolute before:w-7 before:h-1 before:bg-black before:rounded-full before:rotate-45 before:translate-x-2  before:transition-all before:duration-300 before:ease-in-out after:content-[''] after:absolute after:w-7 after:h-1 after:bg-black after:rounded-full after:-rotate-45 after:translate-x-2 after:transition-all after:duration-300 after:ease-in-out",
   MenuContainer: 'fixed bg-white top-[-60px] w-screen z-20 -translate-y-full transition-all duration-500 ease-in-out',
   ActiveMenuContainer: 'fixed bg-white top-[60px] w-screen translate-y-0 md:hidden transition-all duration-500 ease-in-out',
-  MenuSections: 'flex flex-col items-center font-HelveticaNeueMD xl:gap-8 xl:text-xl lg:gap-7 lg:text-lg gap-6 text-md',
+  MenuSections: 'flex flex-col items-center font-HelveticaNeueMD xl:py-8 xl:gap-8 xl:text-xl lg:py-7 lg:gap-7 lg:text-lg gap-6 py-6 text-md',
 }
 
 const Navbar = () => {
@@ -65,7 +65,7 @@ const Navbar = () => {
         <div className={classes.NavHeaderContainer}>
           <Link to="/" className={classes.NavHeader} >
             <img className={classes.NavHeaderLogo} src={logo} alt="" />
-            <span>EVENTSATFORCE</span>
+            <span>FORCE</span>
           </Link>
         </div>
         <div className={classes.NavSections}>
