@@ -4,7 +4,7 @@ import rightButton from '../assets/icons/rightButton.svg'
 
 
 const classes = {
-  CarouselMain: 'hidden sm:block rounded-3xl overflow-hidden relative',
+  CarouselMain: 'hidden sm:block xl:rounded-3xl lg:rounded-2xl md:rounded-xl rounded-lg overflow-hidden relative',
   CarouselContainer: 'flex w-full h-full transition-transform ease-out duration-500 ',
   ButtonsContainer: 'absolute top-1/2 transform -translate-y-1/2 px-4 flex items-center justify-between w-full',
   ButtonBG: 'flex items-center justify-center',
