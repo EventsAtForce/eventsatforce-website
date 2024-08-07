@@ -1,0 +1,39 @@
+/*FONTS*/
+@font-face {
+    font-family: 'HelveticaNeueBD';
+    src: url(assets/fonts/HelveticaNeueLTPro-BdEx.otf);
+}
+@font-face {
+    font-family: 'HelveticaNeueMD';
+    src: url(assets/fonts/HelveticaNeueLTPro-MdEx.otf);
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url(assets/fonts/HelveticaNeueLTPro-Ex.otf);
+}
+
+/* COLORS */
+:root {
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --lightgrey-color: #d9d9d9;
+    --darkgrey-color: #afafaf;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
