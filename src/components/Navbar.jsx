@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/icons/LOGO.svg'
 
@@ -43,6 +43,7 @@ const classes = {
 const Navbar = () => {
 
   const [openMenu, setOpenMenu] = useState(false)
+  const navRef = useRef(null);
 
   //Reset openMenu state on window resize
   useEffect(() => {
@@ -59,8 +60,23 @@ const Navbar = () => {
     };
   }, []);
 
+  // Close menu if clicked outside of navbar or nav menu
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setOpenMenu(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
-    <nav className={classes.NavContainer}>
+    <nav className={classes.NavContainer} ref={navRef}>
       <div className={classes.NavBar}>
         <div className={classes.NavHeaderContainer}>
           <Link to="/" className={classes.NavHeader} >
