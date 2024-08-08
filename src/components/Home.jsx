@@ -8,6 +8,11 @@ const slides_1 = [
   'src/assets/images/Slides_1/Slide_3.png',
   'src/assets/images/Slides_1/Slide_4.png',
   'src/assets/images/Slides_1/Slide_5.png',
+  'src/assets/images/Slides_1/Slide_6.png',
+  'src/assets/images/Slides_1/Slide_7.png',
+  'src/assets/images/Slides_1/Slide_8.png',
+  'src/assets/images/Slides_1/Slide_9.png',
+  'src/assets/images/Slides_1/Slide_10.png',
 ];
 
 const slides_2 = [
@@ -18,6 +23,9 @@ const slides_2 = [
   "src/assets/images/Slides_2/Slide_5.png",
   "src/assets/images/Slides_2/Slide_6.png",
   "src/assets/images/Slides_2/Slide_7.png",
+  "src/assets/images/Slides_2/Slide_8.png",
+  "src/assets/images/Slides_2/Slide_9.png",
+  "src/assets/images/Slides_2/Slide_10.png",
 ];
 
 

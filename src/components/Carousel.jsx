@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import leftButton from '../assets/icons/leftButton.svg'
 import rightButton from '../assets/icons/rightButton.svg'
 
@@ -15,21 +15,56 @@ const classes = {
 }
 
 const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 3000}) => {
-  const [currentSlide, setCurrentSlide] = useState(0)
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const carouselRef = useRef(null);
+  let touchStartX = 0;
+  let touchEndX = 0;
 
-  //prevSlide and nextSlide functions
-  const prev = () => setCurrentSlide((currentSlide) => (currentSlide == 0 ? slides.length - 1 : currentSlide - 1))
-  const next = () => setCurrentSlide((currentSlide) => (currentSlide == slides.length - 1 ? 0 : currentSlide + 1))
-  
-  //autoSlide defaultInterval=3000
+  // prevSlide and nextSlide functions
+  const prev = () => setCurrentSlide((currentSlide) => (currentSlide === 0 ? slides.length - 1 : currentSlide - 1));
+  const next = () => setCurrentSlide((currentSlide) => (currentSlide === slides.length - 1 ? 0 : currentSlide + 1));
+
+  // autoSlide defaultInterval=3000
   useEffect(() => {
-    if(!autoSlide) return
-    const slideInterval = setInterval(next, autoSlideInterval) 
-    return () => clearInterval(slideInterval)
-  })
+    if (!autoSlide) return;
+    const slideInterval = setInterval(next, autoSlideInterval);
+    return () => clearInterval(slideInterval);
+  }, [autoSlide, autoSlideInterval]);
+
+  // Handle touch events
+  useEffect(() => {
+    const handleTouchStart = (e) => {
+      touchStartX = e.touches[0].clientX;
+    };
+
+    const handleTouchMove = (e) => {
+      touchEndX = e.touches[0].clientX;
+    };
+
+    const handleTouchEnd = () => {
+      if (touchStartX - touchEndX > 50) {
+        next();
+      }
+
+      if (touchStartX - touchEndX < -50) {
+        prev();
+      }
+    };
+
+    const carouselElement = carouselRef.current;
+    carouselElement.addEventListener('touchstart', handleTouchStart);
+    carouselElement.addEventListener('touchmove', handleTouchMove);
+    carouselElement.addEventListener('touchend', handleTouchEnd);
+
+    return () => {
+      carouselElement.removeEventListener('touchstart', handleTouchStart);
+      carouselElement.removeEventListener('touchmove', handleTouchMove);
+      carouselElement.removeEventListener('touchend', handleTouchEnd);
+    };
+  }, []);
 
   return (
-  <div className={classes.CarouselMain}>
+  <div className={classes.CarouselMain} ref={carouselRef}>
     <div className={classes.CarouselContainer} style={{ transform: `translateX(-${currentSlide * 100}%)`}}>
       {slides}
     </div>
