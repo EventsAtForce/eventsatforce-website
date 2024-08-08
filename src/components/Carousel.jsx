@@ -16,7 +16,7 @@ const classes = {
 
 const Carousel = ({ children: slidesBig, autoSlide = false, autoSlideInterval = 3000}) => {
   const [currentSlide, setCurrentSlide] = useState(0)
-  const carouselRef = createRef()
+  const carouselRef = React.createRef()
   let touchStartX = 0;
   let touchEndX = 0;
 
@@ -24,61 +24,44 @@ const Carousel = ({ children: slidesBig, autoSlide = false, autoSlideInterval = 
   const prev = () => setCurrentSlide((currentSlide) => (currentSlide == 0 ? slidesBig.length - 1 : currentSlide - 1))
   const next = () => setCurrentSlide((currentSlide) => (currentSlide == slidesBig.length - 1 ? 0 : currentSlide + 1))
   
-// autoSlide defaultInterval=3000
-useEffect(() => {
-  if (!autoSlide) return;
-  const slideInterval = setInterval(next, autoSlideInterval);
-  return () => clearInterval(slideInterval);
-}, [autoSlide, autoSlideInterval]);
+  //autoSlide defaultInterval=3000
+  useEffect(() => {
+    if(!autoSlide) return
+    const slideInterval = setInterval(next, autoSlideInterval) 
+    return () => clearInterval(slideInterval)
+  })
 
   // Handle touch events
-useEffect(() => {
-  let slideInterval;
+  useEffect(() => {
+    const handleTouchStart = (e) => {
+      touchStartX = e.touches[0].clientX;
+    };
 
-  const resetAutoSlide = () => {
-    if (autoSlide) {
-      clearInterval(slideInterval);
-      slideInterval = setInterval(next, autoSlideInterval);
-    }
-  };
+    const handleTouchMove = (e) => {
+      touchEndX = e.touches[0].clientX;
+    };
 
-  const handleTouchStart = (e) => {
-    touchStartX = e.touches[0].clientX;
-    resetAutoSlide();
-  };
+    const handleTouchEnd = () => {
+      if (touchStartX - touchEndX > 50) {
+        next();
+      }
 
-  const handleTouchMove = (e) => {
-    touchEndX = e.touches[0].clientX;
-  };
+      if (touchStartX - touchEndX < -50) {
+        prev();
+      }
+    };
 
-  const handleTouchEnd = () => {
-    if (touchStartX - touchEndX > 50) {
-      next();
-    }
+    const carouselElement = carouselRef.current;
+    carouselElement.addEventListener('touchstart', handleTouchStart);
+    carouselElement.addEventListener('touchmove', handleTouchMove);
+    carouselElement.addEventListener('touchend', handleTouchEnd);
 
-    if (touchStartX - touchEndX < -50) {
-      prev();
-    }
-    resetAutoSlide();
-  };
-
-  const carouselElement = carouselRef.current;
-  carouselElement.addEventListener('touchstart', handleTouchStart);
-  carouselElement.addEventListener('touchmove', handleTouchMove);
-  carouselElement.addEventListener('touchend', handleTouchEnd);
-
-  // Set initial auto-slide interval
-  if (autoSlide) {
-    slideInterval = setInterval(next, autoSlideInterval);
-  }
-
-  return () => {
-    carouselElement.removeEventListener('touchstart', handleTouchStart);
-    carouselElement.removeEventListener('touchmove', handleTouchMove);
-    carouselElement.removeEventListener('touchend', handleTouchEnd);
-    clearInterval(slideInterval);
-  };
-}, [autoSlide, autoSlideInterval]);
+    return () => {
+      carouselElement.removeEventListener('touchstart', handleTouchStart);
+      carouselElement.removeEventListener('touchmove', handleTouchMove);
+      carouselElement.removeEventListener('touchend', handleTouchEnd);
+    };
+  }, []);
 
   return (
   <div className={classes.CarouselMain} ref={carouselRef}>
