@@ -15,7 +15,7 @@ const classes = {
   REVALogo: "xl:w-[220px] lg:w-[196px] md:w-[164px] min-[375px]:w-[190px] w-[160px]",
   FORCELogo: "xl:w-[86px] lg:w-[76px] md:w-[70px] min-[375px]:w-[70px] w-[60px]",
   LogoDivider: "max-h-[100px] lg:h-[88px] md:h-[68px] sm:h-[58px] min-[430px]:h-20 min-[375px]:h-16 min-[320px]:h-14 w-0.5 bg-white rounded-xl",
-  SocialsContainer: "flex flex-col min-[500px]:flex-row items-center justify-center lg:gap-10 min-[500px]:gap-6 gap-4 lg:px-6 lg:py-8 md:px-4 md:py-4 sm:px-3 sm:py-3 px-2 py-2",
+  SocialsContainer: "flex flex-col min-[500px]:flex-row items-center justify-center lg:gap-10 min-[500px]:gap-6 gap-4 lg:px-6 lg:py-8 md:px-4 md:py-4 sm:px-3 sm:py-3 px-[12px] py-[12px]",
   SocialsHeader: "font-HelveticaNeueMD lg:text-[24px] md:text-[20px] text-[16px] text-white",
   SocialsLink: "flex items-center justify-center gap-4",
   SocialsLogo: "lg:w-[36px] lg:h-[36px] md:w-[32px] md:h-[32px] w-[28px] h-[28px]",
