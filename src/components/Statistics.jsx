@@ -33,13 +33,13 @@ const Statistics = () => {
       <img className={classes.StatisticsImage} src={imageSrc} alt="" />
       <div className={classes.StatisticsContainer}>
         <div className={classes.Stats}>
-          <h1 className={classes.StatsHeader}>500+</h1>
-          <p className={classes.StatsParagraph}>Attendees</p>
+          <h1 className={classes.StatsHeader}>30+</h1>
+          <p className={classes.StatsParagraph}>Events</p>
         </div>
         <div className={classes.Divider}></div>
         <div className={classes.Stats}>
-          <h1 className={classes.StatsHeader}>30+</h1>
-          <p className={classes.StatsParagraph}>Events</p>
+          <h1 className={classes.StatsHeader}>1,000+</h1>
+          <p className={classes.StatsParagraph}>Attendees</p>
         </div>
         <div className={classes.Divider}></div>
         <div className={classes.Stats}>
