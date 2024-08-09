@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Carousel from './Carousel'; 
-import About from './About'; 
-import Statistics from './Statistics';
-import Societies from './Societies';
+import Carousel from '../components/Carousel'; 
+import About from '../components/About'; 
+import Statistics from '../components/Statistics';
+import Societies from '../components/Societies';
 
 // for vw >= 640px
 const slides_1 = [

@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes, Route } from "react-router-dom";
 import LocomotiveScroll from 'locomotive-scroll';
 import './App.css'
-import Home from './components/Home'
+import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer';
 
@@ -13,9 +13,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       <Footer />
     </>    
   )    
