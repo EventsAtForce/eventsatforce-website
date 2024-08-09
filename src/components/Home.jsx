@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Carousel from './Carousel'; 
 import About from './About'; 
 import Statistics from './Statistics';
+import Societies from './Societies';
 
+// for vw >= 640px
 const slides_1 = [
   'src/assets/images/Slides_1/Slide_1.png',
   'src/assets/images/Slides_1/Slide_2.png',
@@ -16,6 +18,8 @@ const slides_1 = [
   'src/assets/images/Slides_1/Slide_10.png',
 ];
 
+
+// vw < 640px
 const slides_2 = [
   "src/assets/images/Slides_2/Slide_1.png",
   "src/assets/images/Slides_2/Slide_2.png",
@@ -72,6 +76,7 @@ const Home = () => {
       </div>
       <About />
       <Statistics />
+      <Societies />
     </div>
   );
 };
