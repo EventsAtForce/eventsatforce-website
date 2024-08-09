@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Carousel from './Carousel'; 
 import About from './About'; 
+import Statistics from './Statistics';
 
 const slides_1 = [
   'src/assets/images/Slides_1/Slide_1.png',
@@ -70,6 +71,7 @@ const Home = () => {
         </Carousel>
       </div>
       <About />
+      <Statistics />
     </div>
   );
 };
