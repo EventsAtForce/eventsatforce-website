@@ -76,7 +76,7 @@ const classes = {
   EventsHeader: "text-center xl:text-4xl lg:text-3xl text-2xl font-HelveticaNeueBD text-shadow-3",
   Card: "flex flex-col items-center justify-between gap-2 h-full bg-[#D9D9D9] border-2 border-[#AFAFAF] xl:rounded-3xl md:rounded-2xl rounded-xl lg:p-6 md:p-5 p-6",
   CardHaderContainer: "flex flex-col items-center justify-center",
-  CardHeader: "text-center xl:text-2xl lg:text-[22px] text-2xl font-HelveticaNeueMD",
+  CardHeader: "text-center xl:text-2xl text-[22px] font-HelveticaNeueMD",
   CardDate: "text-center text-lg font-HelveticaNeueMD text-shadow-2",
   CardImage: "w-full h-auto object-cover xl:rounded-3xl md:rounded-2xl rounded-xl border-2 border-[#AFAFAF]",
   WatchButton: "w-full flex items-center justify-center bg-[#D9D9D9] text-black font-HelveticaNeueBD text-lg p-2 md:rounded-2xl rounded-xl border-2 border-[#AFAFAF]",
