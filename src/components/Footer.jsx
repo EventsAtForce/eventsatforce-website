@@ -1,6 +1,5 @@
 import React from "react"
-import { Link } from 'react-router-dom'
-import REVA from "../assets/images/REVA.png"
+import REVA from "../assets/images/REVA_COLOR.png"
 import FORCE from "../assets/images/FORCE.png"
 import facebook from "../assets/icons/facebook.svg"
 import instagram from "../assets/icons/instagram.svg"
@@ -10,18 +9,18 @@ import youtube from "../assets/icons/youtube.svg"
 import github from "../assets/icons/github.svg"
 
 const classes = {
-  PreFooterContainer: "w-screen flex mt-auto flex-col min-[900px]:flex-row items-center justify-around bg-[#1A1A1A] xl:rounded-t-3xl md:rounded-t-2xl rounded-t-xl md:px-6 md:py-6 px-4 py-4",
+  FooterDivider: "w-full max-w-[1240px] h-0.5 bg-[#AFAFAF] rounded-xl",
+  PreFooterContainer: "w-full max-w-1440 flex mt-auto flex-col min-[900px]:flex-row items-center justify-around bg-white md:px-6 md:py-6 px-4 py-4",
   LogoContainer: "flex items-center justify-center gap-4",
   REVALogo: "xl:w-[220px] lg:w-[196px] md:w-[164px] min-[375px]:w-[190px] w-[160px]",
   FORCELogo: "xl:w-[86px] lg:w-[76px] md:w-[70px] min-[375px]:w-[70px] w-[60px]",
-  LogoDivider: "max-h-[100px] lg:h-[88px] md:h-[68px] sm:h-[58px] min-[430px]:h-20 min-[375px]:h-16 min-[320px]:h-14 w-0.5 bg-white rounded-xl",
+  LogoDivider: "max-h-[100px] lg:h-[88px] md:h-[68px] sm:h-[58px] min-[430px]:h-20 min-[375px]:h-16 min-[320px]:h-14 w-0.5 bg-[#AFAFAF] rounded-xl",
   SocialsContainer: "flex flex-col min-[500px]:flex-row items-center justify-center lg:gap-10 min-[500px]:gap-6 gap-4 lg:px-6 lg:py-8 md:px-4 md:py-4 sm:px-3 sm:py-3 px-[12px] py-[12px]",
-  SocialsHeader: "font-HelveticaNeueMD lg:text-[24px] md:text-[20px] text-[16px] text-white",
+  SocialsHeader: "font-HelveticaNeueMD lg:text-[24px] md:text-[20px] text-[16px] text-black",
   SocialsLink: "flex items-center justify-center gap-4",
   SocialsLogo: "lg:w-[36px] lg:h-[36px] md:w-[32px] md:h-[32px] w-[28px] h-[28px]",
-  FooterContainer: "w-screen flex flex-col md:flex-row items-center justify-between md:px-6 md:py-6 px-4 py-4 bg-black",
-  FooterText: "font-HelveticaNeueMD lg:text-[16px] md:text-[14px] sm:text-sm text-[12px] text-white",
-  FooterLink: "hidden md:block font-HelveticaNeueMD lg:text-[16px] md:text-[14px] text-white",
+  FooterContainer: "w-full max-w-1440 flex items-center justify-center md:px-6 md:py-6 px-4 py-4",
+  FooterText: "font-HelveticaNeueMD lg:text-[16px] md:text-[14px] sm:text-sm text-[12px] text-black",
 };
 
 const quickLinks_1 = [
@@ -83,6 +82,7 @@ const socialLinks = [
 const Footer = () => {
   return (
     <>
+      <div className={classes.FooterDivider}></div>
       <div className={classes.PreFooterContainer}>
         <div className={classes.LogoContainer}>
           <img className={classes.REVALogo} src={REVA} alt="" />
@@ -104,26 +104,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className={classes.FooterDivider}></div>
       <div className={classes.FooterContainer}>
-        <a
-          href="https://github.com/EventsAtForce/"
-          target="_blank"
-          rel="noreferrer"
-          className={classes.FooterLink}
-        >
-          Coded with ❣️
-        </a>
-        <p className={classes.FooterText}>
-          © 2024 ⚡FORCE. All rights reserved.
-        </p>
-        <a
-          href="https://github.com/EventsAtForce/eventsatforce-website"
-          target="_blank"
-          rel="noreferrer"
-          className={classes.FooterLink}
-        >
-          Source Code 🔧
-        </a>
+        <p className={classes.FooterText}>© 2024 FORCE. All rights reserved.</p>
       </div>
     </>
   );

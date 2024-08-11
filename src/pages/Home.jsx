@@ -74,12 +74,12 @@ const classes = {
   ReelsCarouselContainer: "flex flex-col md:gap-4 gap-2",
   EventsContainer: "flex flex-col items-center justify-center w-full h-full max-w-1440 xl:gap-[40px] lg:gap-[36px] md:gap-[32px] sm:gap-[28px] gap-[4px] xl:px-[100px] xl:pt-[100px] xl:pb-8 lg:px-[80px] lg:pt-[80px] lg:pb-6 sm:px-[60px] sm:pt-[60px] sm:pb-4 px-6 pt-[60px] pb-4",
   EventsHeader: "text-center xl:text-4xl lg:text-3xl text-2xl font-HelveticaNeueBD text-shadow-3",
-  Card: "flex flex-col items-center justify-between gap-2 h-full bg-[#D9D9D9] border-2 border-[#AFAFAF] xl:rounded-3xl md:rounded-2xl rounded-xl lg:p-6 md:p-5 p-6",
+  Card: "flex flex-col items-center justify-between gap-2 h-full bg-[#D9D9D9] border-2 border-[#AFAFAF] rounded-3xl lg:p-6 md:p-5 p-6",
   CardHaderContainer: "flex flex-col items-center justify-center",
-  CardHeader: "text-center xl:text-2xl text-[22px] font-HelveticaNeueMD",
+  CardHeader: "text-center xl:text-2xl text-[20px] font-HelveticaNeueMD",
   CardDate: "text-center text-lg font-HelveticaNeueMD text-shadow-2",
   CardImage: "w-full h-auto object-cover xl:rounded-3xl md:rounded-2xl rounded-xl border-2 border-[#AFAFAF]",
-  WatchButton: "w-full flex items-center justify-center bg-[#D9D9D9] text-black font-HelveticaNeueBD text-lg p-2 md:rounded-2xl rounded-xl border-2 border-[#AFAFAF]",
+  WatchButton: "w-full flex items-center justify-center bg-[#D9D9D9] text-black font-HelveticaNeueBD md:text-lg text-md p-2 md:rounded-2xl rounded-xl border-2 border-[#AFAFAF]",
 };
 
 const Home = () => {

@@ -11,7 +11,7 @@ const classes = {
   CardHaderContainer: "flex flex-col items-center justify-center",
   CardHeader: "text-center xl:text-3xl lg:text-[26px] text-2xl font-HelveticaNeueMD text-shadow-3",
   CardDate: "text-center text-lg font-HelveticaNeueMD text-shadow-2",
-  CardImage: "w-full h-auto object-cover borde2 border-[#AFAFAF] xl:rounded-3xl md:rounded-2xl rounded-2xl border-2 border-[#AFAFAF]",
+  CardImage: "w-full h-auto object-cover borde2 border-[#AFAFAF] rounded-3xl border-2 border-[#AFAFAF]",
   RegisterButton: "w-full flex items-center justify-center bg-[#D9D9D9] text-black font-HelveticaNeueBD text-lg p-2 md:rounded-2xl rounded-2xl border-2 border-[#AFAFAF]",
 };
 
