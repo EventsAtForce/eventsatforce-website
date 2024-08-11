@@ -12,7 +12,7 @@ const classes = {
   Society: "flex flex-col items-center justify-center w-full gap-4",
   SocietyHeader: "font-HelveticaNeueBD xl:text-4xl xl:text-shadow-3 lg:text-3xl text-2xl text-shadow-2",
   SocietyParagraph: "width-full font-HelveticaNeue text-justify xl:text-2xl xl:leading-7 lg:text-xl lg:leading-6 md:text-lg md:leading-[24px] max-[430px]:leading-[1.25rem]",
-  SocietyImage: "fit-cover w-full xl:rounded-3xl lg:rounded-2xl md:rounded-xl sm:rounded-xl rounded-lg",
+  SocietyImage: "fit-cover w-full xl:rounded-3xl md:rounded-2xl rounded-xl",
 };
 
 const Societies = () => {

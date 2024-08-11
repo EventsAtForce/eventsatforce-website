@@ -4,7 +4,7 @@ import rightButton from '../assets/icons/rightButton.svg'
 
 
 const classes = {
-  CarouselMain: 'xl:rounded-3xl lg:rounded-2xl md:rounded-xl rounded-lg overflow-hidden relative',
+  CarouselMain: 'xl:rounded-3xl md:rounded-2xl rounded-xl overflow-hidden relative',
   CarouselContainer: 'flex w-full h-full transition-transform ease-out duration-500 ',
   ButtonsContainer: 'hidden sm:flex absolute top-1/2 transform -translate-y-1/2 px-4 flex items-center justify-between w-full',
   ButtonBG: 'flex items-center justify-center',
@@ -14,7 +14,7 @@ const classes = {
   Dots: 'flex items-center justify-center xl:gap-2 lg:gap-1.5  gap-1',
 }
 
-const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 3000}) => {
+const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 3000, dots = true}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const carouselRef = useRef(null);
   let touchStartX = 0;
@@ -76,6 +76,7 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
       <img className={classes.rightButton} src={rightButton} alt="" />
       </button>
     </div>
+    { dots && (
     <div className={classes.DotsContainer}>
       <div className={classes.Dots}>
         {slides.map((_, index) => (
@@ -83,6 +84,7 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
         ))} 
       </div>
     </div>
+    )}
   </div>
   )
 }

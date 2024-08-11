@@ -10,7 +10,7 @@ import youtube from "../assets/icons/youtube.svg"
 import github from "../assets/icons/github.svg"
 
 const classes = {
-  PreFooterContainer: "flex w-full flex-col min-[900px]:flex-row items-center justify-around bg-[#1A1A1A] xl:rounded-t-3xl lg:rounded-t-2xl md:rounded-t-xl sm:rounded-t-xl rounded-t-lg md:px-6 md:py-6 px-4 py-4",
+  PreFooterContainer: "w-screen flex mt-auto flex-col min-[900px]:flex-row items-center justify-around bg-[#1A1A1A] xl:rounded-t-3xl md:rounded-t-2xl rounded-t-xl md:px-6 md:py-6 px-4 py-4",
   LogoContainer: "flex items-center justify-center gap-4",
   REVALogo: "xl:w-[220px] lg:w-[196px] md:w-[164px] min-[375px]:w-[190px] w-[160px]",
   FORCELogo: "xl:w-[86px] lg:w-[76px] md:w-[70px] min-[375px]:w-[70px] w-[60px]",
@@ -19,7 +19,7 @@ const classes = {
   SocialsHeader: "font-HelveticaNeueMD lg:text-[24px] md:text-[20px] text-[16px] text-white",
   SocialsLink: "flex items-center justify-center gap-4",
   SocialsLogo: "lg:w-[36px] lg:h-[36px] md:w-[32px] md:h-[32px] w-[28px] h-[28px]",
-  FooterContainer: "w-full flex flex-col md:flex-row items-center justify-between md:px-6 md:py-6 px-4 py-4 bg-black",
+  FooterContainer: "w-screen flex flex-col md:flex-row items-center justify-between md:px-6 md:py-6 px-4 py-4 bg-black",
   FooterText: "font-HelveticaNeueMD lg:text-[16px] md:text-[14px] sm:text-sm text-[12px] text-white",
   FooterLink: "hidden md:block font-HelveticaNeueMD lg:text-[16px] md:text-[14px] text-white",
 };
@@ -106,12 +106,12 @@ const Footer = () => {
       </div>
       <div className={classes.FooterContainer}>
         <a
-          href="https://github.com/JayZ6969"
+          href="https://github.com/EventsAtForce/"
           target="_blank"
           rel="noreferrer"
           className={classes.FooterLink}
         >
-          Coded with ❣️ by JV
+          Coded with ❣️
         </a>
         <p className={classes.FooterText}>
           © 2024 ⚡FORCE. All rights reserved.

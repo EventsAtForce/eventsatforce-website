@@ -4,7 +4,7 @@ import StatsImage_2 from '../assets/images/Statistics_2.png';
 
 const classes = {
   StatisticsMain: "flex flex-col items-center justify-center xl:gap-12 lg:gap-10 md:gap-8 gap-6",
-  StatisticsImage: "w-full fit-cover xl:rounded-3xl lg:runded-2xl md:rounded-xl sm:rounded-xl rounded-lg", 
+  StatisticsImage: "w-full fit-cover xl:rounded-3xl md:rounded-2xl rounded-xl", 
   StatisticsContainer: "flex flex-col md:flex-row items-start md:items-center justify-center md:justify-around w-full gap-4 md:gap-0",
   Stats: "flex flex-col teism-start md:items-center justify-center xl:gap-5 min-[1180px]:gap-4 lg:gap-3 gap-0",
   StatsHeader: "font-HelveticaNeueBD xl:text-[52px] lg:text-shadow-3 lg:text-[40px] min-[1180px]:text-[44px] min-[900px]:text-[30px] md:text-[28px] text-3xl text-shadow-2",

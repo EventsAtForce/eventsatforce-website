@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Carousel from '../components/Carousel'; 
 import About from '../components/About'; 
 import Statistics from '../components/Statistics';
@@ -41,7 +41,6 @@ const classes = {
 
 const Home = () => {
   const [slides, setSlides] = useState(slides_1);
-
 
   // Change slides if vw < 640px
   useEffect(() => {

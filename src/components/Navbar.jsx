@@ -15,9 +15,13 @@ const navItems = [
     name: 'EVENTS',
     link: '/Events'
   },
+  // {
+  //   name: 'HARMONICS',
+  //   link: '/Harmonics'
+  // },
   {
     name: 'SOCIETIES',
-    link: '/Soceities'
+    link: '/Societies'
   },
   {
     name: 'TEAM',
