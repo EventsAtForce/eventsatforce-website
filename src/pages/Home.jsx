@@ -42,7 +42,7 @@ const eventsList = [
     image: "src/assets/images/Events/Harmonics.png",
   },
   {
-    name: "Campus Cruise '24",
+    name: "Campus Cruise",
     link: "https://www.instagram.com/reel/C5BUj3gtZnZ/",
     image: "src/assets/images/Events/CampusCruise.png",
   },

@@ -12,30 +12,51 @@ const classes = {
   RightButton: "w-8 h-8",
 };
 
-const getArrowStyles = () => {
+const getArrowStylesLeft = () => {
   const width = window.innerWidth;
   if (width < 768) {
     return {
       zIndex: "20",
       width: "46px",
       height: "46px",
+      left: "-14px",
     };
   } else {
     return {
       zIndex: "20",
       width: "56px",
       height: "56px",
+      left: "-20px",
+    };
+  }
+};
+
+const getArrowStylesRight = () => {
+  const width = window.innerWidth;
+  if (width < 768) {
+    return {
+      zIndex: "20",
+      width: "46px",
+      height: "46px",
+      right: "-14px",
+    };
+  } else {
+    return {
+      zIndex: "20",
+      width: "56px",
+      height: "56px",
+      right: "-20px",
     };
   }
 };
 
 function NextArrow(props) {
   const { className, style, onClick } = props;
-  const arrowStyles = getArrowStyles();
+  const arrowStyles = getArrowStylesRight();
   return (
     <img
       className={className}
-      style={{ ...style, ...arrowStyles, right: "-20px" }}
+      style={{ ...style, ...arrowStyles}}
       src={rightButton}
       onClick={onClick}
     />
@@ -44,11 +65,11 @@ function NextArrow(props) {
 
 function PrevArrow(props) {
   const { className, style, onClick } = props;
-  const arrowStyles = getArrowStyles();
+  const arrowStyles = getArrowStylesLeft();
   return (
     <img
       className={className}
-      style={{ ...style, ...arrowStyles, left: "-20px" }}
+      style={{ ...style, ...arrowStyles}}
       src={leftButton}
       onClick={onClick}
     />
