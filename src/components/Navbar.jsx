@@ -42,6 +42,7 @@ const classes = {
   MenuContainer: 'fixed bg-white top-[-60px] w-screen z-20 -translate-y-full transition-all duration-500 ease-in-out',
   ActiveMenuContainer: 'fixed bg-white top-[60px] w-screen translate-y-0 md:hidden transition-all duration-500 ease-in-out',
   MenuSections: 'flex flex-col items-center font-HelveticaNeueMD xl:py-8 xl:gap-8 xl:text-xl lg:py-7 lg:gap-7 lg:text-lg gap-6 py-6 text-md',
+  MenuItems: 'text-black hover:text-[#FFD700] transition-all duration-300 ease-in-out'
 }
 
 const Navbar = () => {
@@ -100,7 +101,7 @@ const Navbar = () => {
       <div className={openMenu ? classes.ActiveMenuContainer : classes.MenuContainer}>
         <div className={classes.MenuSections}>
           {navItems.map((item, index) => (
-            <Link to={item.link} key={index} onClick={() => setOpenMenu(!openMenu)}>{item.name}</Link>
+            <Link className={classes.MenuItems} to={item.link} key={index} onClick={() => setOpenMenu(!openMenu)}>{item.name}</Link>
           ))}
         </div>
       </div>
