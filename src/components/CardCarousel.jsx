@@ -17,10 +17,6 @@ const getArrowStylesLeft = () => {
   if (width < 768) {
     return {
       display: "none",
-      zIndex: "20",
-      width: "46px",
-      height: "46px",
-      left: "-14px",
     };
   } else {
     return {
@@ -37,10 +33,6 @@ const getArrowStylesRight = () => {
   if (width < 768) {
     return {
       display: "none",
-      zIndex: "20",
-      width: "46px",
-      height: "46px",
-      right: "-14px",
     };
   } else {
     return {
