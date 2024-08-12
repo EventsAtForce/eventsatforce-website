@@ -1,6 +1,6 @@
-import React from 'react'
-import IMG_1 from '../assets/images/IMG_1.png'
-import IMG_2 from '../assets/images/IMG_2.png'
+import React from 'react';
+import IMG_1 from '../assets/images/IMG_1.png';
+import IMG_2 from '../assets/images/IMG_2.png';
 
 const classes = {
   AboutContainer: 'flex flex-col min-[900px]:flex-row items-start gap-[40px]',
@@ -17,13 +17,19 @@ const classes = {
 
 const About = () => {
   return (
-    <>
-      <div className={classes.AboutContainer}>
-        <div className={classes.AboutText}>
-          <h1 className={classes.AboutHeader}>ABOUT US </h1>
-          <p className={classes.AboutBody}>Welcome to FORCE - Forum of REVA for Communication and Electronics! We are a dynamic student forum established under the School of Electronics and Communication Engineering at REVA University. Our mission is to foster a community of enthusiastic learners, innovators, and leaders.</p>
+    <div className={classes.container}>
+      <div className={classes.section}>
+        <div className={classes.textContainer}>
+          <h1 className={classes.header}>ABOUT US</h1>
+          <p className={classes.body}>
+            Welcome to FORCE - Forum of REVA for Communication and Electronics! We are a dynamic student forum 
+            established under the School of Electronics and Communication Engineering at REVA University. 
+            Our mission is to foster a community of enthusiastic learners, innovators, and leaders.
+          </p>
         </div>
-        <img className={classes.AboutImage} src={IMG_1} alt="" />
+        <div className={classes.imageContainer}>
+          <img className={classes.image} src={IMG_1} alt="About Us" />
+        </div>
       </div>
       <div className={classes.WhatWeDoContainer}>
         <img className={classes.WhatWeDoImage} src={IMG_2} alt="" />
@@ -32,8 +38,8 @@ const About = () => {
           <p className={classes.WhatWeDoBody}>FORCE is a platform for students to showcase their talents, skills, and creativity. We host events like Music Fests and Fresher's Day to celebrate student talents. We also organize technical events to enhance the skills of the students, fostering a dynamic community for students.</p>
         </div>
       </div>
-    </>
-  )
+    </div>
+  );
 }
 
 export default About;
