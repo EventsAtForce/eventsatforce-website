@@ -20,7 +20,7 @@ const About = () => {
     <>
       <div className={classes.AboutContainer}>
         <div className={classes.AboutText}>
-          <h1 className={classes.AboutHeader}>ABOUT US </h1>
+          <h1 className={classes.AboutHeader}>ABOUT US</h1>
           <p className={classes.AboutBody}>Welcome to FORCE - Forum of REVA for Communication and Electronics! We are a dynamic student forum established under the School of Electronics and Communication Engineering at REVA University. Our mission is to foster a community of enthusiastic learners, innovators, and leaders.</p>
         </div>
         <img className={classes.AboutImage} src={IMG_1} alt="" />
