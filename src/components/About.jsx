@@ -17,25 +17,23 @@ const classes = {
 
 const About = () => {
   return (
-    <div className={classes.container}>
-      <div className={classes.section}>
-        <div className={classes.textContainer}>
-          <h1 className={classes.header}>ABOUT US</h1>
-          <p className={classes.body}>
-            Welcome to FORCE - Forum of REVA for Communication and Electronics! We are a dynamic student forum 
-            established under the School of Electronics and Communication Engineering at REVA University. 
-            Our mission is to foster a community of enthusiastic learners, innovators, and leaders.
-          </p>
-        </div>
-        <div className={classes.imageContainer}>
-          <img className={classes.image} src={IMG_1} alt="About Us" />
-        </div>
+    <div className={classes.AboutContainer}>
+      <div className={classes.AboutText}>
+        <h1 className={classes.AboutHeader}>ABOUT US</h1>
+        <p className={classes.AboutBody}>
+          Welcome to FORCE - Forum of REVA for Communication and Electronics! We are a dynamic student forum 
+          established under the School of Electronics and Communication Engineering at REVA University. 
+          Our mission is to foster a community of enthusiastic learners, innovators, and leaders.
+        </p>
+        <img className={classes.AboutImage} src={IMG_1} alt="About Us" />
       </div>
       <div className={classes.WhatWeDoContainer}>
-        <img className={classes.WhatWeDoImage} src={IMG_2} alt="" />
+        <img className={classes.WhatWeDoImage} src={IMG_2} alt="What We Do" />
         <div className={classes.WhatWeDoText}>
           <h1 className={classes.WhatWeDoHeader}>WHAT WE DO</h1>
-          <p className={classes.WhatWeDoBody}>FORCE is a platform for students to showcase their talents, skills, and creativity. We host events like Music Fests and Fresher's Day to celebrate student talents. We also organize technical events to enhance the skills of the students, fostering a dynamic community for students.</p>
+          <p className={classes.WhatWeDoBody}>
+            FORCE is a platform for students to showcase their talents, skills, and creativity. We host events like Music Fests and Fresher's Day to celebrate student talents. We also organize technical events to enhance the skills of the students, fostering a dynamic community for students.
+          </p>
         </div>
       </div>
     </div>

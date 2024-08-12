@@ -38,17 +38,17 @@ const Statistics = () => {
         </div>
         <div className={classes.Divider}></div>
         <div className={classes.Stats}>
-          <h1 className={classes.StatsHeader}>1,000+</h1>
+          <h1 className={classes.StatsHeader}>1,500+</h1>
           <p className={classes.StatsParagraph}>Attendees</p>
         </div>
         <div className={classes.Divider}></div>
         <div className={classes.Stats}>
-          <h1 className={classes.StatsHeader}>20+</h1>
+          <h1 className={classes.StatsHeader}>10+</h1>
           <p className={classes.StatsParagraph}>Brand Partners</p> 
         </div>
         <div className={classes.Divider}></div>
         <div className={classes.Stats}>
-          <h1 className={classes.StatsHeader}>30,000+</h1>
+          <h1 className={classes.StatsHeader}>50,000+</h1>
           <p className={classes.StatsParagraph}>Digital Impressions</p>
         </div>
       </div>
