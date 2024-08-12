@@ -7,32 +7,54 @@ import Statistics from '../components/Statistics';
 import Societies from '../components/Societies';
 
 // for vw >= 640px
+import Slide_1_1 from '../assets/images/Slides_1/Slide_1.png';
+import Slide_1_2 from '../assets/images/Slides_1/Slide_2.png';
+import Slide_1_3 from '../assets/images/Slides_1/Slide_3.png';
+import Slide_1_4 from '../assets/images/Slides_1/Slide_4.png';
+import Slide_1_5 from '../assets/images/Slides_1/Slide_5.png';
+import Slide_1_6 from '../assets/images/Slides_1/Slide_6.png';
+import Slide_1_7 from '../assets/images/Slides_1/Slide_7.png';
+import Slide_1_8 from '../assets/images/Slides_1/Slide_8.png';
+import Slide_1_9 from '../assets/images/Slides_1/Slide_9.png';
+import Slide_1_10 from '../assets/images/Slides_1/Slide_10.png';
+
 const slides_1 = [
-  'src/assets/images/Slides_1/Slide_1.png',
-  'src/assets/images/Slides_1/Slide_2.png',
-  'src/assets/images/Slides_1/Slide_3.png',
-  'src/assets/images/Slides_1/Slide_4.png',
-  'src/assets/images/Slides_1/Slide_5.png',
-  'src/assets/images/Slides_1/Slide_6.png',
-  'src/assets/images/Slides_1/Slide_7.png',
-  'src/assets/images/Slides_1/Slide_8.png',
-  'src/assets/images/Slides_1/Slide_9.png',
-  'src/assets/images/Slides_1/Slide_10.png',
+  Slide_1_1,
+  Slide_1_2,
+  Slide_1_3,
+  Slide_1_4,
+  Slide_1_5,
+  Slide_1_6,
+  Slide_1_7,
+  Slide_1_8,
+  Slide_1_9,
+  Slide_1_10,
 ];
 
 
 // vw < 640px
+import Slide_2_1 from '../assets/images/Slides_2/Slide_1.png';
+import Slide_2_2 from '../assets/images/Slides_2/Slide_2.png';
+import Slide_2_3 from '../assets/images/Slides_2/Slide_3.png';
+import Slide_2_4 from '../assets/images/Slides_2/Slide_4.png';
+import Slide_2_5 from '../assets/images/Slides_2/Slide_5.png';
+import Slide_2_6 from '../assets/images/Slides_2/Slide_6.png';
+import Slide_2_7 from '../assets/images/Slides_2/Slide_7.png';
+import Slide_2_8 from '../assets/images/Slides_2/Slide_8.png';
+import Slide_2_9 from '../assets/images/Slides_2/Slide_9.png';
+import Slide_2_10 from '../assets/images/Slides_2/Slide_10.png';
+
 const slides_2 = [
-  "src/assets/images/Slides_2/Slide_1.png",
-  "src/assets/images/Slides_2/Slide_2.png",
-  "src/assets/images/Slides_2/Slide_3.png",
-  "src/assets/images/Slides_2/Slide_4.png",
-  "src/assets/images/Slides_2/Slide_5.png",
-  "src/assets/images/Slides_2/Slide_6.png",
-  "src/assets/images/Slides_2/Slide_7.png",
-  "src/assets/images/Slides_2/Slide_8.png",
-  "src/assets/images/Slides_2/Slide_9.png",
-  "src/assets/images/Slides_2/Slide_10.png",
+  Slide_2_1,
+  Slide_2_2,
+  Slide_2_3,
+  Slide_2_4,
+  Slide_2_5,
+  Slide_2_6,
+  Slide_2_7,
+  Slide_2_8,
+  Slide_2_9,
+  Slide_2_10,
 ];
 
 const eventsList = [
