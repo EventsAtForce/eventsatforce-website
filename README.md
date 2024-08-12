@@ -1,5 +1,3 @@
-
-
 # FORCE Website Project
 
 This repository contains the code for the forum's website. 
