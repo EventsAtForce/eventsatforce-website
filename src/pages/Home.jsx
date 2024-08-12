@@ -57,36 +57,43 @@ const slides_2 = [
   Slide_2_10,
 ];
 
+import Harmonics from '../assets/images/Events/Harmonics.png';
+import CampusCruise from '../assets/images/Events/CampusCruise.png';
+import FORCE_Recap_23 from '../assets/images/Events/FORCERecap23.png';
+import ChildrensDay from '../assets/images/Events/ChildrensDay.png';
+import Freshers from '../assets/images/Events/Freshers.png';
+import Aarambha from '../assets/images/Events/Aarambha.png';
+
 const eventsList = [
   {
     name: "Harmonics '24",
     link: "https://www.instagram.com/reel/C5gGFQxydjJ/",
-    image: "src/assets/images/Events/Harmonics.png",
+    image: Harmonics,
   },
   {
     name: "Campus Cruise",
     link: "https://www.instagram.com/reel/C5BUj3gtZnZ/",
-    image: "src/assets/images/Events/CampusCruise.png",
+    image: CampusCruise,
   },
   {
     name: "FORCE Recap '23",
     link: "https://www.instagram.com/reel/C1hJpo7yp94/",
-    image: "src/assets/images/Events/FORCERecap23.png",
+    image: FORCE_Recap_23,
   },
   {
     name: "Children's Day '23",
     link: "https://www.instagram.com/reel/C2zolxyy3IP/",
-    image: "src/assets/images/Events/ChildrensDay.png",
+    image: ChildrensDay,
   },
   {
     name: "Fresher's '23",
     link: "https://www.instagram.com/reel/C0Y2J0QyV0F/",
-    image: "src/assets/images/Events/Freshers.png",
+    image: Freshers,
   },
   {
     name: "Aarambha '23",
     link: "https://www.instagram.com/reel/Czx7gRLrty1/",
-    image: "src/assets/images/Events/Aarambha.png",
+    image: Aarambha,
   }
 ]
 
