@@ -7,64 +7,93 @@ import Statistics from '../components/Statistics';
 import Societies from '../components/Societies';
 
 // for vw >= 640px
+import Slide_1_1 from '../assets/images/Slides_1/Slide_1.png';
+import Slide_1_2 from '../assets/images/Slides_1/Slide_2.png';
+import Slide_1_3 from '../assets/images/Slides_1/Slide_3.png';
+import Slide_1_4 from '../assets/images/Slides_1/Slide_4.png';
+import Slide_1_5 from '../assets/images/Slides_1/Slide_5.png';
+import Slide_1_6 from '../assets/images/Slides_1/Slide_6.png';
+import Slide_1_7 from '../assets/images/Slides_1/Slide_7.png';
+import Slide_1_8 from '../assets/images/Slides_1/Slide_8.png';
+import Slide_1_9 from '../assets/images/Slides_1/Slide_9.png';
+import Slide_1_10 from '../assets/images/Slides_1/Slide_10.png';
+
 const slides_1 = [
-  'src/assets/images/Slides_1/Slide_1.png',
-  'src/assets/images/Slides_1/Slide_2.png',
-  'src/assets/images/Slides_1/Slide_3.png',
-  'src/assets/images/Slides_1/Slide_4.png',
-  'src/assets/images/Slides_1/Slide_5.png',
-  'src/assets/images/Slides_1/Slide_6.png',
-  'src/assets/images/Slides_1/Slide_7.png',
-  'src/assets/images/Slides_1/Slide_8.png',
-  'src/assets/images/Slides_1/Slide_9.png',
-  'src/assets/images/Slides_1/Slide_10.png',
+  Slide_1_1,
+  Slide_1_2,
+  Slide_1_3,
+  Slide_1_4,
+  Slide_1_5,
+  Slide_1_6,
+  Slide_1_7,
+  Slide_1_8,
+  Slide_1_9,
+  Slide_1_10,
 ];
 
 
 // vw < 640px
+import Slide_2_1 from '../assets/images/Slides_2/Slide_1.png';
+import Slide_2_2 from '../assets/images/Slides_2/Slide_2.png';
+import Slide_2_3 from '../assets/images/Slides_2/Slide_3.png';
+import Slide_2_4 from '../assets/images/Slides_2/Slide_4.png';
+import Slide_2_5 from '../assets/images/Slides_2/Slide_5.png';
+import Slide_2_6 from '../assets/images/Slides_2/Slide_6.png';
+import Slide_2_7 from '../assets/images/Slides_2/Slide_7.png';
+import Slide_2_8 from '../assets/images/Slides_2/Slide_8.png';
+import Slide_2_9 from '../assets/images/Slides_2/Slide_9.png';
+import Slide_2_10 from '../assets/images/Slides_2/Slide_10.png';
+
 const slides_2 = [
-  "src/assets/images/Slides_2/Slide_1.png",
-  "src/assets/images/Slides_2/Slide_2.png",
-  "src/assets/images/Slides_2/Slide_3.png",
-  "src/assets/images/Slides_2/Slide_4.png",
-  "src/assets/images/Slides_2/Slide_5.png",
-  "src/assets/images/Slides_2/Slide_6.png",
-  "src/assets/images/Slides_2/Slide_7.png",
-  "src/assets/images/Slides_2/Slide_8.png",
-  "src/assets/images/Slides_2/Slide_9.png",
-  "src/assets/images/Slides_2/Slide_10.png",
+  Slide_2_1,
+  Slide_2_2,
+  Slide_2_3,
+  Slide_2_4,
+  Slide_2_5,
+  Slide_2_6,
+  Slide_2_7,
+  Slide_2_8,
+  Slide_2_9,
+  Slide_2_10,
 ];
+
+import Harmonics from '../assets/images/Events/Harmonics.png';
+import CampusCruise from '../assets/images/Events/CampusCruise.png';
+import FORCE_Recap_23 from '../assets/images/Events/FORCERecap23.png';
+import ChildrensDay from '../assets/images/Events/ChildrensDay.png';
+import Freshers from '../assets/images/Events/Freshers.png';
+import Aarambha from '../assets/images/Events/Aarambha.png';
 
 const eventsList = [
   {
     name: "Harmonics '24",
     link: "https://www.instagram.com/reel/C5gGFQxydjJ/",
-    image: "src/assets/images/Events/Harmonics.png",
+    image: Harmonics,
   },
   {
     name: "Campus Cruise",
     link: "https://www.instagram.com/reel/C5BUj3gtZnZ/",
-    image: "src/assets/images/Events/CampusCruise.png",
+    image: CampusCruise,
   },
   {
     name: "FORCE Recap '23",
     link: "https://www.instagram.com/reel/C1hJpo7yp94/",
-    image: "src/assets/images/Events/FORCERecap23.png",
+    image: FORCE_Recap_23,
   },
   {
     name: "Children's Day '23",
     link: "https://www.instagram.com/reel/C2zolxyy3IP/",
-    image: "src/assets/images/Events/ChildrensDay.png",
+    image: ChildrensDay,
   },
   {
     name: "Fresher's '23",
     link: "https://www.instagram.com/reel/C0Y2J0QyV0F/",
-    image: "src/assets/images/Events/Freshers.png",
+    image: Freshers,
   },
   {
     name: "Aarambha '23",
     link: "https://www.instagram.com/reel/Czx7gRLrty1/",
-    image: "src/assets/images/Events/Aarambha.png",
+    image: Aarambha,
   }
 ]
 
