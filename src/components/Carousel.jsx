@@ -11,8 +11,8 @@ const classes = {
   leftButton: 'xl:w-16 lg:w-14 md:w-12 w-10',
   rightButton: 'xl:w-16 lg:w-14 md:w-12 w-10',
   DotsContainer: 'absolute bottom-4 right-0 left-0',
-  Dots: 'flex items-center justify-center xl:gap-2 lg:gap-1.5  gap-1',
-}
+  Dots: 'flex items-center justify-center xl:gap-2 lg:gap-1.5 gap-1',
+};
 
 const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 3000, dots = true}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -89,4 +89,4 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
   )
 }
 
-export default Carousel
+export default Carousel;
