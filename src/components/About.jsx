@@ -1,83 +1,39 @@
-import React, { useEffect, useRef } from 'react';
-import IMG_1 from '../assets/images/IMG_1.png';
-import IMG_2 from '../assets/images/IMG_2.png';
-import './About.css';
+import React from 'react'
+import IMG_1 from '../assets/images/IMG_1.png'
+import IMG_2 from '../assets/images/IMG_2.png'
 
 const classes = {
-  Container: 'flex flex-col items-center gap-[60px] mt-10 w-full px-10',
-  Section: 'flex flex-col min-[900px]:flex-row items-center justify-between gap-[40px] w-full',
-  TextContainer: 'flex flex-col items-start gap-5 w-full max-w-[600px]',
-  Header: 'font-HelveticaNeueBD text-center min-[900px]:text-left xl:text-4xl md:text-3xl text-2xl',
-  Body: 'font-HelveticaNeue text-justify xl:text-2xl md:text-xl text-lg',
-  ImageContainer: 'w-full max-w-[500px] image-container',
-  Image: 'object-cover w-full rounded-2xl image-slide-in',
-};
+  AboutContainer: 'flex flex-col min-[900px]:flex-row items-start gap-[40px]',
+  AboutText: 'flex flex-col items-center xl:gap-5 lg:gap-4 gap-3',
+  AboutHeader: 'width-full font-HelveticaNeueBD xl:text-4xl xl:text-shadow-3 md:text-3xl text-2xl text-shadow-2',
+  AboutBody: 'width-full font-HelveticaNeue text-justify xl:text-2xl xl:leading-7 lg:text-xl lg:leading-6 md:text-lg md:leading-[24px] max-[430px]:leading-[1.25rem]',
+  AboutImage: 'fit-cover xl:w-[600px] min-[1120px]:w-[550px] lg:w-[450px] min-[900px]:w-[400px] xl:rounded-3xl rounded-2xl',
+  WhatWeDoContainer: 'flex flex-col-reverse min-[900px]:flex-row items-start gap-[40px]',
+  WhatWeDoText: 'flex flex-col items-center justify-center xl:gap-5 lg:gap-4 gap-3',
+  WhatWeDoHeader: 'width-full font-HelveticaNeueBD xl:text-4xl xl:text-shadow-3 md:text-3xl text-2xl text-shadow-2',
+  WhatWeDoBody: 'width-full font-HelveticaNeue text-justify xl:text-2xl xl:leading-7 lg:text-xl lg:leading-6 md:text-lg md:leading-[24px] max-[430px]:leading-[1.25rem]',
+  WhatWeDoImage: 'fit-cover hidden min-[900px]:block xl:w-[600px] min-[1120px]:w-[550px] lg:w-[450px] min-[900px]:w-[400px] xl:rounded-3xl lg:rounded-2xl md:rounded-xl sm:rounded-xl rounded-lg',
+}
 
 const About = () => {
-  const img1Ref = useRef(null);
-  const img2Ref = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (img1Ref.current) observer.observe(img1Ref.current);
-    if (img2Ref.current) observer.observe(img2Ref.current);
-
-    return () => {
-      if (img1Ref.current) observer.unobserve(img1Ref.current);
-      if (img2Ref.current) observer.unobserve(img2Ref.current);
-    };
-  }, []);
-
   return (
-    <div className={classes.Container}>
-      <div className={classes.Section}>
-        <div className={classes.TextContainer}>
-          <h1 className={classes.Header}>ABOUT US</h1>
-          <p className={classes.Body}>
-            FORCE-Forum Of REVA for Communication and Electronics, established in 2012, is a vibrant 
-            community exclusively for the students and faculty of School of Electronics and Communication 
-            Engineering, REVA University, Bengaluru.
-          </p>
+    <>
+      <div className={classes.AboutContainer}>
+        <div className={classes.AboutText}>
+          <h1 className={classes.AboutHeader}>ABOUT US</h1>
+          <p className={classes.AboutBody}>Welcome to FORCE - Forum of REVA for Communication and Electronics! We are a dynamic student forum established under the School of Electronics and Communication Engineering at REVA University. Our mission is to foster a community of enthusiastic learners, innovators, and leaders.</p>
         </div>
-        <div className={classes.ImageContainer}>
-          <img 
-            ref={img1Ref}
-            className={`${classes.Image} from-right`}
-            src={IMG_1} 
-            alt="AARAMBHA-2023 Event" 
-          />
+        <img className={classes.AboutImage} src={IMG_1} alt="" />
+      </div>
+      <div className={classes.WhatWeDoContainer}>
+        <img className={classes.WhatWeDoImage} src={IMG_2} alt="" />
+        <div className={classes.WhatWeDoText}>
+          <h1 className={classes.WhatWeDoHeader}>WHAT WE DO</h1>
+          <p className={classes.WhatWeDoBody}>FORCE is a platform for students to showcase their talents, skills, and creativity. We host events like Music Fests and Fresher's Day to celebrate student talents. We also organize technical events to enhance the skills of the students, fostering a dynamic community for students.</p>
         </div>
       </div>
-
-      <div className={classes.Section}>
-        <div className={classes.ImageContainer}>
-          <img 
-            ref={img2Ref}
-            className={`${classes.Image} from-left`}
-            src={IMG_2} 
-            alt="Harmonics Music Festival" 
-          />
-        </div>
-        <div className={classes.TextContainer}>
-          <h1 className={classes.Header}>WHAT WE DO</h1>
-          <p className={classes.Body}>
-            We organize vibrant cultural and technical events, fostering a dynamic community for students and faculty of REVA University. 
-            Join us to connect with like-minded individuals, and be part of innovative initiatives shaping the future!
-          </p>
-        </div>
-      </div>
-    </div>
-  );
+    </>
+  )
 }
 
 export default About;

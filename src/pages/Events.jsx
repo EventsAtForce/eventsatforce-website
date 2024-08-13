@@ -13,6 +13,53 @@ import Aavishkar from "../assets/images/Events/Aavishkar.png";
 import Harmonics from "../assets/images/Events/Harmonics.png";
 import Farewell from "../assets/images/Events/Farewell.png";
 
+const eventsList = [
+  {
+    name: "Aarambha",
+    date: "12th September 2024",
+    image: Aarambha,
+  },
+  {
+    name: "Technical Quiz",
+    date: "27th September 2024",
+    image: TechnicalQuiz,
+  },
+  {
+    name: 'Navotsava',
+    date: "9th October 2024",
+    image: Navotsava,
+  },
+  {
+    name: "Deepotsava",
+    date: "30th October 2024",
+    image: Deepotsava,
+  },
+  {
+    name: "Fresher's Day",
+    date: "09th November 2024",
+    image: Freshers,
+  },
+  {
+    name: "Hackathon",
+    date: "08th March 2025",
+    image: TechnicalCompetition,
+  },
+  {
+    name: "Aavishkar",
+    date: "22nd April 2025",
+    image: Aavishkar,
+  },
+  {
+    name: "Harmonics",
+    date: "23rd April 2025",
+    image: Harmonics,
+  },
+  {
+    name: "Farewell",
+    date: "06th May 2025",
+    image: Farewell,
+  }
+]
 
 const classes = {
   EventsContainer: "flex flex-col items-center justify-center w-full h-full max-w-1440 sm:gap-[16px] gap-[0px] xl:px-[100px] xl:pt-[100px] xl:pb-8 lg:px-[80px] lg:pt-[80px] lg:pb-6 sm:px-[60px] sm:pt-[60px] sm:pb-4 px-6 pt-[60px] pb-4",
