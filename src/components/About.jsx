@@ -16,30 +16,6 @@ const classes = {
 }
 
 const About = () => {
-  const img1Ref = useRef(null);
-  const img2Ref = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (img1Ref.current) observer.observe(img1Ref.current);
-    if (img2Ref.current) observer.observe(img2Ref.current);
-
-    return () => {
-      if (img1Ref.current) observer.unobserve(img1Ref.current);
-      if (img2Ref.current) observer.unobserve(img2Ref.current);
-    };
-  }, []);
-
   return (
     <>
       <div className={classes.AboutContainer}>
