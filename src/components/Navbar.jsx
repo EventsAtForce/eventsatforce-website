@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/icons/LOGO.svg'
 
@@ -15,19 +15,17 @@ const navItems = [
     name: 'EVENTS',
     link: '/Events'
   },
-  // {
-  //   name: 'HARMONICS',
-  //   link: '/Harmonics'
-  // },
   {
     name: 'SOCIETIES',
-    link: '/Societies'
+    link: '/Soceities'
   },
   {
     name: 'TEAM',
     link: '/Team'
   }
 ]
+
+//111
 
 const classes = {
   NavContainer: 'flex flex-col items-center justify-center w-screen bg-white fixed top-0 z-40',
@@ -42,13 +40,11 @@ const classes = {
   MenuContainer: 'fixed bg-white top-[-60px] w-screen z-20 -translate-y-full transition-all duration-500 ease-in-out',
   ActiveMenuContainer: 'fixed bg-white top-[60px] w-screen translate-y-0 md:hidden transition-all duration-500 ease-in-out',
   MenuSections: 'flex flex-col items-center font-HelveticaNeueMD xl:py-8 xl:gap-8 xl:text-xl lg:py-7 lg:gap-7 lg:text-lg gap-6 py-6 text-md',
-  MenuItems: 'text-black hover:text-[#FFD700] transition-all duration-300 ease-in-out'
 }
 
 const Navbar = () => {
 
   const [openMenu, setOpenMenu] = useState(false)
-  const navRef = useRef(null);
 
   //Reset openMenu state on window resize
   useEffect(() => {
@@ -65,23 +61,8 @@ const Navbar = () => {
     };
   }, []);
 
-  // Close menu if clicked outside of navbar or nav menu
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (navRef.current && !navRef.current.contains(event.target)) {
-        setOpenMenu(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
-
   return (
-    <nav className={classes.NavContainer} ref={navRef}>
+    <nav className={classes.NavContainer}>
       <div className={classes.NavBar}>
         <div className={classes.NavHeaderContainer}>
           <Link to="/" className={classes.NavHeader} >
@@ -101,7 +82,7 @@ const Navbar = () => {
       <div className={openMenu ? classes.ActiveMenuContainer : classes.MenuContainer}>
         <div className={classes.MenuSections}>
           {navItems.map((item, index) => (
-            <Link className={classes.MenuItems} to={item.link} key={index} onClick={() => setOpenMenu(!openMenu)}>{item.name}</Link>
+            <Link to={item.link} key={index} onClick={() => setOpenMenu(!openMenu)}>{item.name}</Link>
           ))}
         </div>
       </div>
