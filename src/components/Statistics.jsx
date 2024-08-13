@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import StatsImage_1 from '../assets/images/Statistics_1.png';
 import StatsImage_2 from '../assets/images/Statistics_2.png';
 
@@ -12,43 +12,99 @@ const classes = {
   Divider: "hidden md:block xl:h-36 min-[1180px]:h-32 lg:h-28 h-24 w-1 bg-gray-400 rounded-lg",
 };
 
+const CountUp = ({ end, duration, startCounting }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!startCounting) return;
+
+    let startTime;
+    let animationFrame;
+
+    const animate = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = timestamp - startTime;
+      const increment = Math.min(end, Math.floor((progress / duration) * end));
+      
+      setCount(increment);
+
+      if (progress < duration) {
+        animationFrame = requestAnimationFrame(animate);
+      }
+    };
+
+    animationFrame = requestAnimationFrame(animate);
+
+    return () => cancelAnimationFrame(animationFrame);
+  }, [end, duration, startCounting]);
+
+  return <>{count.toLocaleString()}</>;
+};
+
 const Statistics = () => {
-  const [imageSrc, setImageSrc] = useState(window.innerWidth < 768 ? StatsImage_2 : StatsImage_1);
+  const [imageSrc, setImageSrc] = useState(StatsImage_1);
+  const [startCounting, setStartCounting] = useState(false);
+  const sectionRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
       setImageSrc(window.innerWidth < 768 ? StatsImage_2 : StatsImage_1);
     };
 
+    handleResize(); // Set initial image
     window.addEventListener('resize', handleResize);
 
-    // Cleanup event listener on component unmount
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStartCounting(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.8  }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
     return () => {
       window.removeEventListener('resize', handleResize);
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
     };
   }, []);
 
   return (
-    <div className={classes.StatisticsMain}>
+    <div ref={sectionRef} className={classes.StatisticsMain}>
       <img className={classes.StatisticsImage} src={imageSrc} alt="" />
       <div className={classes.StatisticsContainer}>
         <div className={classes.Stats}>
-          <h1 className={classes.StatsHeader}>30+</h1>
+          <h1 className={classes.StatsHeader}>
+            <CountUp end={30} duration={2000} startCounting={startCounting} />+
+          </h1>
           <p className={classes.StatsParagraph}>Events</p>
         </div>
         <div className={classes.Divider}></div>
         <div className={classes.Stats}>
-          <h1 className={classes.StatsHeader}>1,000+</h1>
+          <h1 className={classes.StatsHeader}>
+            <CountUp end={1000} duration={2000} startCounting={startCounting} />+
+          </h1>
           <p className={classes.StatsParagraph}>Attendees</p>
         </div>
         <div className={classes.Divider}></div>
         <div className={classes.Stats}>
-          <h1 className={classes.StatsHeader}>20+</h1>
+          <h1 className={classes.StatsHeader}>
+            <CountUp end={20} duration={2000} startCounting={startCounting} />+
+          </h1>
           <p className={classes.StatsParagraph}>Brand Partners</p> 
         </div>
         <div className={classes.Divider}></div>
         <div className={classes.Stats}>
-          <h1 className={classes.StatsHeader}>30,000+</h1>
+          <h1 className={classes.StatsHeader}>
+            <CountUp end={30000} duration={2000} startCounting={startCounting} />+
+          </h1>
           <p className={classes.StatsParagraph}>Digital Impressions</p>
         </div>
       </div>

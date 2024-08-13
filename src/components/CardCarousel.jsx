@@ -21,7 +21,7 @@ const getArrowStylesLeft = () => {
   } else {
     return {
       zIndex: "20",
-      width: "56px",
+      width: "57px",
       height: "56px",
       left: "-20px",
     };

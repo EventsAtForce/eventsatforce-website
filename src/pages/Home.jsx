@@ -78,8 +78,12 @@ const classes = {
   CardHaderContainer: "flex flex-col items-center justify-center",
   CardHeader: "text-center xl:text-2xl text-[20px] font-HelveticaNeueMD",
   CardDate: "text-center text-lg font-HelveticaNeueMD text-shadow-2",
-  CardImage: "w-full h-auto object-cover xl:rounded-3xl md:rounded-2xl rounded-xl border-2 border-[#AFAFAF]",
-  WatchButton: "w-full flex items-center justify-center bg-[#D9D9D9] text-black font-HelveticaNeueBD md:text-lg text-md p-2 md:rounded-2xl rounded-xl border-2 border-[#AFAFAF]",
+  CardImage: `w-full h-auto object-cover xl:rounded-3xl md:rounded-3xl rounded-2xl border-2 border-[#AFAFAF] 
+              transition-all duration-300 ease-in-out hover:shadow-2xl hover:transform hover:-translate-y-3 
+              hover:border-[#8c8c8c]`,
+  WatchButton: `w-full flex items-center justify-center bg-[#D9D9D9] text-black font-HelveticaNeueBD md:text-lg text-md p-2 
+  md:rounded-2xl rounded-2xl border-2 border-[#AFAFAF] transition-all duration-300 ease-in-out
+  hover:bg-[#a7a6a7] hover:shadow-2xl hover:transform hover:-translate-y-1`,
 };
 
 const Home = () => {
