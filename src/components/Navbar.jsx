@@ -17,7 +17,7 @@ const navItems = [
   },
   {
     name: 'SOCIETIES',
-    link: '/Soceities'
+    link: '/Societies'
   },
   {
     name: 'TEAM',

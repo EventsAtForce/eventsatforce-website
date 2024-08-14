@@ -9,8 +9,9 @@ import youtube from "../assets/icons/youtube.svg"
 import github from "../assets/icons/github.svg"
 
 const classes = {
+  Footer: "flex flex-col items-center justify center w-full bg-white mt-auto",
   FooterDivider: "w-full max-w-[1240px] h-0.5 bg-[#AFAFAF] rounded-xl",
-  PreFooterContainer: "w-full max-w-1440 flex mt-auto flex-col min-[900px]:flex-row items-center justify-around bg-white md:px-6 md:py-6 px-4 py-4",
+  PreFooterContainer: "w-full max-w-1440 flex flex-col min-[900px]:flex-row items-center justify-around bg-white md:px-6 md:py-6 px-4 py-4",
   LogoContainer: "flex items-center justify-center gap-4",
   REVALogo: "xl:w-[220px] lg:w-[196px] md:w-[164px] min-[375px]:w-[190px] w-[160px]",
   FORCELogo: "xl:w-[86px] lg:w-[76px] md:w-[70px] min-[375px]:w-[70px] w-[60px]",
@@ -81,7 +82,7 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <>
+    <div className={classes.Footer}>
       <div className={classes.FooterDivider}></div>
       <div className={classes.PreFooterContainer}>
         <div className={classes.LogoContainer}>
@@ -108,7 +109,7 @@ const Footer = () => {
       <div className={classes.FooterContainer}>
         <p className={classes.FooterText}>© 2024 FORCE. All rights reserved.</p>
       </div>
-    </>
+    </div>
   );
 };
 
