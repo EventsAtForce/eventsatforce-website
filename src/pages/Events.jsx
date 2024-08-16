@@ -69,7 +69,7 @@ const classes = {
   Card: "flex flex-col items-center justify-between gap-2 h-full bg-[#D9D9D9] border-2 border-[#AFAFAF] rounded-3xl lg:p-6 md:p-5 p-6 transition-all duration-300 ease-in-out hover:shadow-lg",
   CardHaderContainer: "flex flex-col items-center justify-center",
   CardHeader: "text-center xl:text-3xl lg:text-[26px] text-2xl font-HelveticaNeueMD text-shadow-3",
-  CardDate: "text-center text-lg font-HelveticaNeueMD text-shadow-2",
+  CardDate: "text-center text-lg leading-5 font-HelveticaNeueMD text-shadow-2",
   CardImageContainer: "w-full overflow-hidden xl:rounded-3xl rounded-2xl border-2 border-[#AFAFAF] transition-all duration-300 ease-in-out",
   CardImage: "w-full h-auto object-cover transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1",
   RegisterButton: "w-full flex items-center justify-center bg-[#D9D9D9] text-black font-HelveticaNeueBD text-lg p-2 md:rounded-2xl rounded-2xl border-2 border-[#AFAFAF] transition-colors duration-300 ease-in-out hover:bg-[#C0C0C0]",
@@ -83,13 +83,13 @@ const Events = () => {
         <CardCarousel>
           {eventsList.map((event, index) => (
             <div className={classes.CardContainer} key={index}>
-              <div className={classes.Card}>
+              <div className={classes.Card}> 
+                <div className={classes.CardImageContainer}>
+                  <img className={classes.CardImage} src={event.image} alt={event.name} />
+                </div>
                 <div className={classes.CardHaderContainer}>
                   <h1 className={classes.CardHeader}>{event.name}</h1>
                   <h2 className={classes.CardDate}>{event.date}</h2>
-                </div>
-                <div className={classes.CardImageContainer}>
-                  <img className={classes.CardImage} src={event.image} alt={event.name} />
                 </div>
                 <Link to={event.link} className={classes.RegisterButton}>
                   <button>REGISTER</button>
