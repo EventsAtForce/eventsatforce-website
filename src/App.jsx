@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Events from './pages/Events';
 import Societies from './pages/Societies';
+import Team from './pages/Team';
 
 function App() {
   const location = useLocation();
@@ -47,6 +48,7 @@ function App() {
         <Route path="/About" element={<AboutUs />} />
         <Route path="/Events" element={<Events />} />
         <Route path="/Societies" element={<Societies />} />
+        <Route path="/Team" element={<Team />} />
       </Routes>
       <Footer />
     </div>
