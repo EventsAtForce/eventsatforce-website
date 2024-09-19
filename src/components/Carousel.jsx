@@ -14,7 +14,7 @@ const classes = {
   Dots: 'flex items-center justify-center xl:gap-2 lg:gap-1.5  gap-1',
 }
 
-const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 3000, dots = true}) => {
+const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 3000, dots = true }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const carouselRef = useRef(null);
   let touchStartX = 0;
@@ -64,28 +64,28 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
   }, []);
 
   return (
-  <div className={classes.CarouselMain} ref={carouselRef}>
-    <div className={classes.CarouselContainer} style={{ transform: `translateX(-${currentSlide * 100}%)`}}>
-      {slides}
-    </div>
-    <div className={classes.ButtonsContainer}>
-      <button className={classes.ButtonBG} onClick={prev}>
-        <img className={classes.leftButton} src={leftButton} alt="" />
-      </button>
-      <button className={classes.ButtonBG} onClick={next}>
-      <img className={classes.rightButton} src={rightButton} alt="" />
-      </button>
-    </div>
-    { dots && (
-    <div className={classes.DotsContainer}>
-      <div className={classes.Dots}>
-        {slides.map((_, index) => (
-          <button className={`transition-all xl:w-3 xl:h-3 lg:w-2.5 lg:h-2.5 md:w-2 md:h-2 sm:w-1.5 sm:h-1.5 w-2 h-2 bg-white rounded-full ${currentSlide === index ? "" : "bg-opacity-50"}`}  key={index} onClick={() => setCurrentSlide(index)}></button>
-        ))} 
+    <div className={classes.CarouselMain} ref={carouselRef}>
+      <div className={classes.CarouselContainer} style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+        {slides}
       </div>
+      <div className={classes.ButtonsContainer}>
+        <button className={classes.ButtonBG} onClick={prev}>
+          <img className={classes.leftButton} src={leftButton} alt="" />
+        </button>
+        <button className={classes.ButtonBG} onClick={next}>
+          <img className={classes.rightButton} src={rightButton} alt="" />
+        </button>
+      </div>
+      {dots && (
+        <div className={classes.DotsContainer}>
+          <div className={classes.Dots}>
+            {slides.map((_, index) => (
+              <button className={`transition-all xl:w-3 xl:h-3 lg:w-2.5 lg:h-2.5 md:w-2 md:h-2 sm:w-1.5 sm:h-1.5 w-2 h-2 bg-white rounded-full ${currentSlide === index ? "" : "bg-opacity-50"}`} key={index} onClick={() => setCurrentSlide(index)}></button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
-    )}
-  </div>
   )
 }
 
