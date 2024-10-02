@@ -8,10 +8,29 @@ import Faculty_3 from '../assets/images/Faculties/5.png';
 import Faculty_4 from '../assets/images/Faculties/6.png';
 import Faculty_5 from '../assets/images/Faculties/7.png';
 import placeholder from '../assets/images/Team/PlaceHolder.png';
+import President from '../assets/images/Team/1.png';
+import VicePresident from '../assets/images/Team/2.png';
+import Secretary from '../assets/images/Team/3.png';
+import ViceSecretary from '../assets/images/Team/4.png';
+import Treasurer from '../assets/images/Team/5.png';
+import CoTreasurer from '../assets/images/Team/6.png';
+import OrganizingHead from '../assets/images/Team/7.png';
+import OrganizingCoordinator1 from '../assets/images/Team/8.png';
+import OrganizingCoordinator2 from '../assets/images/Team/9.png';
+import TechnicalCoordinator1 from '../assets/images/Team/12.png';
+import TechnicalCoordinator2 from '../assets/images/Team/13.png';
+import TechnicalCoordinator3 from '../assets/images/Team/14.png';
+import DisciplinaryHead from '../assets/images/Team/15.png';
+import DisciplinaryCoordinator1 from '../assets/images/Team/16.png';
+import DisciplinaryCoordinator3 from '../assets/images/Team/18.png';
+import DocumentationHead from '../assets/images/Team/19.png';
+import DocumentationCoordinator from '../assets/images/Team/20.png';
+import CulturalHead from '../assets/images/Team/21.png';
+
 import CardCarousel from "../components/CardCarousel";
 
 const classes = {
-    Container: 'flex flex-col items-center justify-center xl:gap-6 lg:gap-4 md:gap-2 gap-1 w-full h-full max-w-1440 xl:px-[100px] xl:pt-[100px] xl:pb-8 lg:px-[80px] lg:pt-[80px] lg:pb-6 sm:px-[60px] sm:pt-[60px] sm:pb-4 px-6 pt-[60px] pb-4',
+    Container: 'flex flex-col items-center justify-center xl:gap-6 lg:gap-4 md:gap-3 gap-2 w-full h-full max-w-1440 xl:px-[100px] xl:pt-[100px] xl:pb-8 lg:px-[80px] lg:pt-[80px] lg:pb-6 sm:px-[60px] sm:pt-[60px] sm:pb-4 px-6 pt-[60px] pb-4',
     MarqueeTitle: 'w-full font-HelveticaNeueMD sm:text-left text-center xl:text-shadow-3 md:text-3xl sm:text-2xl text-xl text-shadow-2',
     EventsHeader: "text-center xl:text-4xl lg:text-3xl text-2xl font-HelveticaNeueBD text-shadow-3",
     CardSectionContainer: "flex flex-col items-center justify-center w-full gap-8",
@@ -36,27 +55,27 @@ const Team = () => {
     ];
 
     const officeBearersData = [
-        { image: placeholder, name: 'Varshika S B', designation: 'President' },
-        { image: placeholder, name: 'Jayasheel Vinay J', designation: 'Vice President' },
-        { image: placeholder, name: 'Amruth M Acharya', designation: 'Secretary' },
-        { image: placeholder, name: 'C Sai Pratesh', designation: 'Vice Secretary' },
-        { image: placeholder, name: 'Prachi Jain', designation: 'Treasurer' },
-        { image: placeholder, name: 'Rishabh G', designation: 'Co-Treasurer' },
-        { image: placeholder, name: 'Charan P', designation: 'Organizing Head' },
-        { image: placeholder, name: 'Bhuvana', designation: 'Organizing Coordinator' },
-        { image: placeholder, name: 'Saniha Rai T', designation: 'Organizing Coordinator' },
+        { image: President, name: 'Varshika S B', designation: 'President' },
+        { image: VicePresident, name: 'Jayasheel Vinay J', designation: 'Vice President' },
+        { image: Secretary, name: 'Amruth M Acharya', designation: 'Secretary' },
+        { image: ViceSecretary, name: 'C Sai Pratesh', designation: 'Vice Secretary' },
+        { image: Treasurer, name: 'Prachi Jain', designation: 'Treasurer' },
+        { image: CoTreasurer, name: 'Rishabh G', designation: 'Co-Treasurer' },
+        { image: OrganizingHead, name: 'Charan P', designation: 'Organizing Head' },
+        { image: OrganizingCoordinator1, name: 'Bhuvana', designation: 'Organizing Coordinator' },
+        { image: OrganizingCoordinator2, name: 'Saniha Rai T', designation: 'Organizing Coordinator' },
         { image: placeholder, name: 'Abhishree S G', designation: 'Organizing Coordinator' },
         { image: placeholder, name: 'Shaik Shahid Siddique', designation: 'Technical Head' },
-        { image: placeholder, name: 'Chinmay R', designation: 'Technical Coordinator' },
-        { image: placeholder, name: 'Shreyas A', designation: 'Technical Coordinator' },
-        { image: placeholder, name: 'Rohith P', designation: 'Technical Coordinator' },
-        { image: placeholder, name: 'Vivek M A', designation: 'Disciplinary Head' },
-        { image: placeholder, name: 'Darshan R Jadhav', designation: 'Disciplinary Coordinator' },
+        { image: TechnicalCoordinator1, name: 'Chinmay R', designation: 'Technical Coordinator' },
+        { image: TechnicalCoordinator2, name: 'Shreyas A', designation: 'Technical Coordinator' },
+        { image: TechnicalCoordinator3, name: 'Rohith P', designation: 'Technical Coordinator' },
+        { image: DisciplinaryHead, name: 'Vivek M A', designation: 'Disciplinary Head' },
+        { image: DisciplinaryCoordinator1, name: 'Darshan R Jadhav', designation: 'Disciplinary Coordinator' },
         { image: placeholder, name: 'Abdul Shukoor M', designation: 'Disciplinary Coordinator' },
-        { image: placeholder, name: 'Pavan Prathyush R S', designation: 'Disciplinary Coordinator' },
-        { image: placeholder, name: 'Rhea Sanjay', designation: 'Documentation Head' },
-        { image: placeholder, name: 'Janice Fenwick', designation: 'Documentation Coordinator' },
-        { image: placeholder, name: 'Sreya K R', designation: 'Cultural Head' },
+        { image: DisciplinaryCoordinator3, name: 'Pavan Prathyush R S', designation: 'Disciplinary Coordinator' },
+        { image: DocumentationHead, name: 'Rhea Sanjay', designation: 'Documentation Head' },
+        { image: DocumentationCoordinator, name: 'Janice Fenwick', designation: 'Documentation Coordinator' },
+        { image: CulturalHead, name: 'Sreya K R', designation: 'Cultural Head' },
         { image: placeholder, name: 'Kushala T S', designation: 'Cultural Coordinator' },
         { image: placeholder, name: 'Mahesh', designation: 'Cultural Coordinator' },
     ];
