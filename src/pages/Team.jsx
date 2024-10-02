@@ -1,181 +1,107 @@
 import React from 'react';
-import Pro_vc from '../assets/images/Faculties/2.png';
-import director from '../assets/images/Faculties/1.png';
-import Jayadeva from '../assets/images/Faculties/3.png';
-import Neetu from '../assets/images/Faculties/4.png';
-import Anitha from '../assets/images/Faculties/5.png';
-import Sarfraz from '../assets/images/Faculties/6.png';
-import Bharath from '../assets/images/Faculties/7.png';
-import team from '../assets/images/Team/PlaceHolder.png';
-
+import { Link } from "react-router-dom";
+import PRO_VC from '../assets/images/Faculties/2.png';
+import Director from '../assets/images/Faculties/1.png';
+import Faculty_1 from '../assets/images/Faculties/3.png';
+import Faculty_2 from '../assets/images/Faculties/4.png';
+import Faculty_3 from '../assets/images/Faculties/5.png';
+import Faculty_4 from '../assets/images/Faculties/6.png';
+import Faculty_5 from '../assets/images/Faculties/7.png';
+import placeholder from '../assets/images/team/PlaceHolder.png';
+import CardCarousel from "../components/CardCarousel";
 
 const classes = {
-    Container: 'flex flex-col items-center justify-center xl:gap-4 lg:gap-4 md:gap-4 gap-8 w-full h-full max-w-1440 xl:px-[100px] xl:pt-[100px] xl:pb-8 lg:px-[80px] lg:pt-[80px] lg:pb-6 sm:px-[60px] sm:pt-[60px] sm:pb-4 px-6 pt-[60px] pb-4',
-    TeamHeader: 'font-HelveticaNeueBD text-center xl:text-4xl xl:text-shadow-3 md:text-3xl sm:text-2xl text-shadow-2 xl:max-w-[1200px]',
-    FacultysCardContainer: 'grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-4 items-center',
-    FacultyHeader: 'font-HelveticaNeueMD text-center xl:text-3xl xl:text-shadow-3 md:text-2xl sm:text-2xl text-shadow-2',
-    FacultysCard: 'flex flex-col ',
-    FacultyImageContainer: 'w-full h-72 relative ',
-    FacultyImage: 'w-full h-full object-cover rounded-2xl transition duration-300 ease-in-out delay-100 hover:translate-y-[-10px]',
-    FacultyDetailsContainer: 'p-4',
-    FacultyName: 'font-bold',
-    FacultyDesignation: 'text-gray-500',
-    obs: 'flex flex-col max-w-[1200px] pt-4 gap-2',
-    obsTitle: 'w-full font-HelveticaNeueMD text-left xl:text-3xl xl:text-shadow-3 md:text-2xl sm:text-2xl text-shadow-2 mb-4',
-    obsCardsContainer: 'relative overflow-hidden',
-    obsCards: 'flex animate-marquee gap-[12px]',
-    obsCard: 'flex flex-col min-w-[170px]',
-    obsCardImageContainer: 'w-full h-72 relative',
-    obsCardImage: 'w-full h-full object-cover rounded-2xl ',
-    obsCardDetailsContainer: 'p-4',
-    obsCardName: 'font-bold',
-    obsCardDesignation: 'text-gray-500',
+    Container: 'flex flex-col items-center justify-center xl:gap-6 lg:gap-4 md:gap-2 gap-1 w-full h-full max-w-1440 xl:px-[100px] xl:pt-[100px] xl:pb-8 lg:px-[80px] lg:pt-[80px] lg:pb-6 sm:px-[60px] sm:pt-[60px] sm:pb-4 px-6 pt-[60px] pb-4',
+    MarqueeTitle: 'w-full font-HelveticaNeueMD sm:text-left text-center xl:text-shadow-3 md:text-3xl sm:text-2xl text-xl text-shadow-2',
+    EventsHeader: "text-center xl:text-4xl lg:text-3xl text-2xl font-HelveticaNeueBD text-shadow-3",
+    CardSectionContainer: "flex flex-col items-center justify-center w-full gap-8",
+    CardContainer: "transition-all duration-300 ease-in-out",
+    Card: "flex flex-col items-start justify-between sm:gap-4 gap-3 h-full bg-[#D9D9D9] border-2 border-[#AFAFAF] rounded-3xl lg:p-6 md:p-5 p-6 transition-all duration-300 ease-in-out hover:shadow-lg",
+    CardHaderContainer: "flex flex-col items-start pl-4",
+    CardHeader: "text-center xl:text-[26px] lg:text-[18px] text-xl font-HelveticaNeueMD text-shadow-3",
+    CardSubHeader: "text-center text-lg leading-5 font-HelveticaNeueMD text-shadow-2",
+    CardImageContainer: "w-full overflow-hidden xl:rounded-3xl rounded-2xl border-2 border-[#AFAFAF] transition-all duration-300 ease-in-out",
+    CardImage: "w-full h-auto object-cover transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1",
 };
 
-// CSS for the seamless marquee animation
-const styles = `
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); } /* Moves the entire container's width */
-}
-.animate-marquee {
-  display: flex;
-  animation: marquee 20s linear infinite; /* Adjust speed by changing duration */
-}
-`;
-
 const Team = () => {
-    const FacultyData = [
-        { 
-            image: Pro_vc, 
-            name: 'Dr RC Biradar', 
-            designation: 'Pro VC' 
-        },
-        { 
-            image: director, 
-            name: 'Dr KM Sudarshan', 
-            designation: 'Director' 
-        },
-        { 
-            image: Jayadeva, 
-            name: 'Dr. T S Jayadeva', 
-            designation: 'Professor' 
-        },
-        { 
-            image: Neetu, 
-            name: 'Neetu KN', 
-            designation: 'Assistant Professor' 
-        },
-        { 
-            image: Anitha, 
-            name: 'Anitha Kumari RD', 
-            designation: 'Assistant Professor' 
-        },
-        { 
-            image: Sarfraz, 
-            name: 'Dr Sarfraz Hussain', 
-            designation: 'Assistant Professor' 
-        },
-        { 
-            image: Bharath, 
-            name: 'Dr Bharath KP', 
-            designation: 'Assistant Professor' 
-        },
+    const facultyData = [
+        { image: PRO_VC, name: 'Dr. RC Biradar', designation: 'Pro VC, REVA University'},
+        { image: Director, name: 'Dr. KM Sudharshan', designation: 'Director, School of ECE'},
+        { image: Faculty_1, name: 'Dr. T S Jayadeva', designation: 'Professor, School of ECE' },
+        { image: Faculty_2, name: 'Prof. Neethu KN', designation: 'Assistant Professor' },
+        { image: Faculty_5, name: 'Dr. Bharath KP', designation: 'Assistant Professor' },
+        { image: Faculty_3, name: 'Prof. Anitha Kumari', designation: 'Assistant Professor' },
+        { image: Faculty_4, name: 'Dr. Sarfaraz Hussain', designation: 'Assistant Professor' },     
     ];
 
     const officeBearersData = [
-        { image: team, name: 'Member 1', designation: 'President' },
-        { image: team, name: 'Member 2', designation: 'Vice President' },
-        { image: team, name: 'member 3', designation: 'Secretary' },
-        { image: team, name: 'Member 4', designation: 'Treasurer' },
-        { image: team, name: 'Member 5', designation: 'Member' },
-        { image: team, name: 'Member 6', designation: 'Member' },
-        { image: team, name: 'Member 7', designation: 'Member' },
-        { image: team, name: 'Member 1', designation: 'President' },
-        { image: team, name: 'Member 2', designation: 'Vice President' },
-        { image: team, name: 'member 3', designation: 'Secretary' },
-        { image: team, name: 'Member 4', designation: 'Treasurer' },
-        { image: team, name: 'Member 5', designation: 'Member' },
-        { image: team, name: 'Member 6', designation: 'Member' },
-        { image: team, name: 'Member 7', designation: 'Member' },
-
+        { image: placeholder, name: 'Varshika S B', designation: 'President' },
+        { image: placeholder, name: 'Jayasheel Vinay J', designation: 'Vice President' },
+        { image: placeholder, name: 'Amruth M Acharya', designation: 'Secretary' },
+        { image: placeholder, name: 'C Sai Pratesh', designation: 'Vice Secretary' },
+        { image: placeholder, name: 'Prachi Jain', designation: 'Treasurer' },
+        { image: placeholder, name: 'Rishabh G', designation: 'Co-Treasurer' },
+        { image: placeholder, name: 'Charan P', designation: 'Organizing Head' },
+        { image: placeholder, name: 'Bhuvana', designation: 'Organizing Coordinator' },
+        { image: placeholder, name: 'Saniha Rai T', designation: 'Organizing Coordinator' },
+        { image: placeholder, name: 'Abhishree S G', designation: 'Organizing Coordinator' },
+        { image: placeholder, name: 'Shaik Shahid Siddique', designation: 'Technical Head' },
+        { image: placeholder, name: 'Chinmay R', designation: 'Technical Coordinator' },
+        { image: placeholder, name: 'Shreyas A', designation: 'Technical Coordinator' },
+        { image: placeholder, name: 'Rohith P', designation: 'Technical Coordinator' },
+        { image: placeholder, name: 'Vivek M A', designation: 'Disciplinary Head' },
+        { image: placeholder, name: 'Darshan R Jadhav', designation: 'Disciplinary Coordinator' },
+        { image: placeholder, name: 'Abdul Shukoor M', designation: 'Disciplinary Coordinator' },
+        { image: placeholder, name: 'Pavan Prathyush R S', designation: 'Disciplinary Coordinator' },
+        { image: placeholder, name: 'Rhea Sanjay', designation: 'Documentation Head' },
+        { image: placeholder, name: 'Janice Fenwick', designation: 'Documentation Coordinator' },
+        { image: placeholder, name: 'Sreya K R', designation: 'Cultural Head' },
+        { image: placeholder, name: 'Kushala T S', designation: 'Cultural Coordinator' },
+        { image: placeholder, name: 'Mahesh', designation: 'Cultural Coordinator' },
     ];
-    const teamMembersData = [
-        { image: team, name: 'Member 1', designation: 'President' },
-        { image: team, name: 'Member 2', designation: 'Vice President' },
-        { image: team, name: 'member 3', designation: 'Secretary' },
-        { image: team, name: 'Member 4', designation: 'Treasurer' },
-        { image: team, name: 'Member 5', designation: 'Member' },
-        { image: team, name: 'Member 6', designation: 'Member' },
-        { image: team, name: 'Member 7', designation: 'Member' },
-        { image: team, name: 'Member 1', designation: 'President' },
-        { image: team, name: 'Member 2', designation: 'Vice President' },
-        { image: team, name: 'member 3', designation: 'Secretary' },
-        { image: team, name: 'Member 4', designation: 'Treasurer' },
-        { image: team, name: 'Member 5', designation: 'Member' },
-        { image: team, name: 'Member 6', designation: 'Member' },
-        { image: team, name: 'Member 7', designation: 'Member' },
-    ];
-
 
     return (
         <div className={classes.Container}>
-            <style>{styles}</style> {/* Adding the marquee animation */}
-            {/* Faculty Coordinators Section */}
-            <div className={classes.TeamHeader}>OUR TEAM</div>
-            <div className={classes.FacultyHeader}>Faculty COORDINATORS</div>
-            <div className={classes.FacultysCardContainer}>
-                {FacultyData.map((Faculty, index) => (
-                    <div key={index} className={classes.FacultysCard}>
-                        <div className={classes.FacultyImageContainer}>
-                            <img src={Faculty.image} alt={Faculty.name} className={classes.FacultyImage} />
-                        </div>
-                        <div className={classes.FacultyDetailsContainer}>
-                            <h3 className={classes.FacultyName}>{Faculty.name}</h3>
-                            <p className={classes.FacultyDesignation}>{Faculty.designation}</p>
-                        </div>
-                    </div>
-                ))}
-            </div>
-
-            {/* Office Bearers Section */}
-            <div className={classes.obs}>
-                <div className={classes.obsTitle}>OFFICE BEARERS</div>
-                <div className={classes.obsCardsContainer}>
-                    <div className={classes.obsCards}>
-                        {/* Duplicating the officeBearersData to create a continuous scrolling effect */}
-                        {[...officeBearersData, ...officeBearersData].map((member, index) => (
-                            <div key={index} className={classes.obsCard}>
-                                <div className={classes.obsCardImageContainer}>
-                                    <img src={member.image} alt={member.name} className={classes.obsCardImage} />
-                                </div>
-                                <div className={classes.obsCardDetailsContainer}>
-                                    <h3 className={classes.obsCardName}>{member.name}</h3>
-                                    <p className={classes.obsCardDesignation}>{member.designation}</p>
+            <div>
+                <p className={classes.MarqueeTitle}>FACULTY COORDINATORS</p>
+                <div className={classes.CardSectionContainer}>
+                    <CardCarousel>
+                        {facultyData.map((person, index) => (
+                            <div className={classes.CardContainer} key={index}>
+                                <div className={classes.Card}>
+                                    <div className={classes.CardImageContainer}>
+                                        <img className={classes.CardImage} src={person.image} alt={person.name} />
+                                    </div>
+                                    <div className={classes.CardHaderContainer}>
+                                        <h1 className={classes.CardHeader}>{person.name}</h1>
+                                        <h2 className={classes.CardSubHeader}>{person.designation}</h2>
+                                    </div>
                                 </div>
                             </div>
                         ))}
-                    </div>
+                    </CardCarousel>
                 </div>
             </div>
-
-            <div className={classes.obs}>
-                <div className={classes.obsTitle}>TEAM MEMBERS</div>
-                <div className={classes.obsCardsContainer}>
-                    <div className={classes.obsCards}>
-
-                        {[...teamMembersData, ...teamMembersData].map((member, index) => (
-                            <div key={index} className={classes.obsCard}>
-                                <div className={classes.obsCardImageContainer}>
-                                    <img src={member.image} alt={member.name} className={classes.obsCardImage} />
-                                </div>
-                                <div className={classes.obsCardDetailsContainer}>
-                                    <h3 className={classes.obsCardName}>{member.name}</h3>
-                                    <p className={classes.obsCardDesignation}>{member.designation}</p>
+            
+            <div>
+                <p className={classes.MarqueeTitle}>OFFICE BEARERS</p>
+                <div className={classes.CardSectionContainer}>
+                    <CardCarousel>
+                        {officeBearersData.map((person, index) => (
+                            <div className={classes.CardContainer} key={index}>
+                                <div className={classes.Card}>
+                                    <div className={classes.CardImageContainer}>
+                                        <img className={classes.CardImage} src={person.image} alt={person.name} />
+                                    </div>
+                                    <div className={classes.CardHaderContainer}>
+                                        <h1 className={classes.CardHeader}>{person.name}</h1>
+                                        <h2 className={classes.CardSubHeader}>{person.designation}</h2>
+                                    </div>
                                 </div>
                             </div>
                         ))}
-                    </div>
+                    </CardCarousel>
                 </div>
             </div>
         </div>
