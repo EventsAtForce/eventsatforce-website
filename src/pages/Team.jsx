@@ -7,7 +7,7 @@ import Faculty_2 from '../assets/images/Faculties/4.png';
 import Faculty_3 from '../assets/images/Faculties/5.png';
 import Faculty_4 from '../assets/images/Faculties/6.png';
 import Faculty_5 from '../assets/images/Faculties/7.png';
-import placeholder from '../assets/images/team/PlaceHolder.png';
+import placeholder from '../assets/images/Team/PlaceHolder.png';
 import CardCarousel from "../components/CardCarousel";
 
 const classes = {
