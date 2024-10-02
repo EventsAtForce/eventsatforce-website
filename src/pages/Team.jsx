@@ -1,25 +1,25 @@
 import React from 'react';
-import Pro_vc from '../assets/images/teachers/2.png';
-import director from '../assets/images/teachers/1.png';
-import Jayadeva from '../assets/images/teachers/3.png';
-import Neetu from '../assets/images/teachers/4.png';
-import Anitha from '../assets/images/teachers/5.png';
-import Sarfraz from '../assets/images/teachers/6.png';
-import Bharath from '../assets/images/teachers/7.png';
-import team from '../assets/images/team/8.png';
+import Pro_vc from '../assets/images/Faculties/2.png';
+import director from '../assets/images/Faculties/1.png';
+import Jayadeva from '../assets/images/Faculties/3.png';
+import Neetu from '../assets/images/Faculties/4.png';
+import Anitha from '../assets/images/Faculties/5.png';
+import Sarfraz from '../assets/images/Faculties/6.png';
+import Bharath from '../assets/images/Faculties/7.png';
+import team from '../assets/images/Team/PlaceHolder.png';
 
 
 const classes = {
     Container: 'flex flex-col items-center justify-center xl:gap-4 lg:gap-4 md:gap-4 gap-8 w-full h-full max-w-1440 xl:px-[100px] xl:pt-[100px] xl:pb-8 lg:px-[80px] lg:pt-[80px] lg:pb-6 sm:px-[60px] sm:pt-[60px] sm:pb-4 px-6 pt-[60px] pb-4',
-    TeamHeader: 'w-full font-HelveticaNeueBD text-center xl:text-4xl xl:text-shadow-3 md:text-3xl sm:text-2xl text-shadow-2 mb-2 xl:max-w-[1200px] pt-2',
-    TeachersCardContainer: 'grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-4 items-center',
-    TeacherHeader: 'w-auto font-HelveticaNeueMD text-center xl:text-3xl xl:text-shadow-3 md:text-2xl sm:text-2xl text-shadow-2 mb-4',
-    TeachersCard: 'flex flex-col ',
-    TeacherImageContainer: 'w-full h-72 relative ',
-    TeacherImage: 'w-full h-full object-cover rounded-2xl transition duration-300 ease-in-out delay-100 hover:translate-y-[-10px]',
-    TeacherDetailsContainer: 'p-4',
-    TeacherName: 'font-bold',
-    TeacherDesignation: 'text-gray-500',
+    TeamHeader: 'font-HelveticaNeueBD text-center xl:text-4xl xl:text-shadow-3 md:text-3xl sm:text-2xl text-shadow-2 xl:max-w-[1200px]',
+    FacultysCardContainer: 'grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-4 items-center',
+    FacultyHeader: 'font-HelveticaNeueMD text-center xl:text-3xl xl:text-shadow-3 md:text-2xl sm:text-2xl text-shadow-2',
+    FacultysCard: 'flex flex-col ',
+    FacultyImageContainer: 'w-full h-72 relative ',
+    FacultyImage: 'w-full h-full object-cover rounded-2xl transition duration-300 ease-in-out delay-100 hover:translate-y-[-10px]',
+    FacultyDetailsContainer: 'p-4',
+    FacultyName: 'font-bold',
+    FacultyDesignation: 'text-gray-500',
     obs: 'flex flex-col max-w-[1200px] pt-4 gap-2',
     obsTitle: 'w-full font-HelveticaNeueMD text-left xl:text-3xl xl:text-shadow-3 md:text-2xl sm:text-2xl text-shadow-2 mb-4',
     obsCardsContainer: 'relative overflow-hidden',
@@ -45,14 +45,42 @@ const styles = `
 `;
 
 const Team = () => {
-    const teacherData = [
-        { image: Pro_vc, name: 'Dr RC Biradar', designation: 'Pro VC' },
-        { image: director, name: 'Dr KM Sudarshan', designation: 'Director' },
-        { image: Jayadeva, name: 'Dr. T S Jayadeva', designation: 'Professor' },
-        { image: Neetu, name: 'Neetu KN', designation: 'Assistant Professor' },
-        { image: Anitha, name: 'Anitha Kumari RD', designation: 'Assistant Professor' },
-        { image: Sarfraz, name: 'Dr Sarfraz Hussain', designation: 'Assistant Professor' },
-        { image: Bharath, name: 'Dr Bharath KP', designation: 'Assistant Professor' },
+    const FacultyData = [
+        { 
+            image: Pro_vc, 
+            name: 'Dr RC Biradar', 
+            designation: 'Pro VC' 
+        },
+        { 
+            image: director, 
+            name: 'Dr KM Sudarshan', 
+            designation: 'Director' 
+        },
+        { 
+            image: Jayadeva, 
+            name: 'Dr. T S Jayadeva', 
+            designation: 'Professor' 
+        },
+        { 
+            image: Neetu, 
+            name: 'Neetu KN', 
+            designation: 'Assistant Professor' 
+        },
+        { 
+            image: Anitha, 
+            name: 'Anitha Kumari RD', 
+            designation: 'Assistant Professor' 
+        },
+        { 
+            image: Sarfraz, 
+            name: 'Dr Sarfraz Hussain', 
+            designation: 'Assistant Professor' 
+        },
+        { 
+            image: Bharath, 
+            name: 'Dr Bharath KP', 
+            designation: 'Assistant Professor' 
+        },
     ];
 
     const officeBearersData = [
@@ -93,18 +121,18 @@ const Team = () => {
     return (
         <div className={classes.Container}>
             <style>{styles}</style> {/* Adding the marquee animation */}
-            {/* Teacher Coordinators Section */}
+            {/* Faculty Coordinators Section */}
             <div className={classes.TeamHeader}>OUR TEAM</div>
-            <div className={classes.TeacherHeader}>TEACHER COORDINATORS</div>
-            <div className={classes.TeachersCardContainer}>
-                {teacherData.map((teacher, index) => (
-                    <div key={index} className={classes.TeachersCard}>
-                        <div className={classes.TeacherImageContainer}>
-                            <img src={teacher.image} alt={teacher.name} className={classes.TeacherImage} />
+            <div className={classes.FacultyHeader}>Faculty COORDINATORS</div>
+            <div className={classes.FacultysCardContainer}>
+                {FacultyData.map((Faculty, index) => (
+                    <div key={index} className={classes.FacultysCard}>
+                        <div className={classes.FacultyImageContainer}>
+                            <img src={Faculty.image} alt={Faculty.name} className={classes.FacultyImage} />
                         </div>
-                        <div className={classes.TeacherDetailsContainer}>
-                            <h3 className={classes.TeacherName}>{teacher.name}</h3>
-                            <p className={classes.TeacherDesignation}>{teacher.designation}</p>
+                        <div className={classes.FacultyDetailsContainer}>
+                            <h3 className={classes.FacultyName}>{Faculty.name}</h3>
+                            <p className={classes.FacultyDesignation}>{Faculty.designation}</p>
                         </div>
                     </div>
                 ))}
