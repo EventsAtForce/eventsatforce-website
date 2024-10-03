@@ -30,7 +30,7 @@ import CulturalHead from '../assets/images/Team/21.png';
 import CardCarousel from "../components/CardCarousel";
 
 const classes = {
-    Container: 'flex flex-col items-center justify-center w-full xl:gap-10 lg:gap-8 md:gap-6 gap-4',
+    Container: 'flex flex-col items-center justify-center xl:gap-16 lg:gap-14 md:gap-12 gap-8 w-full h-full max-w-1440 xl:px-[100px] xl:pt-[100px] xl:pb-8 lg:px-[80px] lg:pt-[80px] lg:pb-6 sm:px-[60px] sm:pt-[60px] sm:pb-4 px-6 pt-[60px] pb-4',
     MarqueeTitle: 'w-full font-HelveticaNeueMD sm:text-left text-center xl:text-shadow-3 md:text-3xl sm:text-2xl text-xl text-shadow-2',
     EventsHeader: "text-center xl:text-4xl lg:text-3xl text-2xl font-HelveticaNeueBD text-shadow-3",
     CardSectionContainer: "flex flex-col items-center justify-center w-full gap-8",
