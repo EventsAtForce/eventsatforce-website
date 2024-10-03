@@ -5,6 +5,7 @@ import Carousel from '../components/Carousel';
 import About from '../components/About';
 import Statistics from '../components/Statistics';
 import Societies from '../components/Societies';
+import Team from '../components/Team';
 
 // for vw >= 640px
 import Slide_1_1 from '../assets/images/Slides_1/Slide_1.png';
@@ -167,6 +168,7 @@ const Home = () => {
                 </CardCarousel>
             </div>
             <Societies />
+            <Team />
         </div>
     );
 };
