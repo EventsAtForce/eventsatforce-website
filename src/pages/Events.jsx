@@ -40,26 +40,26 @@ const eventsList = [
         date: "TBD",
         image: TechnicalQuiz,
     },
-    {
-        name: "Hackathon",
-        date: "TBD",
-        image: TechnicalCompetition,
-    },
-    {
-        name: "Aavishkar",
-        date: "TBD",
-        image: Aavishkar,
-    },
-    {
-        name: "Harmonics",
-        date: "TBD",
-        image: Harmonics,
-    },
-    {
-        name: "Farewell",
-        date: "TBD",
-        image: Farewell,
-    }
+    // {
+    //     name: "Hackathon",
+    //     date: "TBD",
+    //     image: TechnicalCompetition,
+    // },
+    // {
+    //     name: "Aavishkar",
+    //     date: "TBD",
+    //     image: Aavishkar,
+    // },
+    // {
+    //     name: "Harmonics",
+    //     date: "TBD",
+    //     image: Harmonics,
+    // },
+    // {
+    //     name: "Farewell",
+    //     date: "TBD",
+    //     image: Farewell,
+    // }
 ]
 
 const classes = {
