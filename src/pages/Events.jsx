@@ -15,20 +15,20 @@ import Farewell from "../assets/images/Events/Farewell.png";
 
 const eventsList = [
     {
+        name: 'Navotsava',
+        date: "3rd October 2024",
+        image: Navotsava,
+        link: 'https://forms.gle/oKd2krpvxpeMibbCA',
+    },
+    {
         name: "Aarambha",
         date: "28th October 2024",
         image: Aarambha,
     },
     {
-        name: "Technical Quiz",
+        name: "Fresher's Day",
         date: "TBD",
-        image: TechnicalQuiz,
-    },
-    {
-        name: 'Navotsava',
-        date: "3rd October 2024",
-        image: Navotsava,
-        link: 'https://forms.gle/oKd2krpvxpeMibbCA',
+        image: Freshers,
     },
     {
         name: "Deepotsava",
@@ -36,9 +36,9 @@ const eventsList = [
         image: Deepotsava,
     },
     {
-        name: "Fresher's Day",
+        name: "Technical Quiz",
         date: "TBD",
-        image: Freshers,
+        image: TechnicalQuiz,
     },
     {
         name: "Hackathon",
