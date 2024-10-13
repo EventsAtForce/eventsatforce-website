@@ -67,7 +67,7 @@ const classes = {
     EventsHeader: "text-center xl:text-4xl lg:text-3xl text-2xl font-HelveticaNeueBD text-shadow-3",
     CardSectionContainer: "flex flex-col items-center justify-center w-full gap-8",
     CardContainer: "transition-all duration-300 ease-in-out",
-    Card: "flex flex-col items-center justify-between gap-2 h-full bg-[#D9D9D9] border-2 border-[#AFAFAF] rounded-3xl lg:p-6 md:p-5 p-6 transition-all duration-300 ease-in-out hover:shadow-lg",
+    Card: "flex flex-col items-center justify-between gap-2 h-full bg-[#D9D9D9] border-2 border-[#AFAFAF] rounded-3xl lg:p-6 md:p-5 p-4 transition-all duration-300 ease-in-out hover:shadow-lg",
     CardHaderContainer: "flex flex-col items-center justify-center",
     CardHeader: "text-center xl:text-3xl lg:text-[26px] text-2xl font-HelveticaNeueMD text-shadow-3",
     CardDate: "text-center text-lg leading-5 font-HelveticaNeueMD text-shadow-2",
