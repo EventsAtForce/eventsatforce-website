@@ -26,7 +26,9 @@ import DisciplinaryCoordinator3 from '../assets/images/Team/18.png';
 import DocumentationHead from '../assets/images/Team/19.png';
 import DocumentationCoordinator from '../assets/images/Team/20.png';
 import CulturalHead from '../assets/images/Team/21.png';
-
+import instagram from "../assets/icons/instagram.svg"
+import linkedin from "../assets/icons/linkedin.svg"
+import twitter from "../assets/icons/twitter.svg"
 import CardCarousel from "../components/CardCarousel";
 
 const classes = {
@@ -35,12 +37,14 @@ const classes = {
     EventsHeader: "text-center xl:text-4xl lg:text-3xl text-2xl font-HelveticaNeueBD text-shadow-3",
     CardSectionContainer: "flex flex-col items-center justify-center w-full gap-8",
     CardContainer: "transition-all duration-300 ease-in-out",
-    Card: "flex flex-col items-start justify-between sm:gap-4 gap-3 h-full bg-[#D9D9D9] border-2 border-[#AFAFAF] rounded-3xl lg:p-6 md:p-5 p-6 transition-all duration-300 ease-in-out hover:shadow-lg",
+    Card: "flex flex-col items-start justify-between sm:gap-4 gap-3 h-full bg-[#D9D9D9] border-2 border-[#AFAFAF] rounded-3xl lg:p-6 md:p-5 p-4 transition-all duration-300 ease-in-out hover:shadow-lg",
     CardHaderContainer: "flex flex-col items-start pl-4",
     CardHeader: "text-center xl:text-[26px] lg:text-[18px] text-xl font-HelveticaNeueMD text-shadow-3",
     CardSubHeader: "text-center text-lg leading-5 font-HelveticaNeueMD text-shadow-2",
     CardImageContainer: "w-full overflow-hidden xl:rounded-3xl rounded-2xl border-2 border-[#AFAFAF] transition-all duration-300 ease-in-out",
     CardImage: "w-full h-auto object-cover transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1",
+    OBSocials: "pl-4 w-full flex items-center gap-4",
+    OBSocialsLogo: "w-[36px] h-[36px] duration-200 ease-in-out transform hover:scale-110",
 };
 
 const Team = () => {
@@ -116,6 +120,17 @@ const Team = () => {
                                     <div className={classes.CardHaderContainer}>
                                         <h1 className={classes.CardHeader}>{person.name}</h1>
                                         <h2 className={classes.CardSubHeader}>{person.designation}</h2>
+                                    </div>
+                                    <div className={classes.OBSocials}>
+                                        <Link to={person.ig} className={classes.RegisterButton}>
+                                            <button><img src={instagram} className={classes.OBSocialsLogo} alt="" /></button>
+                                        </Link>
+                                        <Link to={person.linkedin} className={classes.RegisterButton}>
+                                            <button><img src={linkedin} className={classes.OBSocialsLogo} alt="" /></button>
+                                        </Link>
+                                        <Link to={person.twitter} className={classes.RegisterButton}>
+                                            <button><img src={twitter} className={classes.OBSocialsLogo} alt="" /></button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
