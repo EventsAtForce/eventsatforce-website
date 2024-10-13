@@ -82,28 +82,28 @@ const Statistics = () => {
       <div className={classes.StatisticsContainer}>
         <div className={classes.Stats}>
           <h1 className={classes.StatsHeader}>
-            <CountUp end={30} duration={2000} startCounting={startCounting} />+
+            <CountUp end={30} duration={3000} startCounting={startCounting} />+
           </h1>
           <p className={classes.StatsParagraph}>Events</p>
         </div>
         <div className={classes.Divider}></div>
         <div className={classes.Stats}>
           <h1 className={classes.StatsHeader}>
-            <CountUp end={1000} duration={2000} startCounting={startCounting} />+
+            <CountUp end={5000} duration={3000} startCounting={startCounting} />+
           </h1>
           <p className={classes.StatsParagraph}>Attendees</p>
         </div>
         <div className={classes.Divider}></div>
         <div className={classes.Stats}>
           <h1 className={classes.StatsHeader}>
-            <CountUp end={20} duration={2000} startCounting={startCounting} />+
+            <CountUp end={20} duration={3000} startCounting={startCounting} />+
           </h1>
           <p className={classes.StatsParagraph}>Brand Partners</p> 
         </div>
         <div className={classes.Divider}></div>
         <div className={classes.Stats}>
           <h1 className={classes.StatsHeader}>
-            <CountUp end={30000} duration={2000} startCounting={startCounting} />+
+            <CountUp end={100000} duration={3000} startCounting={startCounting} />+
           </h1>
           <p className={classes.StatsParagraph}>Digital Impressions</p>
         </div>
