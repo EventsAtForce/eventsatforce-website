@@ -16,12 +16,15 @@ const getArrowStylesLeft = () => {
   const width = window.innerWidth;
   if (width < 768) {
     return {
-      display: "none",
+      zIndex: "20",
+      width: "48px",
+      height: "48px",
+      left: "-16px",
     };
   } else {
     return {
       zIndex: "20",
-      width: "57px",
+      width: "56px",
       height: "56px",
       left: "-20px",
     };
@@ -32,7 +35,10 @@ const getArrowStylesRight = () => {
   const width = window.innerWidth;
   if (width < 768) {
     return {
-      display: "none",
+      zIndex: "20",
+      width: "48px",
+      height: "48px",
+      right: "-16px",
     };
   } else {
     return {
