@@ -8,7 +8,7 @@ import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Events from './pages/Events';
 import Societies from './pages/Societies';
-import Team from './pages/Team';
+import Team from './pages/Teams';
 
 function App() {
   const location = useLocation();

@@ -59,29 +59,148 @@ const Team = () => {
     ];
 
     const officeBearersData = [
-        { image: President, name: 'Varshika S B', designation: 'President' },
-        { image: VicePresident, name: 'Jayasheel Vinay J', designation: 'Vice President' },
-        { image: Secretary, name: 'Amruth M Acharya', designation: 'Secretary' },
-        { image: ViceSecretary, name: 'C Sai Pratesh', designation: 'Vice Secretary' },
-        { image: Treasurer, name: 'Prachi Jain', designation: 'Treasurer' },
-        { image: CoTreasurer, name: 'Rishabh G', designation: 'Co-Treasurer' },
-        { image: OrganizingHead, name: 'Charan P', designation: 'Organizing Head' },
-        { image: OrganizingCoordinator1, name: 'Bhuvana', designation: 'Organizing Coordinator' },
-        { image: OrganizingCoordinator2, name: 'Saniha Rai T', designation: 'Organizing Coordinator' },
-        { image: placeholder, name: 'Abhishree S G', designation: 'Organizing Coordinator' },
-        { image: placeholder, name: 'Siddique', designation: 'Technical Head' },
-        { image: TechnicalCoordinator1, name: 'Chinmay R', designation: 'Technical Coordinator' },
-        { image: TechnicalCoordinator2, name: 'Shreyas A', designation: 'Technical Coordinator' },
-        { image: TechnicalCoordinator3, name: 'Rohith P', designation: 'Technical Coordinator' },
-        { image: DisciplinaryHead, name: 'Vivek M A', designation: 'Disciplinary Head' },
-        { image: DisciplinaryCoordinator1, name: 'Darshan R Jadhav', designation: 'Disciplinary Coordinator' },
-        { image: placeholder, name: 'Abdul Shukoor M', designation: 'Disciplinary Coordinator' },
-        { image: DisciplinaryCoordinator3, name: 'Pavan Prathyush R S', designation: 'Disciplinary Coordinator' },
-        { image: DocumentationHead, name: 'Rhea Sanjay', designation: 'Documentation Head' },
-        { image: DocumentationCoordinator, name: 'Janice Fenwick', designation: 'Documentation Coordinator' },
-        { image: CulturalHead, name: 'Sreya K R', designation: 'Cultural Head' },
-        { image: placeholder, name: 'Kushala T S', designation: 'Cultural Coordinator' },
-        { image: placeholder, name: 'Mahesh', designation: 'Cultural Coordinator' },
+        { 
+            image: President, 
+            name: 'Varshika S B', 
+            designation: 'President',
+            ig: 'https://www.instagram.com/_varshika.03/',
+            linkedin: 'https://www.linkedin.com/in/varshika-sb-94082b25b/',
+            twitter: 'https://x.com/SbVarshika/', 
+        },
+        { 
+            image: VicePresident, 
+            name: 'Jayasheel Vinay J', 
+            designation: 'Vice President',
+            ig: 'https://www.instagram.com/jayasheel.vinay/', 
+            linkedin: 'https://www.linkedin.com/in/jayasheelvinayj/',
+            twitter: 'https://x.com/JayasheelVinay/',
+        },
+        { 
+            image: Secretary, 
+            name: 'Amruth M Acharya', 
+            designation: 'Secretary',
+        },
+        { 
+            image: ViceSecretary, 
+            name: 'C Sai Pratesh', 
+            designation: 'Vice Secretary',
+        },
+        { 
+            image: Treasurer, 
+            name: 'Prachi Jain', 
+            designation: 'Treasurer',
+            ig: 'https://www.instagram.com/__prachijain_/',
+            linkedin: 'https://www.linkedin.com/in/prachi-k-jain-631417290/',
+        },
+        { 
+            image: CoTreasurer, 
+            name: 'Rishabh G', 
+            designation: 'Co-Treasurer',
+            ig: 'https://www.instagram.com/rishabh_gopakumar/' ,
+            linkedin: 'https://www.linkedin.com/in/rishabh-gopakumar-421752250/',
+        },
+        { 
+            image: OrganizingHead, 
+            name: 'Charan P', 
+            designation: 'Organizing Head',
+            ig: 'https://www.instagram.com/charan_4806/',
+            linkedin: 'https://www.linkedin.com/in/charan-puttabasavaraju-1945132b2/',
+        },
+        { 
+            image: OrganizingCoordinator1, 
+            name: 'Bhuvana', 
+            designation: 'Organizing Coordinator',
+            ig: 'https://www.instagram.com/bhuvana_612/',
+            linkedin: 'https://www.linkedin.com/in/bhuvana-b-002441237',
+        },
+        { 
+            image: OrganizingCoordinator2, 
+            name: 'Saniha Rai T', 
+            designation: 'Organizing Coordinator',
+            ig: 'https://www.instagram.com/saniha__rai',
+            linkedin: 'https://www.linkedin.com/in/saniha-rai-t-235439285',
+        },
+        { 
+            image: placeholder, 
+            name: 'Abhishree S G', 
+            designation: 'Organizing Coordinator' 
+        },
+        { 
+            image: placeholder, 
+            name: ' Shaik S Siddique', 
+            designation: 'Technical Head' 
+        },
+        { 
+            image: TechnicalCoordinator1, 
+            name: 'Chinmay R', 
+            designation: 'Technical Coordinator' 
+        },
+        { 
+            image: TechnicalCoordinator2, 
+            name: 'Shreyas A', 
+            designation: 'Technical Coordinator', 
+            ig: 'https://www.instagram.com/_shreyas99',
+            linkedin: 'https://www.linkedin.com/in/shreyas-ananth-373a73250',
+        },
+        { 
+            image: TechnicalCoordinator3, 
+            name: 'Rohith P', 
+            designation: 'Technical Coordinator',
+            ig: 'https://www.instagram.com/rohith26_/' ,
+            linkedin: 'https://www.linkedin.com/in/rohith-p-a5627a296',
+            twitter: 'https://x.com/Rohith26_',
+        },
+        { 
+            image: DisciplinaryHead, 
+            name: 'Vivek M A', 
+            designation: 'Disciplinary Head',
+            ig: 'https://www.instagram.com/halfvivek' ,
+            linkedin: 'https://www.linkedin.com/in/vivek-m-a-7594b924b',
+        },
+        { 
+            image: DisciplinaryCoordinator1, 
+            name: 'Darshan R Jadhav', 
+            designation: 'Disciplinary Coordinator' 
+        },
+        { 
+            image: placeholder, 
+            name: 'Abdul Shukoor M', 
+            designation: 'Disciplinary Coordinator' 
+        },
+        { 
+            image: DisciplinaryCoordinator3, 
+            name: 'Pavan Prathyush', 
+            designation: 'Disciplinary Coordinator' 
+        },
+        { 
+            image: DocumentationHead, 
+            name: 'Rhea Sanjay', 
+            designation: 'Documentation Head',
+            ig: 'https://www.instagram.com/rhea_sanjay',
+            linkedin: 'http://www.linkedin.com/in/rhea-sanjay',
+        },
+        { 
+            image: DocumentationCoordinator, 
+            name: 'Janice Fenwick', 
+            designation: 'Documentation Coordinator' 
+        },
+        { 
+            image: CulturalHead, 
+            name: 'Sreya K R', 
+            designation: 'Cultural Head',
+            ig: 'https://www.instagram.com/sreyaarav',
+            linkedin: 'https://www.linkedin.com/in/sreya-ravindran-961293305',
+        },
+        { 
+            image: placeholder, 
+            name: 'Kushala T S', 
+            designation: 'Cultural Coordinator' 
+        },
+        { 
+            image: placeholder, 
+            name: 'Mahesh', 
+            designation: 'Cultural Coordinator' 
+        },
     ];
 
     return (
