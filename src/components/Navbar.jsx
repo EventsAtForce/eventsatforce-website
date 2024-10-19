@@ -25,8 +25,6 @@ const navItems = [
   }
 ]
 
-//111
-
 const classes = {
   NavContainer: 'flex flex-col items-center justify-center w-screen bg-white fixed top-0 z-40',
   NavBar: 'flex items-center justify-between w-full max-w-1440 bg-white z-30 xl:px-12 xl:py-8 lg:px-10 lg:py-6 sm:px-8 sm:py-4 px-6  py-4',
@@ -40,13 +38,14 @@ const classes = {
   MenuContainer: 'fixed bg-white top-[-60px] w-screen z-20 -translate-y-full transition-all duration-500 ease-in-out',
   ActiveMenuContainer: 'fixed bg-white top-[60px] w-screen translate-y-0 md:hidden transition-all duration-500 ease-in-out',
   MenuSections: 'flex flex-col items-center font-HelveticaNeueMD xl:py-8 xl:gap-8 xl:text-xl lg:py-7 lg:gap-7 lg:text-lg gap-6 py-6 text-md',
+  NavLink: 'relative group',
+  NavLinkHover: 'hover:text-sky-700',
+  NavLinkUnderline: 'absolute bottom-0 left-0 w-full h-0.5 bg-sky-600 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100'
 }
 
 const Navbar = () => {
-
   const [openMenu, setOpenMenu] = useState(false)
 
-  //Reset openMenu state on window resize
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
@@ -72,7 +71,10 @@ const Navbar = () => {
         </div>
         <div className={classes.NavSections}>
           {navItems.map((item, index) => (
-            <Link to={item.link} key={index}>{item.name}</Link>
+            <Link className={`${classes.NavLink} ${classes.NavLinkHover}`} to={item.link} key={index}>
+              {item.name}
+              <span className={classes.NavLinkUnderline}></span>
+            </Link>
           ))}
         </div>
         <button className={classes.HamMenu} onClick={() => setOpenMenu(!openMenu)}>
