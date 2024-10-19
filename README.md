@@ -17,7 +17,7 @@ Currently, two official plugins are available:
 - **A - APIs**
   - Google APIs
 - **M - Markup**
-  - Next.js
+  - Next.js (To be Implemented)
 - **Tools and Libraries:**
   - Figma - Design
   - Git
