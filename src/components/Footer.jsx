@@ -7,12 +7,9 @@ import linkedin from "../assets/icons/linkedin.svg";
 import twitter from "../assets/icons/twitter.svg";
 import youtube from "../assets/icons/youtube.svg";
 import github from "../assets/icons/github.svg";
-import upwardIcon from "../assets/buttons/upward-arrow.png";
-import { useNavigate } from "react-router-dom";
 
 const classes = {
-  Footer:
-    "flex flex-col relative items-center justify center w-full bg-white mt-auto",
+  Footer: "flex flex-col  items-center justify center w-full bg-white mt-auto",
   FooterDivider: "w-full max-w-[1240px] h-0.5 bg-[#AFAFAF] rounded-xl",
   PreFooterContainer:
     "w-full max-w-1440 flex flex-col min-[900px]:flex-row items-center justify-around bg-white md:px-6 md:py-6 px-4 py-4",
@@ -34,8 +31,6 @@ const classes = {
     "w-full max-w-1440 flex items-center justify-center md:px-6 md:py-6 px-4 py-4",
   FooterText:
     "font-HelveticaNeueMD lg:text-[16px] md:text-[14px] sm:text-sm text-[12px] text-black",
-  UpwardIcon:
-    "w-10 h-10  filter brightness-0 saturate-0 shadow-md rounded-full absolute sm:top-[-45px] lg:right-[30px] top-[3px] sm:right-[15px] right-[5px] cursor-pointer",
 };
 
 const quickLinks_1 = [
@@ -95,15 +90,8 @@ const socialLinks = [
 ];
 
 const Footer = () => {
-  const navigate = useNavigate();
   return (
     <div className={classes.Footer}>
-      <img
-        src={upwardIcon}
-        alt="upward-arrow"
-        className={classes.UpwardIcon}
-        onClick={() => navigate("/")}
-      />
       <div className={classes.FooterDivider}></div>
       <div className={classes.PreFooterContainer}>
         <div className={classes.LogoContainer}>
