@@ -39,8 +39,8 @@ const classes = {
   ActiveMenuContainer: 'fixed bg-white top-[60px] w-screen translate-y-0 md:hidden transition-all duration-500 ease-in-out',
   MenuSections: 'flex flex-col items-center font-HelveticaNeueMD xl:py-8 xl:gap-8 xl:text-xl lg:py-7 lg:gap-7 lg:text-lg gap-6 py-6 text-md',
   NavLink: 'relative group',
-  NavLinkHover: 'hover:text-sky-700',
-  NavLinkUnderline: 'absolute bottom-0 left-0 w-full h-0.5 bg-sky-600 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100'
+  NavLinkHover: 'hover:text-zinc-900',
+  NavLinkUnderline: 'absolute bottom-0 left-0 w-full h-0.5 bg-zinc-900 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100'
 }
 
 const Navbar = () => {
@@ -78,7 +78,7 @@ const Navbar = () => {
           ))}
         </div>
         <button className={classes.HamMenu} onClick={() => setOpenMenu(!openMenu)}>
-          <div className={openMenu ? classes.ActiveMenuIcon : classes.MenuIcon}/>
+          <div className={openMenu ? classes.ActiveMenuIcon : classes.MenuIcon} />
         </button>
       </div>
       <div className={openMenu ? classes.ActiveMenuContainer : classes.MenuContainer}>
