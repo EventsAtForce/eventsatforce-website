@@ -5,104 +5,98 @@ import CardCarousel from "../components/CardCarousel";
 
 import Aarambha from "../assets/images/Events/Aarambha.png";
 import TechnicalQuiz from "../assets/images/Events/TechnicalQuiz.png";
-import Navotsava from "../assets/images/Events/Navotsava.png";
-import Deepotsava from "../assets/images/Events/Deepotsava.png";
+import Navotsava from "../assets/images/Events/Navothsava1.png";
+import Deepotsava from "../assets/images/Events/Deepotsava1.png";
 import Freshers from "../assets/images/Events/Freshers.png";
 import TechnicalCompetition from "../assets/images/Events/TechnicalCompetition.png";
 import Aavishkar from "../assets/images/Events/Aavishkar.png";
 import Harmonics from "../assets/images/Events/Harmonics.png";
 import Farewell from "../assets/images/Events/Farewell.png";
 
-const eventsList = [
+const classes = {
+    EventsCard: 'flex flex-col items-center justify-center  w-full h-full max-w-1440 sm:gap-[16px] gap-[0px] xl:px-[100px] xl:pt-[100px] xl:pb-8 lg:px-[80px] lg:pt-[80px] lg:pb-6 sm:px-[60px] sm:pt-[60px] sm:pb-4 px-6 pt-[60px] pb-4',
+    UpcomingEvents: 'text-center xl:text-4xl lg:text-3xl text-2xl font-HelveticaNeueBD text-shadow-3',
+    UpcomingEventsCard: 'flex flex-row items-center justify-center bg-white w-full h-full max-w-1440 sm:gap-[16px] gap-[0px]',
+    EventCard: 'flex flex-col items-center bg-white justify-center  md: mb-4 rounded-lg shadow-lg p-4',
+    eventDescription: 'flex flex-row gap-6 mt-2',
+    eventName: 'text-lg font-HelveticaNeueBD mt-[4px]',
+    datebox: 'flex flex-col items-center justify-center mt-2 ml-4 -mr-2 ',
+    month: 'text-lg font-HelveticaNeueBD -mb-2',
+    date: 'text-xl font-HelveticaNeueBD w-8 text-center ',
+    eventDetails: 'flex flex-col items-start justify-start -ml-2 mt-[4px]',
+    eventText: ' text-[13px] font-HelveticaNeue text-left leading-tight',
+
+}
+
+const events = [
     {
-        name: 'Navotsava',
-        date: "3rd October 2024",
-        image: Navotsava,
+        EventName: 'Navotsava',
+        EventDate: '03',
+        EventMonth: 'Oct',
+        EventImg: Navotsava,
+        EventDescription: 'Enjoy the festival of Navratri with us!',
         link: 'https://forms.gle/oKd2krpvxpeMibbCA',
     },
     {
-        name: "Aarambha",
-        date: "28th October 2024",
-        image: Aarambha,
+        EventName: 'Aarambha',
+        EventDate: '04',
+        EventMonth: 'Nov',
+        EventImg: Aarambha,
+        EventDescription: 'Inaugration of Force for the year 2024-25',
     },
     {
-        name: "Fresher's Day",
-        date: "TBD",
-        image: Freshers,
+        EventName: "Fresher's Day",
+        EventDate: '04',
+        EventMonth: 'Nov',
+        EventImg: Freshers,
+        EventDescription: 'Welcoming the new batch of 2024-2028',
     },
     {
-        name: "Deepotsava",
-        date: "30th October 2024",
-        image: Deepotsava,
+        EventName: 'Deepotsava',
+        EventDate: '30',
+        EventMonth: 'Oct',
+        EventImg: Deepotsava,
+        EventDescription: 'Celebrating the festival of lights',
     },
     {
-        name: "Technical Quiz",
-        date: "TBD",
-        image: TechnicalQuiz,
+        EventName: 'Technical Quiz',
+        EventDate: '',
+        EventMonth: '',
+        EventImg: TechnicalQuiz,
+        EventDescription: 'Get ready to test your technical knowledge',
     },
-    // {
-    //     name: "Hackathon",
-    //     date: "TBD",
-    //     image: TechnicalCompetition,
-    // },
-    // {
-    //     name: "Aavishkar",
-    //     date: "TBD",
-    //     image: Aavishkar,
-    // },
-    // {
-    //     name: "Harmonics",
-    //     date: "TBD",
-    //     image: Harmonics,
-    // },
-    // {
-    //     name: "Farewell",
-    //     date: "TBD",
-    //     image: Farewell,
-    // }
 ]
-
-const classes = {
-    EventsContainer: "flex flex-col items-center justify-center w-full h-full max-w-1440 sm:gap-[16px] gap-[0px] xl:px-[100px] xl:pt-[100px] xl:pb-8 lg:px-[80px] lg:pt-[80px] lg:pb-6 sm:px-[60px] sm:pt-[60px] sm:pb-4 px-6 pt-[60px] pb-4",
-    EventsHeader: "text-center xl:text-4xl lg:text-3xl text-2xl font-HelveticaNeueBD text-shadow-3",
-    CardSectionContainer: "flex flex-col items-center justify-center w-full gap-8",
-    CardContainer: "transition-all duration-300 ease-in-out",
-    Card: "flex flex-col items-center justify-between gap-2 h-full bg-[#D9D9D9] border-2 border-[#AFAFAF] rounded-3xl lg:p-6 md:p-5 p-4 transition-all duration-300 ease-in-out hover:shadow-lg",
-    CardHaderContainer: "flex flex-col items-center justify-center",
-    CardHeader: "text-center xl:text-3xl lg:text-[26px] text-2xl font-HelveticaNeueMD text-shadow-3",
-    CardDate: "text-center text-lg leading-5 font-HelveticaNeueMD text-shadow-2",
-    CardImageContainer: "w-full overflow-hidden xl:rounded-3xl rounded-2xl border-2 border-[#AFAFAF] transition-all duration-300 ease-in-out",
-    CardImage: "w-full h-auto object-cover transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1",
-    RegisterButton: "w-full flex items-center justify-center bg-[#D9D9D9] text-black font-HelveticaNeueBD text-lg p-2 md:rounded-2xl rounded-2xl border-2 border-[#AFAFAF] transition-colors duration-300 ease-in-out hover:bg-[#C0C0C0]",
-};
-
 const Events = () => {
     return (
-        <div className={classes.EventsContainer}>
-            <h1 className={classes.EventsHeader}>Upcoming Events</h1>
-            <div className={classes.CardSectionContainer}>
+        <div className={classes.EventsCard}>
+            <div className={classes.UpcomingEvents}>Upcoming Events</div>
+            <div className={classes.UpcomingEventsCard}>
                 <CardCarousel>
-                    {eventsList.map((event, index) => (
-                        <div className={classes.CardContainer} key={index}>
-                            <div className={classes.Card}>
-                                <div className={classes.CardImageContainer}>
-                                    <img className={classes.CardImage} src={event.image} alt={event.name} />
+                    {events.map((event, index) => (
+                        <div key={index} className={classes.EventCard}>
+
+                            <img src={event.EventImg} alt={event.EventName} className='h-40 w-full object-cover rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1' />
+                            <div className={classes.eventDescription}>
+                                <div className={classes.datebox}>
+                                    <div className={classes.month}>{event.EventMonth}</div>
+                                    <div className={classes.date}>{event.EventDate}</div>
                                 </div>
-                                <div className={classes.CardHaderContainer}>
-                                    <h1 className={classes.CardHeader}>{event.name}</h1>
-                                    <h2 className={classes.CardDate}>{event.date}</h2>
+                                <div className='line h-16 w-[4px] rounded-2xl bg-black mt-3'></div>
+                                <div className={classes.eventDetails}>
+                                    <div className={classes.eventName}>{event.EventName}</div>
+                                    <div className={classes.eventText}>{event.EventDescription}</div>
                                 </div>
-                                <Link to={event.link} className={classes.RegisterButton}>
-                                    <button>REGISTER</button>
-                                </Link>
+
                             </div>
+                            <button className="bg-[#D9D9D9] font-HelveticaNeueMD rounded-lg w-full h-8 mt-2 "><a href={event.link}>Register now!</a></button>
                         </div>
+
                     ))}
                 </CardCarousel>
-                <StatisticsComponent />
             </div>
+            <StatisticsComponent />
         </div>
-    );
-};
+    )
+}
 
 export default Events;
