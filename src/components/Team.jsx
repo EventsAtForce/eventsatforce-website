@@ -17,6 +17,8 @@ import CoTreasurer from '../assets/images/Team/6.png';
 import OrganizingHead from '../assets/images/Team/7.png';
 import OrganizingCoordinator1 from '../assets/images/Team/8.png';
 import OrganizingCoordinator2 from '../assets/images/Team/9.png';
+import OrganizingCoordinator3 from '../assets/images/Team/22.jpg';
+import TechnicalHead from '../assets/images/Team/25.jpeg';
 import TechnicalCoordinator1 from '../assets/images/Team/12.png';
 import TechnicalCoordinator2 from '../assets/images/Team/13.png';
 import TechnicalCoordinator3 from '../assets/images/Team/14.png';
@@ -26,6 +28,8 @@ import DisciplinaryCoordinator3 from '../assets/images/Team/18.png';
 import DocumentationHead from '../assets/images/Team/19.png';
 import DocumentationCoordinator from '../assets/images/Team/20.png';
 import CulturalHead from '../assets/images/Team/21.png';
+import CulturalCoordinator1 from '../assets/images/Team/23.png';
+import CulturalCoordinator2 from '../assets/images/Team/24.png';
 import instagram from "../assets/icons/instagram.svg"
 import linkedin from "../assets/icons/linkedin.svg"
 import twitter from "../assets/icons/twitter.svg"
@@ -40,7 +44,7 @@ const classes = {
     Card: "flex flex-col items-start justify-between sm:gap-4 gap-3 h-full bg-[#D9D9D9] border-2 border-[#AFAFAF] rounded-3xl lg:p-6 md:p-5 p-4 transition-all duration-300 ease-in-out hover:shadow-lg",
     CardHaderContainer: "flex flex-col items-start pl-4",
     CardHeader: "text-center xl:text-[26px] text-[22px] font-HelveticaNeueMD text-shadow-3",
-    CardSubHeader: "text-center xl:text-[20px] text-[18px] leading-5 font-HelveticaNeueMD text-shadow-2",
+    CardSubHeader: "text-center xl:text-[18px] text-[14px] leading-5 font-HelveticaNeue text-shadow-2",
     CardImageContainer: "w-full overflow-hidden xl:rounded-3xl rounded-2xl border-2 border-[#AFAFAF] transition-all duration-300 ease-in-out",
     CardImage: "w-full h-auto object-cover transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1",
     OBSocials: "pl-4 w-full flex items-center gap-4",
@@ -49,157 +53,152 @@ const classes = {
 
 const Team = () => {
     const facultyData = [
-        { image: PRO_VC, name: 'Dr. RC Biradar', designation: 'Pro VC, REVA University'},
-        { image: Director, name: 'Dr. KM Sudharshan', designation: 'Director, School of ECE'},
+
         { image: Faculty_1, name: 'Dr. T S Jayadeva', designation: 'Professor, School of ECE' },
         { image: Faculty_2, name: 'Prof. Neethu KN', designation: 'Assistant Professor' },
         { image: Faculty_5, name: 'Dr. Bharath KP', designation: 'Assistant Professor' },
         { image: Faculty_3, name: 'Prof. Anitha Kumari', designation: 'Assistant Professor' },
-        { image: Faculty_4, name: 'Dr. Sarfaraz Hussain', designation: 'Assistant Professor' },     
+        { image: Faculty_4, name: 'Dr. Sarfaraz Hussain', designation: 'Assistant Professor' },
     ];
 
     const officeBearersData = [
-        { 
-            image: President, 
-            name: 'Varshika S B', 
+        {
+            image: President,
+            name: 'Varshika S B',
             designation: 'President',
             ig: 'https://www.instagram.com/_varshika.03/',
             linkedin: 'https://www.linkedin.com/in/varshika-sb-94082b25b/',
-            twitter: 'https://x.com/SbVarshika/', 
+            twitter: 'https://x.com/SbVarshika/',
         },
-        { 
-            image: VicePresident, 
-            name: 'Jayasheel Vinay J', 
+        {
+            image: VicePresident,
+            name: 'Jayasheel Vinay J',
             designation: 'Vice President',
-            ig: 'https://www.instagram.com/jayasheel.vinay/', 
+            ig: 'https://www.instagram.com/jayasheel.vinay/',
             linkedin: 'https://www.linkedin.com/in/jayasheelvinayj/',
             twitter: 'https://x.com/JayasheelVinay/',
         },
-        { 
-            image: Secretary, 
-            name: 'Amruth M Acharya', 
+        {
+            image: Secretary,
+            name: 'Amruth M Acharya',
             designation: 'Secretary',
         },
-        { 
-            image: ViceSecretary, 
-            name: 'C Sai Pratesh', 
+        {
+            image: ViceSecretary,
+            name: 'C Sai Pratesh',
             designation: 'Vice Secretary',
         },
-        { 
-            image: Treasurer, 
-            name: 'Prachi Jain', 
+        {
+            image: Treasurer,
+            name: 'Prachi Jain',
             designation: 'Treasurer',
             ig: 'https://www.instagram.com/__prachijain_/',
             linkedin: 'https://www.linkedin.com/in/prachi-k-jain-631417290/',
         },
-        { 
-            image: CoTreasurer, 
-            name: 'Rishabh G', 
+        {
+            image: CoTreasurer,
+            name: 'Rishabh G',
             designation: 'Co-Treasurer',
-            ig: 'https://www.instagram.com/rishabh_gopakumar/' ,
+            ig: 'https://www.instagram.com/rishabh_gopakumar/',
             linkedin: 'https://www.linkedin.com/in/rishabh-gopakumar-421752250/',
         },
-        { 
-            image: OrganizingHead, 
-            name: 'Charan P', 
+        {
+            image: OrganizingHead,
+            name: 'Charan P',
             designation: 'Organizing Head',
             ig: 'https://www.instagram.com/charan_4806/',
             linkedin: 'https://www.linkedin.com/in/charan-puttabasavaraju-1945132b2/',
         },
-        { 
-            image: OrganizingCoordinator1, 
-            name: 'Bhuvana', 
+        {
+            image: OrganizingCoordinator1,
+            name: 'Bhuvana',
             designation: 'Organizing Coordinator',
             ig: 'https://www.instagram.com/bhuvana_612/',
             linkedin: 'https://www.linkedin.com/in/bhuvana-b-002441237',
         },
-        { 
-            image: OrganizingCoordinator2, 
-            name: 'Saniha Rai T', 
+        {
+            image: OrganizingCoordinator2,
+            name: 'Saniha Rai T',
             designation: 'Organizing Coordinator',
             ig: 'https://www.instagram.com/saniha__rai',
             linkedin: 'https://www.linkedin.com/in/saniha-rai-t-235439285',
         },
-        { 
-            image: placeholder, 
-            name: 'Abhishree S G', 
-            designation: 'Organizing Coordinator' 
+        {
+            image: OrganizingCoordinator3,
+            name: 'Abhishree S G',
+            designation: 'Organizing Coordinator'
         },
-        { 
-            image: placeholder, 
-            name: ' Shaik S Siddique', 
-            designation: 'Technical Head' 
+        {
+            image: TechnicalHead,
+            name: ' Shaik S Siddique',
+            designation: 'Technical Head'
         },
-        { 
-            image: TechnicalCoordinator1, 
-            name: 'Chinmay R', 
-            designation: 'Technical Coordinator' 
+        {
+            image: TechnicalCoordinator1,
+            name: 'Chinmay R',
+            designation: 'Technical Coordinator'
         },
-        { 
-            image: TechnicalCoordinator2, 
-            name: 'Shreyas A', 
-            designation: 'Technical Coordinator', 
+        {
+            image: TechnicalCoordinator2,
+            name: 'Shreyas A',
+            designation: 'Technical Coordinator',
             ig: 'https://www.instagram.com/_shreyas99',
             linkedin: 'https://www.linkedin.com/in/shreyas-ananth-373a73250',
         },
-        { 
-            image: TechnicalCoordinator3, 
-            name: 'Rohith P', 
+        {
+            image: TechnicalCoordinator3,
+            name: 'Rohith P',
             designation: 'Technical Coordinator',
-            ig: 'https://www.instagram.com/rohith26_/' ,
+            ig: 'https://www.instagram.com/rohith26_/',
             linkedin: 'https://www.linkedin.com/in/rohith-p-a5627a296',
             twitter: 'https://x.com/Rohith26_',
         },
-        { 
-            image: DisciplinaryHead, 
-            name: 'Vivek M A', 
+        {
+            image: DisciplinaryHead,
+            name: 'Vivek M A',
             designation: 'Disciplinary Head',
-            ig: 'https://www.instagram.com/halfvivek' ,
+            ig: 'https://www.instagram.com/halfvivek',
             linkedin: 'https://www.linkedin.com/in/vivek-m-a-7594b924b',
         },
-        { 
-            image: DisciplinaryCoordinator1, 
-            name: 'Darshan R Jadhav', 
-            designation: 'Disciplinary Coordinator' 
+        {
+            image: DisciplinaryCoordinator1,
+            name: 'Darshan R Jadhav',
+            designation: 'Disciplinary Coordinator'
         },
-        { 
-            image: placeholder, 
-            name: 'Abdul Shukoor M', 
-            designation: 'Disciplinary Coordinator' 
+
+        {
+            image: DisciplinaryCoordinator3,
+            name: 'Pavan Prathyush',
+            designation: 'Disciplinary Coordinator'
         },
-        { 
-            image: DisciplinaryCoordinator3, 
-            name: 'Pavan Prathyush', 
-            designation: 'Disciplinary Coordinator' 
-        },
-        { 
-            image: DocumentationHead, 
-            name: 'Rhea Sanjay', 
+        {
+            image: DocumentationHead,
+            name: 'Rhea Sanjay',
             designation: 'Documentation Head',
             ig: 'https://www.instagram.com/rhea_sanjay',
             linkedin: 'http://www.linkedin.com/in/rhea-sanjay',
         },
-        { 
-            image: DocumentationCoordinator, 
-            name: 'Janice Fenwick', 
-            designation: 'Documentation Coordinator' 
+        {
+            image: DocumentationCoordinator,
+            name: 'Janice Fenwick',
+            designation: 'Documentation Coordinator'
         },
-        { 
-            image: CulturalHead, 
-            name: 'Sreya K R', 
+        {
+            image: CulturalHead,
+            name: 'Sreya K R',
             designation: 'Cultural Head',
             ig: 'https://www.instagram.com/sreyaarav',
             linkedin: 'https://www.linkedin.com/in/sreya-ravindran-961293305',
         },
-        { 
-            image: placeholder, 
-            name: 'Kushala T S', 
-            designation: 'Cultural Coordinator' 
+        {
+            image: CulturalCoordinator2,
+            name: 'Kushala T S',
+            designation: 'Cultural Coordinator'
         },
-        { 
-            image: placeholder, 
-            name: 'Mahesh', 
-            designation: 'Cultural Coordinator' 
+        {
+            image: CulturalCoordinator1,
+            name: 'Mahesh',
+            designation: 'Cultural Coordinator'
         },
     ];
 
@@ -225,7 +224,7 @@ const Team = () => {
                     </CardCarousel>
                 </div>
             </div>
-            
+
             <div>
                 <p className={classes.MarqueeTitle}>OFFICE BEARERS</p>
                 <div className={classes.CardSectionContainer}>

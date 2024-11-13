@@ -19,6 +19,9 @@ import Slide_1_7 from "../assets/images/Slides_1/Slide_7.png";
 import Slide_1_8 from "../assets/images/Slides_1/Slide_8.png";
 import Slide_1_9 from "../assets/images/Slides_1/Slide_9.png";
 import Slide_1_10 from "../assets/images/Slides_1/Slide_10.png";
+import Slide_1_11 from "../assets/images/Slides_1/Slide_11.png";
+import Slide_1_12 from "../assets/images/Slides_1/Slide_12.png";
+import Slide_1_13 from "../assets/images/Slides_1/Slide_13.png";
 
 const slides_1 = [
   Slide_1_1,
@@ -31,6 +34,10 @@ const slides_1 = [
   Slide_1_8,
   Slide_1_9,
   Slide_1_10,
+  Slide_1_11,
+  Slide_1_12,
+  Slide_1_13,
+
 ];
 
 // vw < 640px
@@ -44,6 +51,10 @@ import Slide_2_7 from "../assets/images/Slides_2/Slide_7.png";
 import Slide_2_8 from "../assets/images/Slides_2/Slide_8.png";
 import Slide_2_9 from "../assets/images/Slides_2/Slide_9.png";
 import Slide_2_10 from "../assets/images/Slides_2/Slide_10.png";
+import Slide_2_11 from "../assets/images/Slides_2/Slide_11.png";
+import Slide_2_12 from "../assets/images/Slides_2/Slide_12.png";
+
+
 
 const slides_2 = [
   Slide_2_1,
@@ -56,6 +67,9 @@ const slides_2 = [
   Slide_2_8,
   Slide_2_9,
   Slide_2_10,
+  Slide_2_11,
+  Slide_2_12,
+
 ];
 
 import Harmonics from "../assets/images/Events/Harmonics.png";
