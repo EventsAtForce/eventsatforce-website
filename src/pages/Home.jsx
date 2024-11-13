@@ -21,7 +21,6 @@ import Slide_1_9 from "../assets/images/Slides_1/Slide_9.png";
 import Slide_1_10 from "../assets/images/Slides_1/Slide_10.png";
 import Slide_1_11 from "../assets/images/Slides_1/Slide_11.png";
 import Slide_1_12 from "../assets/images/Slides_1/Slide_12.png";
-import Slide_1_13 from "../assets/images/Slides_1/Slide_13.png";
 
 const slides_1 = [
   Slide_1_1,
@@ -36,7 +35,6 @@ const slides_1 = [
   Slide_1_10,
   Slide_1_11,
   Slide_1_12,
-  Slide_1_13,
 
 ];
 
