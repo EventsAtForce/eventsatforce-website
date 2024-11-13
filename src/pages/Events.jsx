@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import StatisticsComponent from "../components/Statistics";
 import CardCarousel from "../components/CardCarousel";
 
-import Aarambha from "../assets/images/Events/Aarambha.png";
+import Aarambha from "../assets/images/Events/Aarambha1.png";
 import TechnicalQuiz from "../assets/images/Events/TechnicalQuiz.png";
-import Navotsava from "../assets/images/Events/Navothsava1.png";
+import Navotsava from "../assets/images/Events/Navothsava.png";
 import Deepotsava from "../assets/images/Events/Deepotsava1.png";
-import Freshers from "../assets/images/Events/Freshers.png";
+import Freshers from "../assets/images/Events/Freshers1.png";
 import TechnicalCompetition from "../assets/images/Events/TechnicalCompetition.png";
 import Aavishkar from "../assets/images/Events/Aavishkar.png";
 import Harmonics from "../assets/images/Events/Harmonics.png";
@@ -60,8 +60,8 @@ const events = [
     },
     {
         EventName: 'Technical Quiz',
-        EventDate: '',
-        EventMonth: '',
+        EventDate: 'XX',
+        EventMonth: 'Dec',
         EventImg: TechnicalQuiz,
         EventDescription: 'Get ready to test your technical knowledge',
     },
@@ -69,7 +69,7 @@ const events = [
 const Events = () => {
     return (
         <div className={classes.EventsCard}>
-            <div className={classes.UpcomingEvents}>Upcoming Events</div>
+            <div className={classes.UpcomingEvents}>Our Events</div>
             <div className={classes.UpcomingEventsCard}>
                 <CardCarousel>
                     {events.map((event, index) => (
@@ -88,7 +88,7 @@ const Events = () => {
                                 </div>
 
                             </div>
-                            <button className="bg-[#D9D9D9] font-HelveticaNeueMD rounded-lg w-full h-8 mt-2 "><a href={event.link}>Register now!</a></button>
+                            <button className="bg-[#D9D9D9] font-HelveticaNeueMD rounded-lg w-full h-8 mt-2 "><a href={event.link}>Register Now!</a></button>
                         </div>
 
                     ))}
