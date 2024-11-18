@@ -4,6 +4,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Events from './pages/Events';
@@ -44,6 +45,7 @@ function App() {
     <div className='App' data-scroll-container>
       <Navbar />
       <Routes>
+        <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<AboutUs />} />
         <Route path="/Events" element={<Events />} />
