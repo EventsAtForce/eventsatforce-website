@@ -1,16 +1,16 @@
 /*FONTS*/
 @font-face {
     font-family: 'HelveticaNeueBD';
-    src: url(assets/fonts/HelveticaNeueLTPro-BdEx.otf);
+    src: url(../assets/fonts/HelveticaNeueLTPro-BdEx.otf);
 }
 @font-face {
     font-family: 'HelveticaNeueMD';
-    src: url(assets/fonts/HelveticaNeueLTPro-MdEx.otf);
+    src: url(../assets/fonts/HelveticaNeueLTPro-MdEx.otf);
 }
 
 @font-face {
     font-family: 'HelveticaNeue';
-    src: url(assets/fonts/HelveticaNeueLTPro-Ex.otf);
+    src: url(../assets/fonts/HelveticaNeueLTPro-Ex.otf);
 }
 
 ::-webkit-scrollbar {
