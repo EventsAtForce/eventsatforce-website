@@ -6,21 +6,21 @@ import About from "../components/About";
 import Statistics from "../components/Statistics";
 import Societies from "../components/Societies";
 import Team from "../components/Team";
-import upwardIcon from "../assets/buttons/upward-arrow.png";
+import upwardIcon from "../../public/assets/buttons/upward-arrow.webp";
 
 // for vw >= 640px
-import Slide_1_1 from "../assets/images/Slides_1/Slide_1.png";
-import Slide_1_2 from "../assets/images/Slides_1/Slide_2.png";
-import Slide_1_3 from "../assets/images/Slides_1/Slide_3.png";
-import Slide_1_4 from "../assets/images/Slides_1/Slide_4.png";
-import Slide_1_5 from "../assets/images/Slides_1/Slide_5.png";
-import Slide_1_6 from "../assets/images/Slides_1/Slide_6.png";
-import Slide_1_7 from "../assets/images/Slides_1/Slide_7.png";
-import Slide_1_8 from "../assets/images/Slides_1/Slide_8.png";
-import Slide_1_9 from "../assets/images/Slides_1/Slide_9.png";
-import Slide_1_10 from "../assets/images/Slides_1/Slide_10.png";
-import Slide_1_11 from "../assets/images/Slides_1/Slide_11.png";
-import Slide_1_12 from "../assets/images/Slides_1/Slide_12.png";
+import Slide_1_1 from "../../public/assets/images/Slides_1/Slide_1.webp";
+import Slide_1_2 from "../../public/assets/images/Slides_1/Slide_2.webp";
+import Slide_1_3 from "../../public/assets/images/Slides_1/Slide_3.webp";
+import Slide_1_4 from "../../public/assets/images/Slides_1/Slide_4.webp";
+import Slide_1_5 from "../../public/assets/images/Slides_1/Slide_5.webp";
+import Slide_1_6 from "../../public/assets/images/Slides_1/Slide_6.webp";
+import Slide_1_7 from "../../public/assets/images/Slides_1/Slide_7.webp";
+import Slide_1_8 from "../../public/assets/images/Slides_1/Slide_8.webp";
+import Slide_1_9 from "../../public/assets/images/Slides_1/Slide_9.webp";
+import Slide_1_10 from "../../public/assets/images/Slides_1/Slide_10.webp";
+import Slide_1_11 from "../../public/assets/images/Slides_1/Slide_11.webp";
+import Slide_1_12 from "../../public/assets/images/Slides_1/Slide_12.webp";
 
 const slides_1 = [
   Slide_1_1,
@@ -39,18 +39,18 @@ const slides_1 = [
 ];
 
 // vw < 640px
-import Slide_2_1 from "../assets/images/Slides_2/Slide_1.png";
-import Slide_2_2 from "../assets/images/Slides_2/Slide_2.png";
-import Slide_2_3 from "../assets/images/Slides_2/Slide_3.png";
-import Slide_2_4 from "../assets/images/Slides_2/Slide_4.png";
-import Slide_2_5 from "../assets/images/Slides_2/Slide_5.png";
-import Slide_2_6 from "../assets/images/Slides_2/Slide_6.png";
-import Slide_2_7 from "../assets/images/Slides_2/Slide_7.png";
-import Slide_2_8 from "../assets/images/Slides_2/Slide_8.png";
-import Slide_2_9 from "../assets/images/Slides_2/Slide_9.png";
-import Slide_2_10 from "../assets/images/Slides_2/Slide_10.png";
-import Slide_2_11 from "../assets/images/Slides_2/Slide_11.png";
-import Slide_2_12 from "../assets/images/Slides_2/Slide_12.png";
+import Slide_2_1 from "../../public/assets/images/Slides_2/Slide_1.webp";
+import Slide_2_2 from "../../public/assets/images/Slides_2/Slide_2.webp";
+import Slide_2_3 from "../../public/assets/images/Slides_2/Slide_3.webp";
+import Slide_2_4 from "../../public/assets/images/Slides_2/Slide_4.webp";
+import Slide_2_5 from "../../public/assets/images/Slides_2/Slide_5.webp";
+import Slide_2_6 from "../../public/assets/images/Slides_2/Slide_6.webp";
+import Slide_2_7 from "../../public/assets/images/Slides_2/Slide_7.webp";
+import Slide_2_8 from "../../public/assets/images/Slides_2/Slide_8.webp";
+import Slide_2_9 from "../../public/assets/images/Slides_2/Slide_9.webp";
+import Slide_2_10 from "../../public/assets/images/Slides_2/Slide_10.webp";
+import Slide_2_11 from "../../public/assets/images/Slides_2/Slide_11.webp";
+import Slide_2_12 from "../../public/assets/images/Slides_2/Slide_12.webp";
 
 
 
@@ -70,12 +70,12 @@ const slides_2 = [
 
 ];
 
-import Harmonics from "../assets/images/Events/Harmonics.png";
-import CampusCruise from "../assets/images/Events/CampusCruise.png";
-import FORCE_Recap_23 from "../assets/images/Events/FORCERecap23.png";
-import ChildrensDay from "../assets/images/Events/ChildrensDay.png";
-import Freshers from "../assets/images/Events/Freshers.png";
-import Aarambha from "../assets/images/Events/Aarambha.png";
+import Harmonics from "../../public/assets/images/Events/Harmonics.webp";
+import CampusCruise from "../../public/assets/images/Events/CampusCruise.webp";
+import FORCE_Recap_23 from "../../public/assets/images/Events/FORCERecap23.webp";
+import ChildrensDay from "../../public/assets/images/Events/ChildrensDay.webp";
+import Freshers from "../../public/assets/images/Events/Freshers.webp";
+import Aarambha from "../../public/assets/images/Events/Aarambha.webp";
 
 const eventsList = [
   {

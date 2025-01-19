@@ -1,6 +1,6 @@
 import React from 'react'
-import IMG_1 from '../assets/images/IMG_1.png'
-import IMG_2 from '../assets/images/IMG_2.png'
+import IMG_1 from '../../public/assets/images/IMG_1.webp'
+import IMG_2 from '../../public/assets/images/IMG_2.webp'
 
 const classes = {
   AboutContainer: 'flex flex-col min-[900px]:flex-row items-start gap-[40px]',
