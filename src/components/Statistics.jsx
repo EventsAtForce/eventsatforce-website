@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import StatsImage_1 from '../assets/images/Statistics_1.png';
-import StatsImage_2 from '../assets/images/Statistics_2.png';
+import StatsImage_1 from '../../public/assets/images/Statistics_1.webp';
+import StatsImage_2 from '../../public/assets/images/Statistics_2.webp';
 
 const classes = {
   StatisticsMain: "flex flex-col items-center justify-center xl:gap-12 lg:gap-10 md:gap-8 gap-6",

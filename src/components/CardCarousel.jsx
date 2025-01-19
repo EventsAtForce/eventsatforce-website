@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import leftButton from '../assets/icons/leftButton.svg'
-import rightButton from '../assets/icons/rightButton.svg'
+import leftButton from '../../public/assets/icons/leftButton.svg'
+import rightButton from '../../public/assets/icons/rightButton.svg'
 
 const classes = {
   CardCarouselContainer: "w-[86.111vw] max-w-[1240px] m-auto",

@@ -1,12 +1,12 @@
 import React from "react";
-import REVA from "../assets/images/REVA_COLOR.png";
-import FORCE from "../assets/images/FORCE.png";
-import facebook from "../assets/icons/facebook.svg";
-import instagram from "../assets/icons/instagram.svg";
-import linkedin from "../assets/icons/linkedin.svg";
-import twitter from "../assets/icons/twitter.svg";
-import youtube from "../assets/icons/youtube.svg";
-import github from "../assets/icons/github.svg";
+import REVA from "../../public/assets/images/REVA_COLOR.webp";
+import FORCE from "../../public/assets/images/FORCE.webp";
+import facebook from "../../public/assets/icons/facebook.svg";
+import instagram from "../../public/assets/icons/instagram.svg";
+import linkedin from "../../public/assets/icons/linkedin.svg";
+import twitter from "../../public/assets/icons/twitter.svg";
+import youtube from "../../public/assets/icons/youtube.svg";
+import github from "../../public/assets/icons/github.svg";
 
 const classes = {
   Footer: "flex flex-col  items-center justify center w-full bg-white mt-auto",

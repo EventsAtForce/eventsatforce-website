@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import StatisticsComponent from "../components/Statistics";
 import CardCarousel from "../components/CardCarousel";
 
-import Aarambha from "../assets/images/Events/Aarambha1.png";
-import TechnicalQuiz from "../assets/images/Events/TechnicalQuiz.png";
-import Navotsava from "../assets/images/Events/Navothsava.png";
-import Deepotsava from "../assets/images/Events/Deepotsava1.png";
-import Freshers from "../assets/images/Events/Freshers1.png";
-import TechnicalCompetition from "../assets/images/Events/TechnicalCompetition.png";
-import Aavishkar from "../assets/images/Events/Aavishkar.png";
-import Harmonics from "../assets/images/Events/Harmonics.png";
-import Farewell from "../assets/images/Events/Farewell.png";
+import Aarambha from "../../public/assets/images/Events/Aarambha1.webp";
+import TechnicalQuiz from "../../public/assets/images/Events/TechnicalQuiz.webp";
+import Navotsava from "../../public/assets/images/Events/Navothsava.webp";
+import Deepotsava from "../../public/assets/images/Events/Deepotsava1.webp";
+import Freshers from "../../public/assets/images/Events/Freshers1.webp";
+import TechnicalCompetition from "../../public/assets/images/Events/TechnicalCompetition.webp";
+import Aavishkar from "../../public/assets/images/Events/Aavishkar.webp";
+import Harmonics from "../../public/assets/images/Events/Harmonics.webp";
+import Farewell from "../../public/assets/images/Events/Farewell.webp";
 
 const classes = {
     EventsCard: 'flex flex-col items-center justify-center  w-full h-full max-w-1440 sm:gap-[16px] gap-[0px] xl:px-[100px] xl:pt-[100px] xl:pb-8 lg:px-[80px] lg:pt-[80px] lg:pb-6 sm:px-[60px] sm:pt-[60px] sm:pb-4 px-6 pt-[60px] pb-4',
