@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import IMG_1 from "../../public/assets/images/Zealous.webp";
-import IMG_2 from "../../public/assets/images/Euphony.webp";
-import IMG_3 from "../../public/assets/images/Photography.webp";
-import IMG_4 from "../../public/assets/images/Kalakshetra.webp";
+import IMG_1 from "/assets/images/Zealous.webp";
+import IMG_2 from "/assets/images/Euphony.webp";
+import IMG_3 from "/assets/images/Photography.webp";
+import IMG_4 from "/assets/images/Kalakshetra.webp";
 
 const classes = {
   SocietiesMain: "flex flex-col items-center justify-center w-full xl:gap-10 lg:gap-8 md:gap-6 gap-4",
@@ -18,7 +18,7 @@ const classes = {
 const Societies = () => {
 
   return (
-    <div className={classes.SocietiesMain}>
+    <div className={classes.SocietiesMain} id="Societies">
       <h1 className={classes.SocietiesHeader}>SOCIETIES / CLUBS</h1>
       <div className={classes.SocietiesContainer}>
         <div className={classes.SocietyWrapper}>

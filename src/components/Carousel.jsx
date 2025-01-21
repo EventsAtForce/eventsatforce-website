@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
-import leftButton from '../../public/assets/icons/leftButton.svg'
-import rightButton from '../../public/assets/icons/rightButton.svg'
+import leftButton from '/assets/icons/leftButton.svg'
+import rightButton from '/assets/icons/rightButton.svg'
 
 
 const classes = {

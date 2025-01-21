@@ -6,21 +6,21 @@ import About from "../components/About";
 import Statistics from "../components/Statistics";
 import Societies from "../components/Societies";
 import Team from "../components/Team";
-import upwardIcon from "../../public/assets/buttons/upward-arrow.webp";
+import upwardIcon from "/assets/buttons/upward-arrow.webp";
 
 // for vw >= 640px
-import Slide_1_1 from "../../public/assets/images/Slides_1/Slide_1.webp";
-import Slide_1_2 from "../../public/assets/images/Slides_1/Slide_2.webp";
-import Slide_1_3 from "../../public/assets/images/Slides_1/Slide_3.webp";
-import Slide_1_4 from "../../public/assets/images/Slides_1/Slide_4.webp";
-import Slide_1_5 from "../../public/assets/images/Slides_1/Slide_5.webp";
-import Slide_1_6 from "../../public/assets/images/Slides_1/Slide_6.webp";
-import Slide_1_7 from "../../public/assets/images/Slides_1/Slide_7.webp";
-import Slide_1_8 from "../../public/assets/images/Slides_1/Slide_8.webp";
-import Slide_1_9 from "../../public/assets/images/Slides_1/Slide_9.webp";
-import Slide_1_10 from "../../public/assets/images/Slides_1/Slide_10.webp";
-import Slide_1_11 from "../../public/assets/images/Slides_1/Slide_11.webp";
-import Slide_1_12 from "../../public/assets/images/Slides_1/Slide_12.webp";
+import Slide_1_1 from "/assets/images/Slides_1/Slide_1.webp";
+import Slide_1_2 from "/assets/images/Slides_1/Slide_2.webp";
+import Slide_1_3 from "/assets/images/Slides_1/Slide_3.webp";
+import Slide_1_4 from "/assets/images/Slides_1/Slide_4.webp";
+import Slide_1_5 from "/assets/images/Slides_1/Slide_5.webp";
+import Slide_1_6 from "/assets/images/Slides_1/Slide_6.webp";
+import Slide_1_7 from "/assets/images/Slides_1/Slide_7.webp";
+import Slide_1_8 from "/assets/images/Slides_1/Slide_8.webp";
+import Slide_1_9 from "/assets/images/Slides_1/Slide_9.webp";
+import Slide_1_10 from "/assets/images/Slides_1/Slide_10.webp";
+import Slide_1_11 from "/assets/images/Slides_1/Slide_11.webp";
+import Slide_1_12 from "/assets/images/Slides_1/Slide_12.webp";
 
 const slides_1 = [
   Slide_1_1,
@@ -35,24 +35,21 @@ const slides_1 = [
   Slide_1_10,
   Slide_1_11,
   Slide_1_12,
-
 ];
 
 // vw < 640px
-import Slide_2_1 from "../../public/assets/images/Slides_2/Slide_1.webp";
-import Slide_2_2 from "../../public/assets/images/Slides_2/Slide_2.webp";
-import Slide_2_3 from "../../public/assets/images/Slides_2/Slide_3.webp";
-import Slide_2_4 from "../../public/assets/images/Slides_2/Slide_4.webp";
-import Slide_2_5 from "../../public/assets/images/Slides_2/Slide_5.webp";
-import Slide_2_6 from "../../public/assets/images/Slides_2/Slide_6.webp";
-import Slide_2_7 from "../../public/assets/images/Slides_2/Slide_7.webp";
-import Slide_2_8 from "../../public/assets/images/Slides_2/Slide_8.webp";
-import Slide_2_9 from "../../public/assets/images/Slides_2/Slide_9.webp";
-import Slide_2_10 from "../../public/assets/images/Slides_2/Slide_10.webp";
-import Slide_2_11 from "../../public/assets/images/Slides_2/Slide_11.webp";
-import Slide_2_12 from "../../public/assets/images/Slides_2/Slide_12.webp";
-
-
+import Slide_2_1 from "/assets/images/Slides_2/Slide_1.webp";
+import Slide_2_2 from "/assets/images/Slides_2/Slide_2.webp";
+import Slide_2_3 from "/assets/images/Slides_2/Slide_3.webp";
+import Slide_2_4 from "/assets/images/Slides_2/Slide_4.webp";
+import Slide_2_5 from "/assets/images/Slides_2/Slide_5.webp";
+import Slide_2_6 from "/assets/images/Slides_2/Slide_6.webp";
+import Slide_2_7 from "/assets/images/Slides_2/Slide_7.webp";
+import Slide_2_8 from "/assets/images/Slides_2/Slide_8.webp";
+import Slide_2_9 from "/assets/images/Slides_2/Slide_9.webp";
+import Slide_2_10 from "/assets/images/Slides_2/Slide_10.webp";
+import Slide_2_11 from "/assets/images/Slides_2/Slide_11.webp";
+import Slide_2_12 from "/assets/images/Slides_2/Slide_12.webp";
 
 const slides_2 = [
   Slide_2_1,
@@ -67,15 +64,14 @@ const slides_2 = [
   Slide_2_10,
   Slide_2_11,
   Slide_2_12,
-
 ];
 
-import Harmonics from "../../public/assets/images/Events/Harmonics.webp";
-import CampusCruise from "../../public/assets/images/Events/CampusCruise.webp";
-import FORCE_Recap_23 from "../../public/assets/images/Events/FORCERecap23.webp";
-import ChildrensDay from "../../public/assets/images/Events/ChildrensDay.webp";
-import Freshers from "../../public/assets/images/Events/Freshers.webp";
-import Aarambha from "../../public/assets/images/Events/Aarambha.webp";
+import Harmonics from "/assets/images/Events/Harmonics.webp";
+import CampusCruise from "/assets/images/Events/CampusCruise.webp";
+import FORCE_Recap_23 from "/assets/images/Events/FORCERecap23.webp";
+import ChildrensDay from "/assets/images/Events/ChildrensDay.webp";
+import Freshers from "/assets/images/Events/Freshers.webp";
+import Aarambha from "/assets/images/Events/Aarambha.webp";
 
 const eventsList = [
   {
@@ -123,14 +119,13 @@ const classes = {
   CardImageContainer: "w-full overflow-hidden xl:rounded-3xl rounded-2xl border-2 border-[#AFAFAF] transition-all duration-300 ease-in-out",
   CardImage: "w-full h-auto object-cover transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1",
   WatchButton: "w-full flex items-center justify-center bg-[#D9D9D9] text-black font-HelveticaNeueBD text-lg p-2 md:rounded-2xl rounded-2xl border-2 border-[#AFAFAF] transition-colors duration-300 ease-in-out hover:bg-[#C0C0C0]",
-  UpwardIconWrapper: "sm:w-12 sm:h-12 w-10 h-10 z-30 bg-stone-100 flex items-center animate-moveInLeft justify-center  fixed  shadow-custom rounded-full bottom-[20px] right-[20px]   cursor-pointer",
+  UpwardIconWrapper: "sm:w-12 sm:h-12 w-10 h-10 z-30 bg-stone-100 flex items-center animate-moveInLeft justify-center fixed shadow-custom rounded-full bottom-[20px] right-[20px] cursor-pointer",
   UpwardIcon: "w-10 h-10 filter brightness-0 saturate-[0]",
 };
 
 const Home = () => {
   const [slides, setSlides] = useState(slides_1);
   const [showButton, setShowButton] = useState(false);
-  const [atBottom, setAtBottom] = useState(false);
 
   // Change slides if vw < 640px
   useEffect(() => {
@@ -158,15 +153,8 @@ const Home = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
 
-      if (scrollPosition + windowHeight >= documentHeight) {
-        setAtBottom(true);
-        setShowButton(false);
-      } else {
-        setAtBottom(false);
-        setShowButton(scrollPosition > windowHeight);
-      }
+      setShowButton(scrollPosition > windowHeight);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -175,6 +163,7 @@ const Home = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -213,7 +202,7 @@ const Home = () => {
       </div>
       <Societies />
       <Team />
-      {showButton && !atBottom && (
+      {showButton && (
         <div className={classes.UpwardIconWrapper}>
           <img
             src={upwardIcon}

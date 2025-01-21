@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../public/assets/icons/LOGO.svg'
+import logo from '/assets/icons/LOGO.svg'
 
 const navItems = [
   {
@@ -9,7 +9,7 @@ const navItems = [
   },
   {
     name: 'ABOUT',
-    link: '/About'
+    link: '#About'
   },
   {
     name: 'EVENTS',
@@ -17,11 +17,11 @@ const navItems = [
   },
   {
     name: 'SOCIETIES',
-    link: '/Societies'
+    link: '#Societies'
   },
   {
     name: 'TEAM',
-    link: '/Team'
+    link: '#Team'
   }
 ]
 
