@@ -19,7 +19,7 @@ const Societies = () => {
 
   return (
     <div className={classes.SocietiesMain} id="Societies">
-      <h1 className={classes.SocietiesHeader}>SOCIETIES / CLUBS</h1>
+      <h1 className={classes.SocietiesHeader} id="Societies">SOCIETIES / CLUBS</h1>
       <div className={classes.SocietiesContainer}>
         <div className={classes.SocietyWrapper}>
           <div className={classes.Society}>

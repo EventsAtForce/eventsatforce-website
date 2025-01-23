@@ -9,7 +9,7 @@ const navItems = [
   },
   {
     name: 'ABOUT',
-    link: '#About'
+    link: '/About'
   },
   {
     name: 'EVENTS',
@@ -17,11 +17,11 @@ const navItems = [
   },
   {
     name: 'SOCIETIES',
-    link: '#Societies'
+    link: '/Societies'
   },
   {
     name: 'TEAM',
-    link: '#Team'
+    link: '/Team'
   }
 ]
 
