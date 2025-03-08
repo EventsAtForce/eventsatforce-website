@@ -1,6 +1,6 @@
 import React from 'react'
-import IMG_1 from '../assets/images/IMG_1.png'
-import IMG_2 from '../assets/images/IMG_2.png'
+import IMG_1 from '/assets/images/IMG_1.webp'
+import IMG_2 from '/assets/images/IMG_2.webp'
 
 const classes = {
   AboutContainer: 'flex flex-col min-[900px]:flex-row items-start gap-[40px]',
@@ -18,7 +18,7 @@ const classes = {
 const About = () => {
   return (
     <>
-      <div className={classes.AboutContainer}>
+      <div className={classes.AboutContainer} >
         <div className={classes.AboutText}>
           <h1 className={classes.AboutHeader}>ABOUT US</h1>
           <p className={classes.AboutBody}>Welcome to FORCE - Forum of REVA for Communication and Electronics! We are a dynamic student forum established under the School of Electronics and Communication Engineering at REVA University. Our mission is to foster a community of enthusiastic learners, innovators, and leaders.</p>
@@ -29,7 +29,7 @@ const About = () => {
         <img className={classes.WhatWeDoImage} src={IMG_2} alt="" />
         <div className={classes.WhatWeDoText}>
           <h1 className={classes.WhatWeDoHeader}>WHAT WE DO</h1>
-          <p className={classes.WhatWeDoBody}>FORCE is a platform for students to showcase their talents, skills, and creativity. We host events like Music Fests and Fresher's Day to celebrate student talents. We also organize technical events to enhance the skills of the students, fostering a dynamic community for students.</p>
+          <p className={classes.WhatWeDoBody} >FORCE is a platform for students to showcase their talents, skills, and creativity. We host events like Music Fests and Fresher's Day to celebrate student talents. We also organize technical events to enhance the skills of the students, fostering a dynamic community for students.</p>
         </div>
       </div>
     </>

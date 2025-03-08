@@ -7,7 +7,6 @@ import Statistics from "../components/Statistics";
 import Societies from "../components/Societies";
 import Team from "../components/Team";
 import upwardIcon from "/assets/buttons/upward-arrow.webp";
-import EventsCarousel from "../components/EventsCarousel";
 
 // for vw >= 640px
 import Slide_1_1 from "/assets/images/Slides_1/Slide_1.webp";
