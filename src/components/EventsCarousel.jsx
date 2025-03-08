@@ -13,11 +13,11 @@ import BattleOfBands from "/assets/images/Events/BattleOfBands.webp";
 
 const classes = {
     EventsCard: 'flex flex-col items-center justify-center w-full h-full',
-    UpcomingEvents: 'text-center xl:text-4xl lg:text-3xl text-2xl font-HelveticaNeueBD text-shadow-3',
+    UpcomingEvents: 'text-center xl:text-4xl lg:text-3xl text-2xl font-HelveticaNeueMD text-shadow-3',
     UpcomingEventsCard: 'flex flex-row items-center justify-center w-full h-full max-w-1440 sm:gap-[16px] gap-[0px]',
     EventCard: 'flex flex-col items-center justify-center h-full bg-[#D9D9D9] border-2 border-[#AFAFAF] rounded-3xl md:mb-4 shadow-lg p-4',
     eventDescription: 'flex flex-row gap-6 mt-2',
-    eventName: 'text-lg font-HelveticaNeueBD mt-[4px]',
+    eventName: 'text-lg font-HelveticaNeueBD mt-[4px] leading-tight',
     datebox: 'flex flex-col items-center justify-center mt-2 ml-4 -mr-2 ',
     month: 'text-lg font-HelveticaNeueBD -mb-2',
     date: 'text-xl font-HelveticaNeueBD w-8 text-center ',
@@ -87,7 +87,7 @@ const events = [
     },
     {
         EventName: 'Singing & Instrumental',  
-        EventDate: '03',
+        EventDate: '04',
         EventMonth: 'Apr',
         EventImg: Singing,
         EventDescription: 'Let your voice or instrument do the talking!',
@@ -96,7 +96,7 @@ const events = [
     },
     {
         EventName: 'Battle Of Bands',
-        EventDate: '03',
+        EventDate: '04',
         EventMonth: 'Apr',
         EventImg: BattleOfBands,
         EventDescription: 'Let the stage ignite with electrifying performances! ',
@@ -108,7 +108,7 @@ const events = [
 const EventsCarousel = () => {
     return (
         <div className={classes.EventsCard}>
-            <div className={classes.UpcomingEvents}>HARMONICS - 2025</div>
+            <div className={classes.UpcomingEvents}>Registrations Open for Harmonics '25!</div>
             <div className={classes.UpcomingEventsCard}>
                 <CardCarousel>
                     {events.map((event, index) => (
@@ -118,13 +118,13 @@ const EventsCarousel = () => {
                             </Link>
                             <div className={classes.eventDescription}>
                                 <div className={classes.datebox}>
-                                    <div className={classes.month}>{event.EventMonth}</div>
-                                    <div className={classes.date}>{event.EventDate}</div>
+                                    <p className={classes.month}>{event.EventMonth}</p>
+                                    <p className={classes.date}>{event.EventDate}</p>
                                 </div>
                                 <div className='line h-16 w-[4px] rounded-2xl bg-black mt-3'></div>
                                 <div className={classes.eventDetails}>
-                                    <div className={classes.eventName}>{event.EventName}</div>
-                                    <div className={classes.eventText}>{event.EventDescription}</div>
+                                    <p className={classes.eventName}>{event.EventName}</p>
+                                    <p className={classes.eventText}>{event.EventDescription}</p>
                                 </div>
                             </div>
                             <button className="font-HelveticaNeueMD w-full h-12 mt-2 bg-[#D9D9D9] border-2 border-[#AFAFAF] rounded-2xl transition-all duration-300 ease-in-out transform  hover:bg-[#C0C0C0]"><a href={event.link} className="w-full h-full" target="_blank">Register Now!</a></button>
