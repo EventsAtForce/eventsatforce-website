@@ -107,7 +107,9 @@ const Footer = () => {
       </div>
       <div className={classes.FooterDivider}></div>
       <div className={classes.FooterContainer}>
-        <p className={classes.FooterText}>© 2024 FORCE. All rights reserved.</p>
+        <p className={classes.FooterText}>
+          © {new Date().getFullYear()} FORCE. All rights reserved.
+        </p>
       </div>
     </div>
   );
