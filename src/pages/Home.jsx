@@ -5,7 +5,6 @@ import Carousel from "../components/Carousel";
 import About from "../components/About";
 import Statistics from "../components/Statistics";
 import Societies from "../components/Societies";
-import EventsCarousel from "../components/EventsCarousel";
 import Team from "../components/Team";
 import upwardIcon from "/assets/buttons/upward-arrow.webp";
 
@@ -179,7 +178,6 @@ const Home = () => {
           ))}
         </Carousel>
       </div>
-      <EventsCarousel />
       <About />
       <Statistics />
       <div className={classes.ReelsCarouselContainer}>
