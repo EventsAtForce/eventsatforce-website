@@ -12,10 +12,6 @@ const navItems = [
     link: '/About'
   },
   {
-    name: 'EVENTS',
-    link: '/Events'
-  },
-  {
     name: 'SOCIETIES',
     link: '/Societies'
   },

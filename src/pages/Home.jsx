@@ -172,11 +172,11 @@ const Home = () => {
   return (
     <div className={classes.HomeContainer}>
       <div className={classes.CarouselContainer}>
-        <Carousel autoSlide={true} autoSlideInterval={5000}>
+        {/* <Carousel autoSlide={true} autoSlideInterval={5000}>
           {slides.map((slide, index) => (
             <img src={slide} key={index} alt={`Slide ${index + 1}`} />
           ))}
-        </Carousel>
+        </Carousel> */}
       </div>
       <About />
       <Statistics />
@@ -202,7 +202,7 @@ const Home = () => {
         </CardCarousel>
       </div>
       <Societies />
-      <Team />
+      {/* <Team /> */}
       {showButton && (
         <div className={classes.UpwardIconWrapper}>
           <img
