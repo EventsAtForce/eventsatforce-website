@@ -8,7 +8,7 @@ const App = () => {
   const location = useLocation();
 
   return (
-    <div className='App w-full'>
+    <div className='App w-full bg-black'>
        <Routes>
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Athenova />} />

@@ -1,20 +1,33 @@
 import React, { forwardRef } from "react";
 
-const Navbar = forwardRef((props, ref) => {
+const Navbar = forwardRef(({ lenisRef }, ref) => {
   const navItems = [
-    "About","Events","Contact"
+    { label: "About", id: "about" },
+    { label: "Events", id: "events" },
+    { label: "Contact", id: "footer" }
   ];
 
+  const handleNavClick = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element && lenisRef?.current) {
+      lenisRef.current.scrollTo(element, {
+        smooth: true,
+        offset: 0,
+      });
+    }
+  };
+
   return (
-    <div ref={ref} className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 opacity-0 backdrop-blur-sm">
-      <nav className="flex items-center gap-8 px-8 py-3 bg-zinc-800 rounded-full shadow-md">
+    <div ref={ref} className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 opacity-0 ">
+      <nav className="flex items-center gap-8 px-8 py-3 bg-zinc-800 rounded-full backdrop-blur-sm shadow-md" style={{ fontFamily: 'Guntech' }}>
         
         {/* Logo Circle */}
-        <img 
+        {/* <img 
           src="/assets/images/Athenova/logo.png" 
           alt="Athenova Logo"
           className="w-8 h-8 object-contain"
-        />
+        /> */}
 
         {/* Nav Links */}
         <ul className="flex items-center gap-6">
@@ -22,9 +35,10 @@ const Navbar = forwardRef((props, ref) => {
             <li key={index}>
               <a
                 href="#"
-                className="text-sm font-medium text-white hover:text-black transition-colors duration-200"
+                onClick={(e) => handleNavClick(e, item.id)}
+                className="text-sm font-medium text-white hover:underline transition-all duration-200"
               >
-                {item}
+                {item.label}
               </a>
             </li>
           ))}

@@ -1,6 +1,25 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities; 
+@tailwind utilities;
+
+/* Guntech Font */
+@font-face {
+  font-family: 'Guntech';
+  src: url('/assets/fonts/Guntech.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Blinking Cursor */
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.typewriter-cursor {
+  display: inline;
+  animation: blink 0.7s infinite;
+}
 
 /* Lenis Smooth Scroll */
 html.lenis, html.lenis body {
