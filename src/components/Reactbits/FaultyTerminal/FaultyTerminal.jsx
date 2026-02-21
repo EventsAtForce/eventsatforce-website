@@ -235,7 +235,7 @@ export default function FaultyTerminal({
   tint = '#ffffff',
   mouseReact = true,
   mouseStrength = 0.2,
-  dpr = Math.min(window.devicePixelRatio || 1, 2),
+  dpr = 1,
   pageLoadAnimation = true,
   brightness = 1,
   className,
@@ -251,6 +251,10 @@ export default function FaultyTerminal({
   const rafRef = useRef(0);
   const loadAnimationStartRef = useRef(0);
   const timeOffsetRef = useRef(Math.random() * 100);
+  const pauseRef = useRef(pause);
+
+  // Sync pause prop to ref so toggling pause never re-creates the WebGL context
+  useEffect(() => { pauseRef.current = pause; }, [pause]);
 
   const tintVec = useMemo(() => hexToRgb(tint), [tint]);
 
@@ -320,23 +324,31 @@ export default function FaultyTerminal({
       );
     }
 
-    const resizeObserver = new ResizeObserver(() => resize());
+    let resizeTimer;
+    const resizeObserver = new ResizeObserver(() => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => resize(), 100);
+    });
     resizeObserver.observe(ctn);
-    resize();
+    resize(); // initial size set immediately
 
     const update = t => {
       rafRef.current = requestAnimationFrame(update);
+
+      // Skip GPU render entirely when paused
+      if (pauseRef.current) {
+        program.uniforms.iTime.value = frozenTimeRef.current;
+        return;
+      }
 
       if (pageLoadAnimation && loadAnimationStartRef.current === 0) {
         loadAnimationStartRef.current = t;
       }
 
-      if (!pause) {
+      if (!pauseRef.current) {
         const elapsed = (t * 0.001 + timeOffsetRef.current) * timeScale;
         program.uniforms.iTime.value = elapsed;
         frozenTimeRef.current = elapsed;
-      } else {
-        program.uniforms.iTime.value = frozenTimeRef.current;
       }
 
       if (pageLoadAnimation && loadAnimationStartRef.current > 0) {
@@ -367,6 +379,7 @@ export default function FaultyTerminal({
 
     return () => {
       cancelAnimationFrame(rafRef.current);
+      clearTimeout(resizeTimer);
       resizeObserver.disconnect();
       if (mouseReact) ctn.removeEventListener('mousemove', handleMouseMove);
       if (gl.canvas.parentElement === ctn) ctn.removeChild(gl.canvas);
@@ -376,7 +389,6 @@ export default function FaultyTerminal({
     };
   }, [
     dpr,
-    pause,
     timeScale,
     scale,
     gridMul,

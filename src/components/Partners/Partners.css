@@ -1,6 +1,58 @@
-.Partner-div{
-    background-color: black;
-    width: 100%;
-    height: 50vh;
-    color:white
+/* Main Section */
+@font-face {
+  font-family: "guntech";
+  src: url("/assets/fonts/Guntech.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  height:30vh;
+}
+.Partner-div {
+  background-color: #000;
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+  overflow: hidden;
+  color:white;
+}
+
+/* Title */
+.partners-title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  font-family: "guntech";
+}
+
+/* Rounded Pill Container */
+.partners-container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 40px 40px;
+  border-radius:100px; 
+  background:black; 
+  overflow: hidden;
+  position: relative;
+}
+
+/* Track for animation */
+.partners-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+
+  width: max-content;
+
+  animation: scroll 25s linear infinite;
+}
+
+/* Infinite scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

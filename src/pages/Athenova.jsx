@@ -83,7 +83,7 @@ const Athenova = () => {
       const scrollProgress = Math.max(0, Math.min(1, (window.innerHeight - top) / window.innerHeight));
       
       // Move 15px for every 10vh of scroll progress (creates parallax effect)
-      const translateY = scrollProgress * 50;
+      const translateY = scrollProgress * 150;
       eventsRef.current.style.transform = `translateY(-${translateY}px)`;
       
       ticking = false;

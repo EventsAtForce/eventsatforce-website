@@ -1,7 +1,15 @@
 import React from 'react'
 import './EventDetails.css'
 
-const EventDetails = () => {
+const EventDetails = ({ event }) => {
+  if (!event) {
+    return (
+      <div className='EventDetails'>
+        <p>No event selected</p>
+      </div>
+    )
+  }
+
   return (
     <div class="event-card">
         <div class="cover-img">
