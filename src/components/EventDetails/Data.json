@@ -1,0 +1,148 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "name": "Robo Soccer",
+      "date": "March 15, 2026",
+      "venue": "Sports Complex, Main Campus",
+      "teamSize": "4-5 members",
+      "registrationFee": "₹500 per team",
+      "description": "An exciting robotics competition where teams design and build autonomous robots to play soccer. Showcase your engineering and programming skills as your robot competes against others in this fast-paced tournament.",
+      "rules": [
+        "Teams must consist of 4-5 members",
+        "Robots must not exceed 20cm x 20cm x 20cm dimensions",
+        "Robot weight limit: 2kg",
+        "All robots must be autonomous (no remote control)",
+        "Battery-powered robots only",
+        "Match duration: 10 minutes per game",
+        "Best 2 out of 3 matches wins the round",
+        "Technical specifications must be submitted 3 days before the event"
+      ],
+      "eligibility": "Students from any year and branch",
+      "prizes": {
+        "first": "₹15,000 + Trophy",
+        "second": "₹10,000 + Trophy",
+        "third": "₹5,000 + Certificate"
+      },
+      "judging": "Based on robot performance, design innovation, and programming logic"
+    },
+    {
+      "id": 2,
+      "name": "AI Video Challenge",
+      "date": "March 20, 2026",
+      "venue": "Auditorium Hall 2, Block C",
+      "teamSize": "2-3 members",
+      "registrationFee": "₹300 per team",
+      "description": "Create innovative video content that demonstrates AI applications in real-world scenarios. Use machine learning, computer vision, or any AI technique to produce a compelling 3-5 minute video. Show creativity, technical depth, and presentation quality.",
+      "rules": [
+        "Video duration: 3-5 minutes",
+        "Video format: MP4, MOV, or AVI (1080p minimum)",
+        "Must showcase AI/ML application",
+        "Original content required (no plagiarism)",
+        "Team size: 2-3 members",
+        "Submission deadline: March 18, 2026",
+        "Videos will be judged on creativity, technical implementation, and content quality",
+        "Multiple submissions per team not allowed"
+      ],
+      "eligibility": "Open to all college students",
+      "prizes": {
+        "first": "₹12,000 + Trophy + Recognition",
+        "second": "₹8,000 + Trophy + Certificate",
+        "third": "₹4,000 + Certificate"
+      },
+      "judging": "Expert panel including AI researchers and industry professionals",
+      "themes": [
+        "Healthcare and AI",
+        "AI in Education",
+        "Environmental Solutions",
+        "Smart Cities",
+        "Entertainment Industry"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mad Ads",
+      "date": "March 22, 2026",
+      "venue": "Creative Studio, Annexe Building",
+      "teamSize": "3-4 members",
+      "registrationFee": "₹250 per team",
+      "description": "Unleash your creativity! Design an engaging advertisement campaign for a fictional or real product. The twist? Create content using unique themes and unconventional approaches. Present your complete campaign including visuals, taglines, and marketing strategy.",
+      "rules": [
+        "Team size: 3-4 members",
+        "Presentation time: 8-10 minutes",
+        "Must include: visual design, tagline, and marketing strategy",
+        "Can use any medium: digital, print, or multimedia",
+        "No offensive or inappropriate content",
+        "Originality is key - unique concepts will be favored",
+        "Use of existing brand guidelines is not allowed for fictional products",
+        "Judges' decision is final"
+      ],
+      "eligibility": "Open to all students interested in marketing and creative design",
+      "prizes": {
+        "first": "₹10,000 + Trophy + Portfolio Feature",
+        "second": "₹6,000 + Trophy + Certificate",
+        "third": "₹3,000 + Certificate"
+      },
+      "judging": "Based on creativity, originality, execution, and presentation quality",
+      "rounds": [
+        {
+          "round": 1,
+          "name": "Concept Submission",
+          "details": "Submit 1-page concept outline"
+        },
+        {
+          "round": 2,
+          "name": "Final Presentation",
+          "details": "Live presentation with visual materials"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Buildspace",
+      "date": "March 25-27, 2026",
+      "venue": "Innovation Hub, Central Campus",
+      "teamSize": "2-4 members",
+      "registrationFee": "₹400 per team",
+      "description": "A 3-day hackathon where teams build innovative software or hardware solutions to real-world problems. Work with mentors, leverage APIs and tools, and pitch your idea at the end. The most impactful and feasible solution wins.",
+      "rules": [
+        "Team size: 2-4 members",
+        "Event duration: 3 days (continuous or extended hours)",
+        "Original code/design required - no pre-built projects",
+        "Open to all technology stacks and frameworks",
+        "Teams must submit working prototype",
+        "Final presentation: 5 minutes pitch + 2 minutes Q&A",
+        "Collaboration tools and APIs provided",
+        "Mentors available for guidance throughout the event"
+      ],
+      "eligibility": "All college students, no experience requirement",
+      "prizes": {
+        "first": "₹25,000 + Trophy + Mentorship",
+        "second": "₹15,000 + Trophy + Mentorship",
+        "third": "₹8,000 + Certificate",
+        "specialAward": "₹5,000 - Best Innovation/Potential"
+      },
+      "judging": "Technical feasibility, innovation, implementation, and business potential",
+      "themes": [
+        "Education Technology",
+        "Healthcare Tech",
+        "Sustainability",
+        "Social Impact",
+        "Open Theme"
+      ],
+      "whatIncluded": [
+        "Free meals for 3 days",
+        "Access to development tools and APIs",
+        "Mentorship from industry experts",
+        "Networking opportunities",
+        "Workspace and resources",
+        "Certificate and recognition"
+      ],
+      "timeline": {
+        "day1": "Team formation, ideation, and development kickoff",
+        "day2": "Continued development, mentor sessions",
+        "day3": "Final touches, presentations, and prizes"
+      }
+    }
+  ]
+}

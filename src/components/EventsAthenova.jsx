@@ -1,17 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import EventDetails from './EventDetails/EventDetails'
 import Checkout from './Checkout/Checkout'
+import eventsData from './EventDetails/Data.json'
 
 const EventsAthenova = ({ pauseScroll, resumeScroll }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedEvent, setSelectedEvent] = useState(null)
 
-  const events = [
-    { id: 1, name: 'Event 1' },
-    { id: 2, name: 'Event 2' },
-    { id: 3, name: 'Event 3' },
-    { id: 4, name: 'Event 4' }
-  ];
+  const events = eventsData.events;
 
   // Pause Lenis RAF entirely when modal is open so it can't intercept scroll events
   useEffect(() => {
@@ -51,18 +47,29 @@ const EventsAthenova = ({ pauseScroll, resumeScroll }) => {
         {events.map((event) => (
           <div
             key={event.id}
-            className='border-2 border-gray-400 rounded-2xl p-4 flex flex-col items-center justify-center min-h-[400px] bg-black hover:bg-gray-900 transition-colors duration-300'
+            className='border-2 border-gray-400 rounded-2xl p-6 flex flex-col bg-black hover:bg-gray-900 transition-colors duration-300 min-h-[350px]'
           >
+            {/* Event Info */}
+            <div className='flex-1 flex flex-col justify-start'>
+              <h3 className='text-2xl font-bold text-white mb-4' style={{ fontFamily: 'Guntech' }}>
+                {event.name}
+              </h3>
+              <div className='text-gray-300 text-sm space-y-2'>
+                <p><span className='font-semibold text-gray-200'>Date:</span> {event.date}</p>
+                <p><span className='font-semibold text-gray-200'>Fee:</span> {event.registrationFee}</p>
+              </div>
+            </div>
 
-            <div className='flex gap-4 mt-auto w-full justify-end'>
+            {/* Buttons */}
+            <div className='flex gap-4 mt-6 w-full'>
               <button
                 onClick={() => handleDetailsClick(event)}
-                className='px-6 py-2 border-2 border-white text-white rounded-lg font-medium hover:bg-white hover:text-black transition-all duration-300'
+                className='flex-1 px-6 py-2 border-2 border-white text-white rounded-lg font-medium hover:bg-white hover:text-black transition-all duration-300'
               >
                 Details
               </button>
               <button
-                className='px-6 py-2 border-2 border-white text-white rounded-lg font-medium hover:bg-white hover:text-black transition-all duration-300'
+                className='flex-1 px-6 py-2 border-2 border-white text-white rounded-lg font-medium hover:bg-white hover:text-black transition-all duration-300'
               >
                 Register
               </button>

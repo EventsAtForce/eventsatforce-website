@@ -53,7 +53,7 @@ const Hero = forwardRef(({ heroRef, typewriterRef }, tvImgRef) => {
   }, [typewriterText, typewriterRef]);
   return (
     <>
-      {/* <FaultyTerminal
+      <FaultyTerminal
     scale={1.5}
     gridMul={[2, 1]}
     digitSize={1.2}
@@ -62,16 +62,17 @@ const Hero = forwardRef(({ heroRef, typewriterRef }, tvImgRef) => {
     scanlineIntensity={0.5}
     glitchAmount={1}
     flickerAmount={1}
-    noiseAmp={1}
+    noiseAmp={0.5}
     chromaticAberration={0}
     dither={0}
     curvature={0.1}
     tint="#1a5813"
-    mouseReact
-    mouseStrength={0.5}
+    mouseReact={true}
+    mouseStrength={0.1}
+    dpr={0.7}
     pageLoadAnimation
-    brightness={0.6}
-  /> */}
+    brightness={0.8}
+  />
 
       {/* TV Overlay — scales up as you scroll */}
       <img

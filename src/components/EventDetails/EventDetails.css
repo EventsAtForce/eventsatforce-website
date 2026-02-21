@@ -1,6 +1,165 @@
-.EventDetails{
+.EventDetails {
     display: flex;
-    height:50vh;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+    color: #fff;
+    overflow-y: auto;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    border-radius: 8px;
+}
+
+.event-details-content {
     width: 100%;
-    background-color: white;
+}
+
+.event-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    border-bottom: 2px solid #4a9eff;
+    padding-bottom: 1rem;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    border-left: 3px solid #4a9eff;
+}
+
+.detail-item .label {
+    font-size: 0.85rem;
+    color: #999;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.detail-item .value {
+    font-size: 0.95rem;
+    color: #fff;
+    margin-top: 0.25rem;
+}
+
+.description-section,
+.eligibility-section,
+.rules-section,
+.prizes-section,
+.themes-section,
+.included-section {
+    margin-bottom: 1.5rem;
+}
+
+.description-section h3,
+.eligibility-section h3,
+.rules-section h3,
+.prizes-section h3,
+.themes-section h3,
+.included-section h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4a9eff;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.description-section p,
+.eligibility-section p {
+    color: #ddd;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.rules-section ul,
+.included-section ul {
+    list-style-position: inside;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.rules-section li,
+.included-section li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.rules-section li:before {
+    content: "✓ ";
+    color: #4a9eff;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.prizes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.prize-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: rgba(74, 158, 255, 0.1);
+    border: 1px solid rgba(74, 158, 255, 0.3);
+    border-radius: 6px;
+    text-align: center;
+}
+
+.prize-item .rank {
+    color: #4a9eff;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.prize-item .amount {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.themes-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.theme-tag {
+    background: rgba(74, 158, 255, 0.2);
+    color: #4a9eff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(74, 158, 255, 0.4);
+}
+
+/* Scrollbar styling */
+.EventDetails::-webkit-scrollbar {
+    width: 8px;
+}
+
+.EventDetails::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+.EventDetails::-webkit-scrollbar-thumb {
+    background: rgba(74, 158, 255, 0.5);
+    border-radius: 4px;
+}
+
+.EventDetails::-webkit-scrollbar-thumb:hover {
+    background: rgba(74, 158, 255, 0.8);
 }
