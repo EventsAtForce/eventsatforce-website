@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "Robo Soccer",
+      "coverImage": "/assets/images/Athenova/robosoccer.png",
       "date": "March 15, 2026",
       "venue": "Sports Complex, Main Campus",
       "teamSize": "4-5 members",
@@ -29,6 +30,7 @@
     {
       "id": 2,
       "name": "AI Video Challenge",
+      "coverImage": "/assets/images/Athenova/aivideo.png",
       "date": "March 20, 2026",
       "venue": "Auditorium Hall 2, Block C",
       "teamSize": "2-3 members",
@@ -62,6 +64,7 @@
     {
       "id": 3,
       "name": "Mad Ads",
+      "coverImage": "/assets/images/Athenova/madads.png",
       "date": "March 22, 2026",
       "venue": "Creative Studio, Annexe Building",
       "teamSize": "3-4 members",
@@ -100,6 +103,7 @@
     {
       "id": 4,
       "name": "Buildspace",
+      "coverImage": "/assets/images/Athenova/buildspace.png",
       "date": "March 25-27, 2026",
       "venue": "Innovation Hub, Central Campus",
       "teamSize": "2-4 members",

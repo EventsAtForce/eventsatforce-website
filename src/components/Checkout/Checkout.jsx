@@ -1,40 +1,41 @@
 import React from "react";
 import "./Checkout.css";
+import eventsData from '../EventDetails/Data.json'
 
-const classes = {
-  section:
-    "checkout-section flex flex-col items-center justify-center xl:px-[20px] lg:px-[80px] sm:px-[60px] px-6 xl:py-[100px] lg:py-[80px] py-[60px]",
-  card:
-    "event-card w-[220px] h-[220px] flex items-center justify-center  overflow-hidden cursor-pointer",
-  image:
-    "w-full h-full object-cover",
-};
+const Checkout = ({ event, onSelectEvent }) => {
+  const allEvents = eventsData.events || [];
+  const otherEvents = allEvents.filter(e => e.id !== event?.id);
 
-const events = [
-  { id: 1, name: "Event 1", image: "https://via.placeholder.com/300x400?text=Event+1" },
-  { id: 2, name: "Event 2", image: "https://via.placeholder.com/300x400?text=Event+2" },
-  { id: 3, name: "Event 3", image: "https://via.placeholder.com/300x400?text=Event+3" },
-];
-
-const Checkout = () => {
   return (
-    <section className={classes.section}>
-      <div className="checkout-container">
-        <h2 class="title">Checkout Our Other Events</h2>
+    <div className='checkout-wrapper'>
+      <div className='checkout-container'>
+        <h2 className='checkout-title' style={{ fontFamily: 'Guntech' }}>
+          EXPLORE OTHER EVENTS
+        </h2>
 
-        <div className="hii">
-          {events.map((event) => (
-            <div key={event.id} className={classes.card}>
-              <img
-                src={event.image}
-                alt={event.name}
-                className={classes.image}
-              />
+        <div className='events-grid'>
+          {otherEvents.map((evt) => (
+            <div
+              key={evt.id}
+              className='event-card'
+              onClick={() => onSelectEvent?.(evt)}
+              style={{
+                backgroundImage: `linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('${evt.coverImage}')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+              }}
+            >
+              <div className='event-card-content'>
+                <h4 className='event-card-name'>{evt.name}</h4>
+                <p className='event-card-date'>{evt.date}</p>
+                <p className='event-card-fee'>{evt.registrationFee}</p>
+              </div>
+              <span className='event-card-cta'>View Details →</span>
             </div>
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

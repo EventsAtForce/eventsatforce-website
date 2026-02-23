@@ -53,7 +53,10 @@ const Athenova = () => {
       if (heroRef.current) {
         const heroProgress = Math.min(1, progress / 0.7);
         const translateY = -100 + (heroProgress * 100);
-        heroRef.current.style.transform = `scale(0.55) translateY(${translateY}vh)`;
+        let heroScale = 0.55;
+        if (window.innerWidth < 640) heroScale = 0.85;
+        else if (window.innerWidth < 1024) heroScale = 0.9;
+        heroRef.current.style.transform = `scale(${heroScale}) translateY(${translateY}vh)`;
       }
       
       ticking = false;

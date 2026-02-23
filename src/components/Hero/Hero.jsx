@@ -1,9 +1,25 @@
-import React, { forwardRef, useEffect, useRef } from 'react';
+import React, { forwardRef, useEffect, useRef, useState, useCallback } from 'react';
 import FaultyTerminal from '../Reactbits/FaultyTerminal/FaultyTerminal';
 
 const Hero = forwardRef(({ heroRef, typewriterRef }, tvImgRef) => {
   const typewriterText = 'build. create. compete. conquer.';
   const rafIdRef = useRef(null);
+
+  const getHeroScale = useCallback(() => {
+    if (typeof window === 'undefined') return 0.65;
+    if (window.innerWidth < 640) return 0.85;
+    if (window.innerWidth < 1024) return 0.9;
+    return 0.65;
+  }, []);
+
+  const [heroScale, setHeroScale] = useState(() => getHeroScale());
+
+  useEffect(() => {
+    const handleResize = () => setHeroScale(getHeroScale());
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [getHeroScale]);
 
   useEffect(() => {
     // Smooth time-based typewriter effect using requestAnimationFrame
@@ -51,35 +67,37 @@ const Hero = forwardRef(({ heroRef, typewriterRef }, tvImgRef) => {
       }
     };
   }, [typewriterText, typewriterRef]);
+
   return (
     <>
       <FaultyTerminal
-    scale={1.5}
-    gridMul={[2, 1]}
-    digitSize={1.2}
-    timeScale={0.5}
-    pause={false}
-    scanlineIntensity={0.5}
-    glitchAmount={1}
-    flickerAmount={1}
-    noiseAmp={0.5}
-    chromaticAberration={0}
-    dither={0}
-    curvature={0.1}
-    tint="#1a5813"
-    mouseReact={true}
-    mouseStrength={0.1}
-    dpr={0.7}
-    pageLoadAnimation
-    brightness={0.8}
-  />
+        scale={1.5}
+        gridMul={[2, 1]}
+        digitSize={1.2}
+        timeScale={0.5}
+        pause={false}
+        scanlineIntensity={0.5}
+        glitchAmount={1}
+        flickerAmount={1}
+        noiseAmp={0.5}
+        chromaticAberration={0}
+        dither={0}
+        curvature={0.1}
+        tint="#0b1983"
+        mouseReact={true}
+        mouseStrength={0.1}
+        dpr={0.7}
+        pageLoadAnimation
+        brightness={0.8}
+        className="hero-terminal"
+      />
 
       {/* TV Overlay — scales up as you scroll */}
       <img
         ref={tvImgRef}
         src="/assets/images/Athenova/tv.png"
         alt="TV"
-        className="absolute inset-0 w-full h-full object-fill z-20 pointer-events-none"
+        className="absolute inset-0 w-full h-full object-cover z-20 pointer-events-none lg:object-fill"
         style={{
           transform: 'scale(1)',
           transformOrigin: 'center center',
@@ -97,7 +115,7 @@ const Hero = forwardRef(({ heroRef, typewriterRef }, tvImgRef) => {
           width: '100%',
           height: '100%',
           objectFit: 'contain',
-          transform: 'scale(0.55) translateY(-100vh)',
+          transform: `scale(${heroScale}) translateY(-100vh)`,
           willChange: 'transform',
         }}
       />
@@ -106,7 +124,7 @@ const Hero = forwardRef(({ heroRef, typewriterRef }, tvImgRef) => {
       <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
         <div
           ref={typewriterRef}
-          className="text-white text-3xl font-bold tracking-wide mt-[400px]"
+          className="text-white text-xl sm:text-3xl md:text-4xl font-bold tracking-wide mt-[350px] sm:mt-[300px] md:mt-[400px] px-4 text-center"
           style={{
             fontFamily: 'Guntech',
             letterSpacing: '2px',

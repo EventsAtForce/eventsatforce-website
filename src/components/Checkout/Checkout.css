@@ -1,55 +1,125 @@
-/* Outer section background */
-
-@font-face {
-  font-family: "guntech";
-  src: url("/assets/fonts/Guntech.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  height:30vh;
-}
-.hii {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  background-color: #000;
+/* Checkout Wrapper */
+.checkout-wrapper {
   width: 100%;
-  /* padding: 10px 0; */
-}
-
-.checkout-section {
-  background-color: #000;
-  color: white;
-}
-
-/* Inner bordered container (like your screenshot) */
-.checkout-container {
-  /* border: 1px solid #444; */
-  border-radius: 20px;
-  padding: 60px 40px;
-  width: 100%;
-  max-width: 1200px;
-}
-.title {
   color: #ffffff;
-  font-size: 25px;
+}
+
+.checkout-container {
+  width: 100%;
+}
+
+/* Checkout Title */
+.checkout-title {
+  font-size: 20px;
   font-weight: 600;
-  margin-bottom: 30px;
-  font-family: "guntech";
-  margin-left:100px;
-  /* align-items: center; */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+  display: block;
 }
 
-/* Event card styling */
+/* Events Grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+/* Event Card */
 .event-card {
-  background-color: #111;
-  border: 1px solid #666;
-  transition: transform 0.3s ease, border 0.3s ease;
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* Hover effect */
+.event-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.8) 100%);
+  pointer-events: none;
+}
+
 .event-card:hover {
-  transform: scale(1.05);
-  border: 1px solid #ffffff;
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.event-card-cta {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  padding: 3px 8px;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 2;
+  letter-spacing: 0.5px;
+  pointer-events: none;
+  backdrop-filter: blur(4px);
+}
+
+.event-card:hover .event-card-cta {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.event-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.event-card-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.event-card-date {
+  font-size: 12px;
+  color: #888;
+  margin: 0;
+}
+
+.event-card-fee {
+  font-size: 12px;
+  color: #d0d0d0;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .event-card {
+    padding: 12px;
+    min-height: 120px;
+  }
+
+  .checkout-title {
+    font-size: 16px;
+  }
 }

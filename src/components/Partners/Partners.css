@@ -1,58 +1,155 @@
-/* Main Section */
 @font-face {
-  font-family: "guntech";
+  font-family: "Guntech";
   src: url("/assets/fonts/Guntech.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  height:30vh;
 }
-.Partner-div {
-  background-color: #000;
+
+/* Main Section */
+.partners-section {
   width: 100%;
-  padding: 100px 0;
-  text-align: center;
+  margin-top: -150px;
+  background: #000000;
+  padding: 30px 20px;
   overflow: hidden;
-  color:white;
+}
+
+@media (min-width: 768px) {
+  .partners-section {
+    padding: 80px 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .partners-section {
+    padding: 50px 30px;
+  }
+}
+
+.partners-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
 /* Title */
 .partners-title {
   color: #ffffff;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
-  margin-bottom: 60px;
-  font-family: "guntech";
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0;
 }
 
-/* Rounded Pill Container */
+@media (min-width: 768px) {
+  .partners-title {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .partners-title {
+    font-size: 44px;
+  }
+}
+
+.partners-subtitle {
+  color: #888;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Container */
 .partners-container {
-  width: 85%;
-  margin: 0 auto;
-  padding: 40px 40px;
-  border-radius:100px; 
-  background:black; 
+  width: 100%;
+  padding: 30px 0;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
   overflow: hidden;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .partners-container {
+    padding: 40px 0;
+    border-radius: 30px;
+  }
 }
 
 /* Track for animation */
 .partners-track {
   display: flex;
   align-items: center;
-  gap: 60px;
-
+  gap: 40px;
   width: max-content;
+  animation: scroll 40s linear infinite;
+  padding: 0 20px;
+}
 
-  animation: scroll 25s linear infinite;
+@media (min-width: 768px) {
+  .partners-track {
+    gap: 60px;
+    padding: 0 40px;
+  }
+}
+
+/* Logo Card */
+.logo-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  height: 80px;
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(74, 158, 255, 0.2);
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.logo-card:hover {
+  background: rgba(74, 158, 255, 0.15);
+  border-color: rgba(74, 158, 255, 0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(74, 158, 255, 0.2);
+}
+
+@media (min-width: 768px) {
+  .logo-card {
+    min-width: 180px;
+    height: 90px;
+  }
+}
+
+/* Logo Image */
+.partner-logo {
+  max-width: 100%;
+  max-height: 50px;
+  object-fit: contain;
+  filter: grayscale(1) opacity(0.7);
+  transition: all 0.3s ease;
+}
+
+.logo-card:hover .partner-logo {
+  filter: grayscale(0) opacity(1);
 }
 
 /* Infinite scroll animation */
 @keyframes scroll {
   0% {
-    transform: translateX(0%);
+    transform: translateX(-33.333%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(0);
   }
 }
